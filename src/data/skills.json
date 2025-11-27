@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "name": "Test Automation",
+      "icon": "🤖",
+      "skills": ["Playwright", "Cypress", "Selenium", "k6", "Postman/Newman", "Pact", "Testcontainers", "Detox", "Appium"]
+    },
+    {
+      "name": "CI/CD & DevOps",
+      "icon": "🔄",
+      "skills": ["GitHub Actions", "Jenkins", "Docker", "AWS", "Terraform", "Kubernetes", "ArgoCD", "Helm", "LocalStack"]
+    },
+    {
+      "name": "Observability & Monitoring",
+      "icon": "📊",
+      "skills": ["Prometheus", "Grafana", "OpenTelemetry", "CloudWatch", "Datadog", "ELK Stack"]
+    },
+    {
+      "name": "Languages",
+      "icon": "💻",
+      "skills": ["JavaScript", "TypeScript", "Python", "Shell/Bash"]
+    },
+    {
+      "name": "Databases",
+      "icon": "🗄️",
+      "skills": ["MongoDB", "PostgreSQL", "DynamoDB", "Redis"]
+    },
+    {
+      "name": "Tools & Platforms",
+      "icon": "🛠️",
+      "skills": ["JIRA", "TestRail", "Confluence", "Git", "Slack"]
+    },
+    {
+      "name": "Methodologies",
+      "icon": "📋",
+      "skills": ["Agile", "Scrum", "BDD", "Shift-Left Testing", "SRE Practices", "Risk-Based Testing"]
+    }
+  ]
+}

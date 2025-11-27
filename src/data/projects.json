@@ -1,0 +1,252 @@
+[
+  {
+    "id": "1",
+    "title": "E2E Automation with Playwright & POM",
+    "company": "Portfolio Project",
+    "description": "Modern E2E testing framework using Playwright with Page Object Model, demonstrating best practices for scalable test automation",
+    "fullDescription": "Comprehensive E2E automation project showcasing Playwright with Page Object Model design pattern. Features custom fixtures, cross-browser testing, parallel execution, and visual regression testing. Tests the Sauce Demo e-commerce application with complete coverage of authentication, product browsing, cart management, and checkout flows. Includes detailed reporting, trace debugging, and CI/CD integration examples.",
+    "testingTypes": ["E2E", "Automation", "Cross-Browser"],
+    "technologies": ["Playwright", "TypeScript", "Page Object Model", "GitHub Actions"],
+    "achievements": [
+      "Implemented scalable POM architecture for maintainability",
+      "Achieved cross-browser testing (Chromium, Firefox, WebKit)",
+      "Built custom fixtures and utilities for test reusability",
+      "Integrated comprehensive reporting with screenshots and traces"
+    ],
+    "metrics": {
+      "testCases": 20,
+      "coverage": 95,
+      "bugsFound": 0,
+      "timeReduction": 85
+    },
+    "links": {
+      "github": "https://github.com/andreirepo/qa-projects/tree/main/01-playwright-e2e-pom",
+      "report": "https://github.com/andreirepo/qa-projects/tree/main/01-playwright-e2e-pom#viewing-reports"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Performance Testing with k6",
+    "company": "Portfolio Project",
+    "description": "Comprehensive performance testing suite with k6, covering load, stress, and spike testing scenarios",
+    "fullDescription": "Professional performance testing project demonstrating k6 for load, stress, and spike testing. Tests ReqRes API with realistic load patterns, custom metrics, and meaningful thresholds. Includes examples of gradual ramp-up, sudden traffic spikes, and stress testing to find breaking points. Features custom metrics, Grafana integration, and CI/CD pipeline examples for continuous performance validation.",
+    "testingTypes": ["Performance", "Load Testing", "Stress Testing"],
+    "technologies": ["k6", "JavaScript", "Grafana", "InfluxDB"],
+    "achievements": [
+      "Implemented load, stress, and spike test scenarios",
+      "Created custom metrics and thresholds for SLA validation",
+      "Integrated with Grafana for real-time monitoring",
+      "Established performance baselines for CI/CD gates"
+    ],
+    "metrics": {
+      "testCases": 4,
+      "coverage": 100,
+      "bugsFound": 0,
+      "timeReduction": 90
+    },
+    "links": {
+      "github": "https://github.com/andreirepo/qa-projects/tree/main/02-k6-performance-testing",
+      "report": "https://github.com/andreirepo/qa-projects/tree/main/02-k6-performance-testing#viewing-reports"
+    }
+  },
+  {
+    "id": "3",
+    "title": "API Testing with Postman & Newman",
+    "company": "Portfolio Project",
+    "description": "Complete API testing framework using Postman collections and Newman CLI with comprehensive validation and reporting",
+    "fullDescription": "Professional API testing project showcasing Postman and Newman for REST API validation. Tests ReqRes API with complete CRUD operations, authentication flows, schema validation, and data-driven testing. Features pre-request scripts, test chaining, environment management, and beautiful HTML reports. Demonstrates contract testing, error handling validation, and CI/CD integration patterns.",
+    "testingTypes": ["API", "Contract Testing", "Integration"],
+    "technologies": ["Postman", "Newman", "JavaScript", "JSON Schema"],
+    "achievements": [
+      "Validated complete CRUD operations and authentication flows",
+      "Implemented schema validation for contract testing",
+      "Created data-driven tests with multiple iterations",
+      "Generated comprehensive HTML reports with newman-reporter-htmlextra"
+    ],
+    "metrics": {
+      "testCases": 15,
+      "coverage": 100,
+      "bugsFound": 0,
+      "timeReduction": 95
+    },
+    "links": {
+      "github": "https://github.com/andreirepo/qa-projects/tree/main/03-api-testing-newman",
+      "report": "https://github.com/andreirepo/qa-projects/tree/main/03-api-testing-newman#viewing-reports"
+    }
+  },
+  {
+    "id": "4",
+    "title": "Security & Compliance Testing",
+    "company": "Portfolio Project",
+    "description": "Security testing framework covering OWASP Top 10 vulnerabilities and GDPR compliance validation",
+    "fullDescription": "Comprehensive security testing project demonstrating OWASP Top 10 vulnerability scanning, SQL injection testing, XSS detection, and compliance validation. Tests OWASP Juice Shop with automated security scans using OWASP ZAP and custom Playwright scripts. Includes GDPR compliance checks, authentication security testing, and detailed security reporting. Essential for QA engineers in regulated industries.",
+    "testingTypes": ["Security", "Compliance", "Vulnerability Scanning"],
+    "technologies": ["OWASP ZAP", "Playwright", "TypeScript", "Security Tools"],
+    "achievements": [
+      "Automated OWASP Top 10 vulnerability detection",
+      "Implemented SQL injection and XSS testing",
+      "Validated GDPR compliance requirements",
+      "Generated detailed security reports with remediation steps"
+    ],
+    "metrics": {
+      "testCases": 25,
+      "coverage": 90,
+      "bugsFound": 12,
+      "timeReduction": 80
+    },
+    "links": {
+      "github": "https://github.com/andreirepo/qa-projects/tree/main/04-security-compliance-testing",
+      "report": "https://github.com/andreirepo/qa-projects/tree/main/04-security-compliance-testing#running-tests"
+    }
+  },
+  {
+    "id": "5",
+    "title": "AWS Lambda Testing with Terraform",
+    "company": "Portfolio Project",
+    "description": "Cloud-native testing for AWS Lambda functions using Terraform IaC and LocalStack for serverless architecture validation",
+    "fullDescription": "Demonstrates infrastructure testing for AWS Lambda using Terraform for Infrastructure as Code and LocalStack for local AWS simulation. Tests serverless functions, API Gateway, DynamoDB integration, and validates Terraform configurations. Includes integration tests, infrastructure validation, and end-to-end workflows. Perfect example of cloud-native QA practices with cost-effective local development using LocalStack.",
+    "testingTypes": ["Cloud", "Infrastructure", "Serverless"],
+    "technologies": ["AWS Lambda", "Terraform", "LocalStack", "TypeScript", "DynamoDB"],
+    "achievements": [
+      "Validated Infrastructure as Code with Terraform",
+      "Tested serverless Lambda functions locally with LocalStack",
+      "Integrated DynamoDB and API Gateway testing",
+      "Implemented cost-effective cloud testing strategy"
+    ],
+    "metrics": {
+      "testCases": 25,
+      "coverage": 90,
+      "bugsFound": 0,
+      "timeReduction": 80
+    },
+    "links": {
+      "github": "https://github.com/andreirepo/qa-projects/tree/main/06-aws-lambda-testing-terraform",
+      "report": "https://github.com/andreirepo/qa-projects/tree/main/06-aws-lambda-testing-terraform#setup--running"
+    }
+  },
+  {
+    "id": "6",
+    "title": "Kubernetes Test Orchestration",
+    "company": "Portfolio Project",
+    "description": "Container orchestration testing with Kubernetes, including deployment validation, chaos engineering, and test execution in K8s clusters",
+    "fullDescription": "Comprehensive Kubernetes testing project demonstrating test orchestration in container environments. Tests deployments, services, auto-scaling, and resilience using chaos engineering. Runs tests as Kubernetes Jobs with kind/minikube for local development. Validates service discovery, networking, rolling updates, and pod scheduling. Showcases modern microservices testing and DevOps integration.",
+    "testingTypes": ["Kubernetes", "DevOps", "Chaos Engineering"],
+    "technologies": ["Kubernetes", "Docker", "Helm", "kind", "TypeScript"],
+    "achievements": [
+      "Orchestrated tests as Kubernetes Jobs",
+      "Implemented chaos engineering for resilience testing",
+      "Validated auto-scaling and deployment strategies",
+      "Built containerized test execution pipeline"
+    ],
+    "metrics": {
+      "testCases": 20,
+      "coverage": 88,
+      "bugsFound": 0,
+      "timeReduction": 75
+    },
+    "links": {
+      "github": "https://github.com/andreirepo/qa-projects/tree/main/07-kubernetes-test-orchestration",
+      "report": "https://github.com/andreirepo/qa-projects/tree/main/07-kubernetes-test-orchestration#setup--running"
+    }
+  },
+  {
+    "id": "7",
+    "title": "AI-Powered Test Generation & Analysis",
+    "company": "Portfolio Project",
+    "description": "Cutting-edge AI/LLM integration for automated test generation, bug analysis, and intelligent test optimization",
+    "fullDescription": "Innovative project showcasing AI integration in QA workflows using OpenAI GPT-4. Demonstrates automated test case generation from requirements, intelligent bug report analysis and categorization, realistic test data generation, coverage gap identification, and flaky test detection using ML. Represents the future of QA engineering where AI augments human expertise for 10x productivity gains.",
+    "testingTypes": ["AI/ML", "Test Generation", "Analysis"],
+    "technologies": ["OpenAI GPT-4", "TypeScript", "Playwright", "Machine Learning"],
+    "achievements": [
+      "Automated test generation from natural language requirements",
+      "Built intelligent bug analyzer with root cause suggestions",
+      "Created AI-powered test data generator",
+      "Implemented ML-based flaky test detection"
+    ],
+    "metrics": {
+      "testCases": 30,
+      "coverage": 85,
+      "bugsFound": 0,
+      "timeReduction": 70
+    },
+    "links": {
+      "github": "https://github.com/andreirepo/qa-projects/tree/main/05-ai-test-generation",
+      "report": "https://github.com/andreirepo/qa-projects/tree/main/05-ai-test-generation#running-examples"
+    }
+  },
+  {
+    "id": "6",
+    "title": "Playwright Migration & Framework Evolution",
+    "company": "Sketch B.V.",
+    "description": "Led enterprise-wide migration from Cypress to Playwright, reducing execution time by 30% and expanding test coverage",
+    "fullDescription": "Spearheaded the complete migration of the automation framework from Cypress to Playwright for a design collaboration platform. Designed custom fixtures, utilities, and reporting pipelines that became the foundation for scalable automation across multiple teams. The migration not only improved stability but also enabled testing of complex user workflows that were previously challenging.",
+    "testingTypes": ["Automation", "E2E", "Migration"],
+    "technologies": ["Playwright", "TypeScript", "GitHub Actions", "Python"],
+    "achievements": [
+      "Reduced test execution time by 30% through parallel execution",
+      "Mentored cross-functional teams on Playwright best practices",
+      "Built reusable fixtures and utilities adopted company-wide",
+      "Achieved zero critical post-migration bugs in production"
+    ],
+    "metrics": {
+      "testCases": 500,
+      "coverage": 88,
+      "bugsFound": 42,
+      "timeReduction": 30
+    },
+    "links": {
+      "github": "https://github.com/andreirepo",
+      "report": "#"
+    }
+  },
+  {
+    "id": "7",
+    "title": "Games Marketplace Quality Strategy",
+    "company": "Playtech plc",
+    "description": "Owned end-to-end quality strategy for cloud-native gaming platform with distributed microservices",
+    "fullDescription": "Architected and implemented comprehensive quality strategy for a Games Marketplace platform serving millions of users. Built Cypress E2E suites integrated with Jenkins, cutting release cycles by 60%. Collaborated directly with CTO and architects to embed quality gates into deployment pipelines. Implemented API performance testing and monitoring that significantly improved system resilience.",
+    "testingTypes": ["E2E", "API", "Performance"],
+    "technologies": ["Cypress", "Jenkins", "Postman", "Docker", "Microservices"],
+    "achievements": [
+      "Cut release cycle time by 60% through automation",
+      "Validated large-scale JSON data pipelines across microservices",
+      "Implemented shift-left testing practices reducing production bugs",
+      "Enhanced observability through strategic quality gates"
+    ],
+    "metrics": {
+      "testCases": 650,
+      "coverage": 85,
+      "bugsFound": 78,
+      "timeReduction": 60
+    },
+    "links": {
+      "github": "https://github.com/andreirepo",
+      "report": "#"
+    }
+  },
+  {
+    "id": "8",
+    "title": "Full-Stack Todo Application",
+    "company": "Personal Project",
+    "description": "Production-ready CRUD app with authentication, deployed on self-hosted Kubernetes with full CI/CD",
+    "fullDescription": "Built a complete full-stack application from scratch to demonstrate modern DevOps and testing practices. Features responsive React frontend, Node.js backend, MongoDB database, all containerized with Docker and deployed behind Traefik reverse proxy with HTTPS. Comprehensive Playwright E2E test suite integrated into GitHub Actions pipeline ensures quality on every commit.",
+    "testingTypes": ["E2E", "Integration", "CI/CD"],
+    "technologies": ["React", "Node.js", "MongoDB", "Docker", "Playwright", "Traefik"],
+    "achievements": [
+      "Deployed on self-hosted Kubernetes cluster",
+      "Secured with HTTPS and proper authentication",
+      "100% E2E test coverage for critical user flows",
+      "Automated deployment pipeline with zero-downtime releases"
+    ],
+    "metrics": {
+      "testCases": 45,
+      "coverage": 92,
+      "bugsFound": 0,
+      "timeReduction": 100
+    },
+    "links": {
+      "github": "https://github.com/andreirepo",
+      "report": "https://todo.andreiqa.click"
+    }
+  }
+]
