@@ -2,9 +2,11 @@
 
 A modern, responsive portfolio website for Quality Assurance Engineers built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
-> **🚀 New here? Start with [START_HERE.md](./START_HERE.md) for a guided setup!**
+> **� Documentation:** All guides and documentation are now organized in the [`/docs`](./docs/) folder. See the [Documentation Index](./docs/README.md) for easy navigation.
+
+> **�🚀 New here? Start with [START_HERE.md](./docs/setup/START_HERE.md) for a guided setup!**
 >
-> **📱 Have a Cloudflare domain?** See [QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md) for fast deployment with automatic GitHub Actions!
+> **📱 Have a Cloudflare domain?** See [QUICK_DEPLOY_CLOUDFLARE.md](./docs/deployment/QUICK_DEPLOY_CLOUDFLARE.md) for fast deployment with automatic GitHub Actions!
 
 ## Features
 
@@ -98,11 +100,11 @@ npm run test:coverage
 
 ### Using Cloudflare Domain?
 
-If you have a domain hosted on Cloudflare, see **[CLOUDFLARE_SETUP.md](./CLOUDFLARE_SETUP.md)** for detailed instructions on connecting your Cloudflare domain to AWS.
+If you have a domain hosted on Cloudflare, see **[CLOUDFLARE_SETUP.md](./docs/deployment/CLOUDFLARE_SETUP.md)** for detailed instructions on connecting your Cloudflare domain to AWS.
 
 ### Automated Deployment with GitHub Actions
 
-For automatic deployment on every PR merge, see **[CICD_SETUP.md](./CICD_SETUP.md)** for complete CI/CD setup instructions.
+For automatic deployment on every PR merge, see **[CICD_SETUP.md](./docs/deployment/CICD_SETUP.md)** for complete CI/CD setup instructions.
 
 ## Deployment to AWS
 
@@ -271,6 +273,13 @@ qa-portfolio/
 │   ├── main.tsx         # Entry point
 │   └── index.css        # Global styles
 ├── public/              # Static assets
+├── docs/                # Documentation
+│   ├── setup/           # Setup and getting started guides
+│   ├── deployment/      # Deployment guides
+│   ├── guides/          # Project guides and references
+│   ├── analysis/        # Analysis and review documents
+│   ├── templates/       # Templates and examples
+│   └── README.md        # Documentation index
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml   # GitHub Actions workflow
@@ -321,13 +330,22 @@ For issues or questions:
 
 ## Additional Guides
 
-- **[CLOUDFLARE_SETUP.md](./CLOUDFLARE_SETUP.md)** - Connect your Cloudflare domain to AWS
-- **[CICD_SETUP.md](./CICD_SETUP.md)** - Set up automated deployment with GitHub Actions
-- **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Detailed AWS deployment guide
-- **[QUICKSTART.md](./QUICKSTART.md)** - Get started in 5 minutes
-- **[SETUP.md](./SETUP.md)** - Complete setup instructions
-- **[PROJECT_OVERVIEW.md](./PROJECT_OVERVIEW.md)** - Technical overview
-- **[CHECKLIST.md](./CHECKLIST.md)** - Step-by-step checklist
+### Setup & Getting Started
+- **[START_HERE.md](./docs/setup/START_HERE.md)** - Complete guided setup for new users
+- **[QUICKSTART.md](./docs/setup/QUICKSTART.md)** - Get started in 5 minutes
+- **[SETUP.md](./docs/setup/SETUP.md)** - Complete setup instructions
+
+### Deployment
+- **[DEPLOYMENT.md](./docs/deployment/DEPLOYMENT.md)** - Detailed AWS deployment guide
+- **[CLOUDFLARE_SETUP.md](./docs/deployment/CLOUDFLARE_SETUP.md)** - Connect your Cloudflare domain to AWS
+- **[CICD_SETUP.md](./docs/deployment/CICD_SETUP.md)** - Set up automated deployment with GitHub Actions
+- **[QUICK_DEPLOY_CLOUDFLARE.md](./docs/deployment/QUICK_DEPLOY_CLOUDFLARE.md)** - Fast deployment with Cloudflare
+
+### Project Guides
+- **[PROJECT_OVERVIEW.md](./docs/guides/PROJECT_OVERVIEW.md)** - Technical overview
+- **[CHECKLIST.md](./docs/guides/CHECKLIST.md)** - Step-by-step checklist
+- **[BRANDING_GUIDE.md](./docs/guides/BRANDING_GUIDE.md)** - Brand guidelines and styling
+- **[PROJECTS_INTEGRATION_GUIDE.md](./docs/guides/PROJECTS_INTEGRATION_GUIDE.md)** - How to add and manage projects
 
 ## Acknowledgments
 
