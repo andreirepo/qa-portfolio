@@ -8,7 +8,7 @@ echo "🚀 Starting GitHub Actions Runner..."
 
 # Configuration
 REPO_URL="https://github.com/andreirepo/qa-portfolio"
-GITHUB_TOKEN="${GITHUB_TOKEN:-}"
+GITHUB_TOKEN="${RUNNER_TOKEN:-}"
 RUNNER_NAME="proxmox-runner-$(hostname)-$(date +%s)"
 
 # Check if token is provided
