@@ -1,0 +1,23 @@
+# Add this service to your existing docker-compose.yml
+
+  portfolio:
+    build:
+      context: /home/ubuntu/qa-portfolio  # Path where you'll upload the portfolio
+      dockerfile: Dockerfile
+    container_name: portfolio
+    networks:
+      - traefik-net
+    restart: unless-stopped
+    labels:
+      # HTTPS router (main)
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`andreirepo.com`)"
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.service=portfolio"
+      - "traefik.http.routers.portfolio.tls.certresolver=le"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=80"
+      
+      # HTTP router (redirect to HTTPS)
+      - "traefik.http.routers.portfolio-http.rule=Host(`andreirepo.com`)"
+      - "traefik.http.routers.portfolio-http.entrypoints=web"
+      - "traefik.http.routers.portfolio-http.middlewares=redirect-to-https"
