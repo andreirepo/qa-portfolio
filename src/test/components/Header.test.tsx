@@ -13,9 +13,9 @@ describe('Header', () => {
     )
     
     expect(screen.getByText(/about/i)).toBeInTheDocument()
-    expect(screen.getByText(/projects/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/projects/i)).toHaveLength(2) // Desktop and mobile versions
     expect(screen.getByText(/skills/i)).toBeInTheDocument()
-    expect(screen.getByText(/contact/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/contact/i)).toHaveLength(2) // Desktop and mobile versions
   })
 
   it('toggles dark mode when button is clicked', () => {

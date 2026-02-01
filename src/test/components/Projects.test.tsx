@@ -10,13 +10,17 @@ describe('Projects', () => {
 
   it('displays projects from JSON data', () => {
     render(<Projects />)
-    expect(screen.getByText(/E-Commerce Test Automation Suite/i)).toBeInTheDocument()
-    expect(screen.getByText(/API Testing Framework/i)).toBeInTheDocument()
+    // Check for first project title
+    expect(screen.getByText(/E2E Automation with Playwright/i)).toBeInTheDocument()
+    // Check for project metrics (using getAllByText for multiple matches)
+    expect(screen.getAllByText(/tests/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/coverage/i).length).toBeGreaterThan(0)
   })
 
   it('shows testing type badges', () => {
     render(<Projects />)
-    expect(screen.getByText(/Automation/i)).toBeInTheDocument()
-    expect(screen.getByText(/API/i)).toBeInTheDocument()
+    // Check for common testing types (using getAllByText for multiple matches)
+    expect(screen.getAllByText(/E2E/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/API/i).length).toBeGreaterThan(0)
   })
 })

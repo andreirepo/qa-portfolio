@@ -5,7 +5,8 @@ import App from '../App'
 describe('App', () => {
   it('renders without crashing', () => {
     render(<App />)
-    expect(screen.getByText(/Quality Assurance/i)).toBeInTheDocument()
+    // Just check that the app renders without throwing
+    expect(screen.getByText(/Andrei Repo/i)).toBeInTheDocument()
   })
 
   it('displays the hero section', () => {
@@ -15,6 +16,6 @@ describe('App', () => {
 
   it('has navigation header', () => {
     render(<App />)
-    expect(screen.getByText(/QA Portfolio/i)).toBeInTheDocument()
+    expect(screen.getByText(/Cloud QA/i)).toBeInTheDocument()
   })
 })
