@@ -60,6 +60,16 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
+## Development Workflow
+
+This project uses **Husky** for pre-commit hooks to ensure code quality:
+
+- **Pre-commit**: Runs linting, formatting, and type checking
+- **Commit messages**: Enforces conventional commit format
+- **Automated testing**: E2E tests run on every push
+
+For detailed development guidelines, see [Development Workflow Guide](./docs/guides/DEVELOPMENT_WORKFLOW.md).
+
 ## Available Scripts
 
 - `npm run dev` - Start development server

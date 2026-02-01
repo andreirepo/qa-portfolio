@@ -21,6 +21,7 @@ This directory contains all project documentation organized by category.
 ### 📖 Project Guides (`/guides`)
 
 - **[PROJECT_OVERVIEW.md](./guides/PROJECT_OVERVIEW.md)** - Technical project overview
+- **[DEVELOPMENT_WORKFLOW.md](./guides/DEVELOPMENT_WORKFLOW.md)** - Development workflow and quality gates
 - **[CHECKLIST.md](./guides/CHECKLIST.md)** - Step-by-step implementation checklist
 - **[BRANDING_GUIDE.md](./guides/BRANDING_GUIDE.md)** - Brand guidelines and styling
 - **[DARK_MODE_COLORS.md](./guides/DARK_MODE_COLORS.md)** - Dark mode color scheme
