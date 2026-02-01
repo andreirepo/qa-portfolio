@@ -61,6 +61,7 @@ aws acm describe-certificate \
 ```
 
 You'll see output like:
+
 ```json
 {
   "Name": "_abc123.yourdomain.com",
@@ -94,24 +95,28 @@ Wait 5-10 minutes for validation to complete.
 3. Configure:
 
 **Origin Settings:**
+
 - **Origin Domain**: Select your S3 bucket
 - **Origin Path**: Leave empty
 - **Name**: Leave default
 - **Origin Access**: Public (or use OAC for better security)
 
 **Default Cache Behavior:**
+
 - **Viewer Protocol Policy**: Redirect HTTP to HTTPS
 - **Allowed HTTP Methods**: GET, HEAD
 - **Cache Policy**: CachingOptimized
 
 **Settings:**
-- **Alternate Domain Names (CNAMEs)**: 
+
+- **Alternate Domain Names (CNAMEs)**:
   - `yourdomain.com`
   - `www.yourdomain.com`
 - **Custom SSL Certificate**: Select your ACM certificate
 - **Default Root Object**: `index.html`
 
 **Custom Error Responses** (Important for React Router):
+
 - Click **Create Custom Error Response**
 - **HTTP Error Code**: 403
 - **Response Page Path**: `/index.html`
@@ -140,6 +145,7 @@ For full configuration with custom domain, use the AWS Console or create a JSON 
 2. Add/Update these records:
 
 **For root domain (yourdomain.com):**
+
 - **Type**: CNAME
 - **Name**: `@`
 - **Target**: `d1234abcd.cloudfront.net` (your CloudFront domain)
@@ -147,13 +153,15 @@ For full configuration with custom domain, use the AWS Console or create a JSON 
 - **TTL**: Auto
 
 **For www subdomain:**
+
 - **Type**: CNAME
 - **Name**: `www`
 - **Target**: `d1234abcd.cloudfront.net`
 - **Proxy status**: DNS only (gray cloud) ⚠️ Important!
 - **TTL**: Auto
 
-**Why DNS only?** 
+**Why DNS only?**
+
 - CloudFront already provides CDN and SSL
 - Proxying through Cloudflare would create double CDN (slower)
 - CloudFront handles HTTPS with your ACM certificate
@@ -207,6 +215,7 @@ aws s3 sync dist/ s3://your-portfolio-bucket --delete
 ### Step 2: Get S3 Website Endpoint
 
 Your S3 website endpoint will be:
+
 ```
 your-portfolio-bucket.s3-website-us-east-1.amazonaws.com
 ```
@@ -219,6 +228,7 @@ Test it in browser to ensure it works.
 2. Add these records:
 
 **For root domain:**
+
 - **Type**: CNAME
 - **Name**: `@`
 - **Target**: `your-portfolio-bucket.s3-website-us-east-1.amazonaws.com`
@@ -226,6 +236,7 @@ Test it in browser to ensure it works.
 - **TTL**: Auto
 
 **For www subdomain:**
+
 - **Type**: CNAME
 - **Name**: `www`
 - **Target**: `your-portfolio-bucket.s3-website-us-east-1.amazonaws.com`
@@ -259,16 +270,16 @@ open https://yourdomain.com
 
 ## Comparison: Option A vs Option B
 
-| Feature | Option A (CloudFront) | Option B (S3 + CF Proxy) |
-|---------|----------------------|--------------------------|
-| **Performance** | Excellent (AWS CDN) | Good (Cloudflare CDN) |
-| **Setup Complexity** | Medium | Easy |
-| **SSL Certificate** | AWS ACM (free) | Cloudflare (free) |
-| **Cost** | $1-5/month | $0.50-2/month |
-| **Custom Domain** | Yes | Yes |
-| **HTTPS** | Yes | Yes |
-| **Cache Control** | Full control | Via Cloudflare |
-| **Best For** | Production sites | Simple portfolios |
+| Feature              | Option A (CloudFront) | Option B (S3 + CF Proxy) |
+| -------------------- | --------------------- | ------------------------ |
+| **Performance**      | Excellent (AWS CDN)   | Good (Cloudflare CDN)    |
+| **Setup Complexity** | Medium                | Easy                     |
+| **SSL Certificate**  | AWS ACM (free)        | Cloudflare (free)        |
+| **Cost**             | $1-5/month            | $0.50-2/month            |
+| **Custom Domain**    | Yes                   | Yes                      |
+| **HTTPS**            | Yes                   | Yes                      |
+| **Cache Control**    | Full control          | Via Cloudflare           |
+| **Best For**         | Production sites      | Simple portfolios        |
 
 ---
 
@@ -277,6 +288,7 @@ open https://yourdomain.com
 ### Issue: "This site can't be reached"
 
 **Solution:**
+
 - Check DNS propagation: https://dnschecker.org
 - Wait 24-48 hours for full propagation
 - Clear browser cache
@@ -284,6 +296,7 @@ open https://yourdomain.com
 ### Issue: SSL Certificate Pending Validation
 
 **Solution:**
+
 - Verify CNAME record added to Cloudflare
 - Ensure Proxy status is "DNS only" for validation record
 - Wait 10-15 minutes
@@ -291,6 +304,7 @@ open https://yourdomain.com
 ### Issue: 403 Forbidden Error
 
 **Solution:**
+
 - Check S3 bucket policy allows public read
 - Verify bucket website hosting is enabled
 - Check CloudFront error pages configured
@@ -298,12 +312,14 @@ open https://yourdomain.com
 ### Issue: 404 on Page Refresh
 
 **Solution:**
+
 - Configure CloudFront custom error responses (403 → /index.html, 404 → /index.html)
 - For S3 only: Set error document to `index.html`
 
 ### Issue: Changes Not Appearing
 
 **Solution:**
+
 ```bash
 # Invalidate CloudFront cache
 aws cloudfront create-invalidation \
@@ -317,6 +333,7 @@ aws cloudfront create-invalidation \
 ### Issue: Mixed Content Warnings
 
 **Solution:**
+
 - Ensure all resources use HTTPS
 - Check Cloudflare SSL/TLS mode is correct
 - Verify CloudFront uses HTTPS
@@ -352,12 +369,14 @@ aws cloudfront create-invalidation \
 ## Cost Breakdown
 
 ### Option A (CloudFront + Cloudflare DNS)
+
 - S3 Storage: ~$0.50/month
 - CloudFront: ~$1-3/month (1TB free tier first year)
 - Cloudflare DNS: Free
 - **Total: $1.50-3.50/month**
 
 ### Option B (S3 + Cloudflare Proxy)
+
 - S3 Storage: ~$0.50/month
 - S3 Data Transfer: ~$0.50-1/month
 - Cloudflare: Free

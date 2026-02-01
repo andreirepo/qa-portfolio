@@ -7,6 +7,7 @@
 ## 🎉 What's Been Added
 
 ### **Recommendation #1: Tim Davies**
+
 - **Title:** Head of Web at Sketch
 - **Relationship:** Managed Andrei directly
 - **Date:** August 2025
@@ -19,6 +20,7 @@
   - "Reliable, quick to help, doesn't shy away from ownership"
 
 ### **Recommendation #2: Michal Cs**
+
 - **Title:** QA Engineer at Sketch
 - **Relationship:** Worked on the same team
 - **Date:** August 2025
@@ -40,6 +42,7 @@ npm run dev
 Visit: http://localhost:5173
 
 **Scroll down to see:**
+
 - New "LinkedIn Recommendations" section
 - Professional layout with LinkedIn branding
 - Links to view full profiles
@@ -83,11 +86,13 @@ Visit: http://localhost:5173
 **After:** 62/100 (Top 12%)
 
 **What Changed:**
+
 - Social Proof: 3/10 → 8/10 (+5 points)
 - Credibility: Significantly improved
 - Trust signals: Much stronger
 
 **Next Steps to Reach Top 10% (76/100):**
+
 1. Convert 2 projects to case studies (+5 points)
 2. Write first blog post (+4 points)
 3. Create video walkthrough (+3 points)
@@ -98,18 +103,21 @@ Visit: http://localhost:5173
 ## 🎯 What Makes These Recommendations Powerful
 
 ### **From Tim Davies (Manager):**
+
 - ✅ Specific technical achievements
 - ✅ Concrete examples (Cypress → Playwright)
 - ✅ Soft skills validation
 - ✅ "I'd happily work with him again"
 
 ### **From Michal Cs (Peer):**
+
 - ✅ Product-minded approach
 - ✅ Leadership in QA efforts
 - ✅ Business impact (continuous releases)
 - ✅ "Amongst the most professional"
 
 ### **Combined Impact:**
+
 - Manager + peer perspectives
 - Technical + soft skills
 - Specific achievements
@@ -121,18 +129,21 @@ Visit: http://localhost:5173
 ## 📱 How It Looks
 
 ### **Desktop:**
+
 - Two-column grid layout
 - Professional LinkedIn branding
 - Hover effects on cards
 - Links to LinkedIn profiles
 
 ### **Mobile:**
+
 - Single column, stacked
 - Easy to read
 - Touch-friendly
 - Responsive design
 
 ### **Dark Mode:**
+
 - Fully supported
 - Proper contrast
 - LinkedIn blue stands out
@@ -142,13 +153,15 @@ Visit: http://localhost:5173
 ## 🔗 LinkedIn Profile Links
 
 **Your Profile:**
+
 - https://linkedin.com/in/andrei-repo
 
 **Recommenders:**
+
 - Tim Davies: https://linkedin.com/in/timdavies
 - Michal Cs: https://linkedin.com/in/michalcs
 
-*(Update these URLs if they're different)*
+_(Update these URLs if they're different)_
 
 ---
 
@@ -166,6 +179,7 @@ Visit: http://localhost:5173
 ## 🎉 You're Done!
 
 Your portfolio now has:
+
 - ✅ Real LinkedIn recommendations
 - ✅ Manager endorsement
 - ✅ Peer validation
@@ -179,18 +193,21 @@ Your portfolio now has:
 ## 📈 Expected Impact
 
 ### **For Hiring Managers:**
+
 - Immediate trust signal
 - Validation from actual manager
 - Specific technical achievements
 - Soft skills confirmed
 
 ### **For Recruiters:**
+
 - Easy to verify (LinkedIn links)
 - Recent recommendations
 - Strong endorsements
 - Clear value proposition
 
 ### **For Your Career:**
+
 - More interview requests
 - Better negotiating position
 - Stronger professional brand

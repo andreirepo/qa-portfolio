@@ -21,26 +21,29 @@ const Testimonials = () => {
       title: 'Engineering Manager',
       company: 'Sketch B.V.',
       text: "Andrei's migration of our test framework to Playwright was exceptional. His technical expertise and mentorship elevated our entire QA team's capabilities.",
-      linkedin: '#'
+      linkedin: '#',
     },
     {
       name: 'Your Colleague Name',
       title: 'Senior QA Engineer',
       company: 'Playtech plc',
       text: 'Working with Andrei on the Games Marketplace project was a game-changer. His automation strategies reduced our release cycle by 60% while improving quality.',
-      linkedin: '#'
+      linkedin: '#',
     },
     {
       name: 'Your Team Lead Name',
       title: 'Tech Lead',
       company: 'Previous Company',
       text: 'Andrei brings a unique blend of QA expertise and DevOps knowledge. His cloud-native testing approach helped us achieve zero production incidents for 2 years.',
-      linkedin: '#'
-    }
+      linkedin: '#',
+    },
   ]
 
   return (
-    <section id="testimonials" className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <section
+      id="testimonials"
+      className="py-20 px-6 bg-gray-50 dark:bg-gray-900"
+    >
       <div className="container mx-auto max-w-6xl">
         <motion.div
           ref={ref}
@@ -74,14 +77,17 @@ const Testimonials = () => {
                 className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-md transition-shadow"
               >
                 <Quote className="text-pass mb-4" size={32} />
-                
+
                 <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed italic">
                   "{testimonial.text}"
                 </p>
 
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-pass/10 flex items-center justify-center text-pass font-bold">
-                    {testimonial.name.split(' ').map(n => n[0]).join('')}
+                    {testimonial.name
+                      .split(' ')
+                      .map((n) => n[0])
+                      .join('')}
                   </div>
                   <div>
                     <div className="font-semibold text-sm text-gray-800 dark:text-gray-200">
@@ -118,7 +124,9 @@ const Testimonials = () => {
                 className="text-pass hover:underline"
                 onClick={(e) => {
                   e.preventDefault()
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                  document
+                    .getElementById('contact')
+                    ?.scrollIntoView({ behavior: 'smooth' })
                 }}
               >
                 Get in touch

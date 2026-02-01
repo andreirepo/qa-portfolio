@@ -49,7 +49,9 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           <div className="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-6 flex justify-between items-start">
             <div>
               <h2 className="text-2xl font-bold mb-1">{project.title}</h2>
-              <p className="text-gray-500 dark:text-gray-400">{project.company}</p>
+              <p className="text-gray-500 dark:text-gray-400">
+                {project.company}
+              </p>
             </div>
             <button
               onClick={onClose}
@@ -64,19 +66,27 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center">
-                <div className="text-3xl font-bold text-pass">{project.metrics.testCases}</div>
+                <div className="text-3xl font-bold text-pass">
+                  {project.metrics.testCases}
+                </div>
                 <div className="text-sm text-gray-500 mt-1">Test Cases</div>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center">
-                <div className="text-3xl font-bold text-pass">{project.metrics.coverage}%</div>
+                <div className="text-3xl font-bold text-pass">
+                  {project.metrics.coverage}%
+                </div>
                 <div className="text-sm text-gray-500 mt-1">Coverage</div>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center">
-                <div className="text-3xl font-bold text-pass">{project.metrics.bugsFound}</div>
+                <div className="text-3xl font-bold text-pass">
+                  {project.metrics.bugsFound}
+                </div>
                 <div className="text-sm text-gray-500 mt-1">Bugs Found</div>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center">
-                <div className="text-3xl font-bold text-pass">{project.metrics.timeReduction}%</div>
+                <div className="text-3xl font-bold text-pass">
+                  {project.metrics.timeReduction}%
+                </div>
                 <div className="text-sm text-gray-500 mt-1">Time Saved</div>
               </div>
             </div>
@@ -86,7 +96,10 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               <ul className="space-y-2">
                 {project.achievements.map((achievement, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="text-pass flex-shrink-0 mt-1" size={20} />
+                    <CheckCircle2
+                      className="text-pass flex-shrink-0 mt-1"
+                      size={20}
+                    />
                     <span>{achievement}</span>
                   </li>
                 ))}

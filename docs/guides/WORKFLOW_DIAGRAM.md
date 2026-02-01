@@ -458,25 +458,25 @@ RESULT: < 2s Time to Interactive
 
 ### Typical Timeline
 
-| Action | Time |
-|--------|------|
-| Local development | Instant |
-| Create PR | < 1 min |
-| PR checks run | 2-3 min |
-| Merge PR | < 1 min |
-| Deploy workflow | 3-4 min |
-| CloudFront propagation | 5-10 min |
+| Action                    | Time        |
+| ------------------------- | ----------- |
+| Local development         | Instant     |
+| Create PR                 | < 1 min     |
+| PR checks run             | 2-3 min     |
+| Merge PR                  | < 1 min     |
+| Deploy workflow           | 3-4 min     |
+| CloudFront propagation    | 5-10 min    |
 | **Total: Commit to Live** | **~15 min** |
 
 ### Key Components
 
-| Component | Purpose | Cost |
-|-----------|---------|------|
-| GitHub | Code hosting & CI/CD | Free |
-| AWS S3 | Static file storage | ~$0.50/mo |
-| CloudFront | CDN & HTTPS | ~$1-3/mo |
-| Cloudflare | DNS management | Free |
-| ACM | SSL certificate | Free |
+| Component  | Purpose              | Cost      |
+| ---------- | -------------------- | --------- |
+| GitHub     | Code hosting & CI/CD | Free      |
+| AWS S3     | Static file storage  | ~$0.50/mo |
+| CloudFront | CDN & HTTPS          | ~$1-3/mo  |
+| Cloudflare | DNS management       | Free      |
+| ACM        | SSL certificate      | Free      |
 
 ---
 

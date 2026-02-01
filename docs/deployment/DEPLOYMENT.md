@@ -14,16 +14,19 @@ This guide provides step-by-step instructions for deploying your QA Portfolio to
 ### 1. Install AWS CLI
 
 **Windows:**
+
 ```powershell
 msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 ```
 
 **macOS:**
+
 ```bash
 brew install awscli
 ```
 
 **Linux:**
+
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
@@ -37,6 +40,7 @@ aws configure
 ```
 
 You'll need:
+
 - AWS Access Key ID (from IAM user)
 - AWS Secret Access Key
 - Default region (e.g., `us-east-1`)
@@ -117,6 +121,7 @@ The `--delete` flag removes files from S3 that don't exist locally.
 ### Step 6: Access Your Website
 
 Your website is now live at:
+
 ```
 http://your-unique-bucket-name.s3-website-us-east-1.amazonaws.com
 ```
@@ -126,6 +131,7 @@ Replace `us-east-1` with your chosen region.
 ## Adding CloudFront (Recommended)
 
 CloudFront provides:
+
 - HTTPS support
 - Global CDN for faster loading
 - Custom domain support
@@ -157,6 +163,7 @@ aws cloudfront create-distribution \
 ### Configure Error Pages for SPA Routing
 
 In CloudFront Console:
+
 1. Go to your distribution
 2. Click "Error Pages" tab
 3. Create custom error response:
@@ -218,6 +225,7 @@ Value: Your CloudFront distribution domain
 ```
 
 For Route 53:
+
 ```bash
 aws route53 change-resource-record-sets \
   --hosted-zone-id YOUR_ZONE_ID \
@@ -239,6 +247,7 @@ aws route53 change-resource-record-sets \
 ### Workflow File
 
 The `.github/workflows/deploy.yml` file is already configured. It will:
+
 - Run on push to `main` branch
 - Install dependencies
 - Run tests
@@ -259,17 +268,21 @@ git push origin main
 ## Cost Breakdown
 
 ### S3 Costs
+
 - Storage: $0.023 per GB/month
 - GET requests: $0.0004 per 1,000 requests
 - Data transfer out: $0.09 per GB (first 10 TB)
 
 ### CloudFront Costs
+
 - Data transfer out: $0.085 per GB (first 10 TB)
 - HTTPS requests: $0.0100 per 10,000 requests
 - Free tier: 1 TB data transfer, 10M HTTPS requests/month
 
 ### Estimated Monthly Cost
+
 For a typical portfolio with moderate traffic:
+
 - **Without CloudFront**: $0.50 - $2
 - **With CloudFront**: $1 - $5 (but faster and more secure)
 
@@ -308,6 +321,7 @@ aws s3api get-bucket-policy --bucket your-unique-bucket-name
 **Solution**: Ensure error document is set to `index.html` for SPA routing.
 
 For S3:
+
 ```bash
 aws s3 website s3://your-unique-bucket-name \
   --index-document index.html \
@@ -318,7 +332,8 @@ For CloudFront: Configure custom error responses (see above).
 
 ### Issue: Changes Not Appearing
 
-**Solution**: 
+**Solution**:
+
 1. Clear browser cache
 2. Invalidate CloudFront cache
 3. Check if files were uploaded correctly:
@@ -338,6 +353,7 @@ aws s3api put-bucket-cors \
 ```
 
 Create `cors.json`:
+
 ```json
 {
   "CORSRules": [
@@ -388,6 +404,7 @@ aws cloudfront delete-distribution --id YOUR_DIST_ID --if-match ETAG
 ## Support
 
 For deployment issues:
+
 - Check AWS CloudWatch logs
 - Review AWS Trusted Advisor recommendations
 - Contact AWS Support (if you have a support plan)

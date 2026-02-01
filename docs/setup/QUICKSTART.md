@@ -19,25 +19,33 @@ Open http://localhost:5173 in your browser.
 ## 3. Customize Your Content
 
 ### Update Projects
+
 Edit `src/data/projects.json`:
+
 - Add your testing projects
 - Update metrics and achievements
 - Add GitHub/report links
 
 ### Update Skills
+
 Edit `src/data/skills.json`:
+
 - Modify skill categories
 - Adjust proficiency levels
 - Add new technologies
 
 ### Update Contact Information
+
 Edit `src/components/Contact.tsx`:
+
 - Replace email address
 - Update LinkedIn, GitHub, Twitter links
 - Modify availability status
 
 ### Update Personal Information
+
 Edit these files:
+
 - `src/components/Hero.tsx` - Your title and intro
 - `src/components/About.tsx` - Your background and philosophy
 - `index.html` - Page title and meta description
@@ -59,6 +67,7 @@ npm run build
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed AWS deployment instructions.
 
 Quick deploy:
+
 ```bash
 # Build
 npm run build
@@ -72,6 +81,7 @@ aws s3 sync dist/ s3://your-bucket-name --delete
 ### Change Color Scheme
 
 Edit `tailwind.config.js`:
+
 ```js
 colors: {
   pass: '#10b981',  // Change to your preferred color
@@ -88,6 +98,7 @@ colors: {
 ### Modify Animations
 
 Edit animation settings in component files using Framer Motion props:
+
 ```tsx
 initial={{ opacity: 0, y: 20 }}
 animate={{ opacity: 1, y: 0 }}
@@ -97,6 +108,7 @@ transition={{ duration: 0.5 }}
 ## Troubleshooting
 
 **Port already in use?**
+
 ```bash
 # Kill process on port 5173
 npx kill-port 5173
@@ -104,6 +116,7 @@ npm run dev
 ```
 
 **Build errors?**
+
 ```bash
 # Clean install
 rm -rf node_modules package-lock.json
@@ -112,6 +125,7 @@ npm run build
 ```
 
 **Dark mode not working?**
+
 - Clear browser localStorage
 - Check browser console for errors
 

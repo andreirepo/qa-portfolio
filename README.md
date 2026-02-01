@@ -40,17 +40,20 @@ A modern, responsive portfolio website for Quality Assurance Engineers built wit
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <your-repo-url>
 cd qa-portfolio
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -87,11 +90,13 @@ npm run dev
 The project includes comprehensive tests using Vitest and React Testing Library.
 
 Run tests:
+
 ```bash
 npm test
 ```
 
 Generate coverage report:
+
 ```bash
 npm run test:coverage
 ```
@@ -111,6 +116,7 @@ For automatic deployment on every PR merge, see **[CICD_SETUP.md](./docs/deploym
 ### Option 1: Manual Deployment
 
 #### Step 1: Build the Project
+
 ```bash
 npm run build
 ```
@@ -118,22 +124,26 @@ npm run build
 #### Step 2: Install and Configure AWS CLI
 
 Install AWS CLI:
+
 - **Windows**: Download from https://aws.amazon.com/cli/
 - **macOS**: `brew install awscli`
 - **Linux**: `sudo apt-get install awscli`
 
 Configure AWS credentials:
+
 ```bash
 aws configure
 ```
 
 Enter your:
+
 - AWS Access Key ID
 - AWS Secret Access Key
 - Default region (e.g., us-east-1)
 - Default output format (json)
 
 #### Step 3: Create S3 Bucket
+
 ```bash
 aws s3 mb s3://your-portfolio-bucket-name
 ```
@@ -141,6 +151,7 @@ aws s3 mb s3://your-portfolio-bucket-name
 Replace `your-portfolio-bucket-name` with your desired bucket name (must be globally unique).
 
 #### Step 4: Enable Static Website Hosting
+
 ```bash
 aws s3 website s3://your-portfolio-bucket-name \
   --index-document index.html \
@@ -152,6 +163,7 @@ aws s3 website s3://your-portfolio-bucket-name \
 Edit `bucket-policy.json` and replace `your-portfolio-bucket-name` with your actual bucket name.
 
 Apply the policy:
+
 ```bash
 aws s3api put-bucket-policy \
   --bucket your-portfolio-bucket-name \
@@ -159,6 +171,7 @@ aws s3api put-bucket-policy \
 ```
 
 #### Step 6: Upload Files
+
 ```bash
 aws s3 sync dist/ s3://your-portfolio-bucket-name --delete
 ```
@@ -168,6 +181,7 @@ Your site is now live at: `http://your-portfolio-bucket-name.s3-website-us-east-
 #### Step 7 (Optional): Add CloudFront for HTTPS and CDN
 
 Create CloudFront distribution:
+
 ```bash
 aws cloudfront create-distribution \
   --origin-domain-name your-portfolio-bucket-name.s3.amazonaws.com \
@@ -175,6 +189,7 @@ aws cloudfront create-distribution \
 ```
 
 Or use the AWS Console:
+
 1. Go to CloudFront in AWS Console
 2. Create Distribution
 3. Set Origin Domain to your S3 bucket
@@ -183,6 +198,7 @@ Or use the AWS Console:
 6. Create distribution
 
 After updates, invalidate cache:
+
 ```bash
 aws cloudfront create-invalidation \
   --distribution-id YOUR_DISTRIBUTION_ID \
@@ -192,6 +208,7 @@ aws cloudfront create-invalidation \
 ### Option 2: Automated Deployment with GitHub Actions
 
 The project includes GitHub Actions workflows for:
+
 - **PR Quality Checks**: Runs tests and linting on every pull request
 - **Automatic Deployment**: Deploys to AWS when PR is merged to main
 
@@ -210,6 +227,7 @@ The project includes GitHub Actions workflows for:
 **For detailed CI/CD setup instructions, see [CICD_SETUP.md](./CICD_SETUP.md)**
 
 The workflows will:
+
 - Run linter and tests on every PR
 - Build and deploy on PR merge
 - Invalidate CloudFront cache
@@ -297,6 +315,7 @@ qa-portfolio/
 ### Build Issues
 
 If you encounter build errors:
+
 ```bash
 rm -rf node_modules package-lock.json
 npm install
@@ -324,6 +343,7 @@ MIT License - feel free to use this project for your own portfolio.
 ## Support
 
 For issues or questions:
+
 - Open an issue on GitHub
 - Check existing issues for solutions
 - Review AWS documentation for deployment questions
@@ -331,17 +351,20 @@ For issues or questions:
 ## Additional Guides
 
 ### Setup & Getting Started
+
 - **[START_HERE.md](./docs/setup/START_HERE.md)** - Complete guided setup for new users
 - **[QUICKSTART.md](./docs/setup/QUICKSTART.md)** - Get started in 5 minutes
 - **[SETUP.md](./docs/setup/SETUP.md)** - Complete setup instructions
 
 ### Deployment
+
 - **[DEPLOYMENT.md](./docs/deployment/DEPLOYMENT.md)** - Detailed AWS deployment guide
 - **[CLOUDFLARE_SETUP.md](./docs/deployment/CLOUDFLARE_SETUP.md)** - Connect your Cloudflare domain to AWS
 - **[CICD_SETUP.md](./docs/deployment/CICD_SETUP.md)** - Set up automated deployment with GitHub Actions
 - **[QUICK_DEPLOY_CLOUDFLARE.md](./docs/deployment/QUICK_DEPLOY_CLOUDFLARE.md)** - Fast deployment with Cloudflare
 
 ### Project Guides
+
 - **[PROJECT_OVERVIEW.md](./docs/guides/PROJECT_OVERVIEW.md)** - Technical overview
 - **[CHECKLIST.md](./docs/guides/CHECKLIST.md)** - Step-by-step checklist
 - **[BRANDING_GUIDE.md](./docs/guides/BRANDING_GUIDE.md)** - Brand guidelines and styling

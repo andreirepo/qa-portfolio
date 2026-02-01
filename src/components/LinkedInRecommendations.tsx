@@ -25,19 +25,19 @@ const LinkedInRecommendations = () => {
       title: 'Head of Web',
       company: 'Sketch',
       relationship: 'Managed Andrei directly',
-      text: 'Andrei is a dedicated QA engineer who cares about doing things properly. He was key to fixing our CI/CD and E2E setup. The Cypress suite had grown messy and flaky over the years and he reorganised it from the core. He replaced brittle fixtures with ephemeral ones, cut flakiness and shifted the pipeline from scheduled monitoring to support real-time release deployments. He also set the groundwork for a move to Playwright, for which I am immensely grateful. He managed a wide range of Web team requests, including Stripe integration, SSO implementation, email validation and regular cross-browser runs. Beyond web, he jumped in where needed, assisting with Jenkins and running hands-on testing on our macOS and iOS platforms too. A truly versatile QA professional. Everyone I spoke with across the teams enjoyed working with Andrei because he\'s reliable, quick to help and doesn\'t shy away from taking ownership. He\'s a great QA engineer and I\'d happily work with him again on any project, of any size.',
+      text: "Andrei is a dedicated QA engineer who cares about doing things properly. He was key to fixing our CI/CD and E2E setup. The Cypress suite had grown messy and flaky over the years and he reorganised it from the core. He replaced brittle fixtures with ephemeral ones, cut flakiness and shifted the pipeline from scheduled monitoring to support real-time release deployments. He also set the groundwork for a move to Playwright, for which I am immensely grateful. He managed a wide range of Web team requests, including Stripe integration, SSO implementation, email validation and regular cross-browser runs. Beyond web, he jumped in where needed, assisting with Jenkins and running hands-on testing on our macOS and iOS platforms too. A truly versatile QA professional. Everyone I spoke with across the teams enjoyed working with Andrei because he's reliable, quick to help and doesn't shy away from taking ownership. He's a great QA engineer and I'd happily work with him again on any project, of any size.",
       linkedinUrl: 'https://linkedin.com/in/timdavies',
-      date: 'August 2025'
+      date: 'August 2025',
     },
     {
       name: 'Michal Cs',
       title: 'QA Engineer',
       company: 'Sketch',
       relationship: 'Worked with Andrei on the same team',
-      text: 'Andrei is not just a successful QA engineer, but he is also incredibly product-minded, considering the end user\'s experience in all that he does. I was fortunate enough to work with Andrei on our web app team at Sketch, where Andrei led our QA efforts and also took the lead on automated QA efforts, managing our end-to-end suites. This work was vital in enabling our close-to-continuous release process, providing engineers with the confidence to ship quickly and users with the assurance that they\'d face minimal impact while the team worked at pace. Proactive, engaged, and ultimately a team player, Andrei ranks amongst some of the most professional and engaged QA engineers I\'ve worked with.',
+      text: "Andrei is not just a successful QA engineer, but he is also incredibly product-minded, considering the end user's experience in all that he does. I was fortunate enough to work with Andrei on our web app team at Sketch, where Andrei led our QA efforts and also took the lead on automated QA efforts, managing our end-to-end suites. This work was vital in enabling our close-to-continuous release process, providing engineers with the confidence to ship quickly and users with the assurance that they'd face minimal impact while the team worked at pace. Proactive, engaged, and ultimately a team player, Andrei ranks amongst some of the most professional and engaged QA engineers I've worked with.",
       linkedinUrl: 'https://linkedin.com/in/michalcs',
-      date: 'August 2025'
-    }
+      date: 'August 2025',
+    },
   ]
 
   // Auto-play carousel
@@ -56,7 +56,9 @@ const LinkedInRecommendations = () => {
   }
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + recommendations.length) % recommendations.length)
+    setCurrentIndex(
+      (prev) => (prev - 1 + recommendations.length) % recommendations.length
+    )
   }
 
   const goToSlide = (index: number) => {
@@ -64,7 +66,10 @@ const LinkedInRecommendations = () => {
   }
 
   return (
-    <section id="recommendations" className="py-16 px-6 bg-gray-50 dark:bg-gray-900">
+    <section
+      id="recommendations"
+      className="py-16 px-6 bg-gray-50 dark:bg-gray-900"
+    >
       <div className="container mx-auto max-w-6xl">
         <motion.div
           ref={ref}
@@ -89,7 +94,7 @@ const LinkedInRecommendations = () => {
           </motion.p>
 
           {/* Carousel Container */}
-          <div 
+          <div
             className="relative max-w-4xl mx-auto mb-8"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
@@ -108,7 +113,10 @@ const LinkedInRecommendations = () => {
                   {/* Header */}
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-14 h-14 rounded-full bg-pass/10 flex items-center justify-center text-pass font-bold text-base flex-shrink-0">
-                      {recommendations[currentIndex].name.split(' ').map(n => n[0]).join('')}
+                      {recommendations[currentIndex].name
+                        .split(' ')
+                        .map((n) => n[0])
+                        .join('')}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="font-semibold text-base text-gray-800 dark:text-gray-200">
@@ -137,7 +145,8 @@ const LinkedInRecommendations = () => {
                   {/* Relationship */}
                   <div className="text-xs text-gray-500 dark:text-gray-400 mb-3 italic">
                     {recommendations[currentIndex].relationship}
-                    {recommendations[currentIndex].date && ` • ${recommendations[currentIndex].date}`}
+                    {recommendations[currentIndex].date &&
+                      ` • ${recommendations[currentIndex].date}`}
                   </div>
 
                   {/* Quote */}
@@ -157,14 +166,20 @@ const LinkedInRecommendations = () => {
                   className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors shadow-md"
                   aria-label="Previous recommendation"
                 >
-                  <ChevronLeft size={20} className="text-gray-600 dark:text-gray-400" />
+                  <ChevronLeft
+                    size={20}
+                    className="text-gray-600 dark:text-gray-400"
+                  />
                 </button>
                 <button
                   onClick={goToNext}
                   className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors shadow-md"
                   aria-label="Next recommendation"
                 >
-                  <ChevronRight size={20} className="text-gray-600 dark:text-gray-400" />
+                  <ChevronRight
+                    size={20}
+                    className="text-gray-600 dark:text-gray-400"
+                  />
                 </button>
               </>
             )}

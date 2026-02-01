@@ -22,18 +22,19 @@ interface Testimonial {
 
 const testimonials = [
   {
-    name: "John Smith",
-    title: "Engineering Manager",
-    company: "Sketch B.V.",
-    photo: "/testimonials/john.jpg",
+    name: 'John Smith',
+    title: 'Engineering Manager',
+    company: 'Sketch B.V.',
+    photo: '/testimonials/john.jpg',
     text: "Andrei's migration of our test framework to Playwright was flawless. His expertise in automation and mentorship elevated our entire QA team.",
-    linkedin: "https://linkedin.com/in/..."
+    linkedin: 'https://linkedin.com/in/...',
   },
   // Add 4-5 more
 ]
 ```
 
 **Action Items:**
+
 - [ ] Reach out to 5 former colleagues/managers
 - [ ] Request LinkedIn recommendations
 - [ ] Take screenshots of recommendations
@@ -49,41 +50,41 @@ const testimonials = [
 ```tsx
 const metrics = [
   {
-    value: "500+",
-    label: "Tests Automated",
-    icon: "🤖",
-    description: "Across 7 major projects"
+    value: '500+',
+    label: 'Tests Automated',
+    icon: '🤖',
+    description: 'Across 7 major projects',
   },
   {
-    value: "$200K+",
-    label: "Cost Savings",
-    icon: "💰",
-    description: "Through automation efficiency"
+    value: '$200K+',
+    label: 'Cost Savings',
+    icon: '💰',
+    description: 'Through automation efficiency',
   },
   {
-    value: "60%",
-    label: "Faster Deployments",
-    icon: "⚡",
-    description: "Reduced release cycle time"
+    value: '60%',
+    label: 'Faster Deployments',
+    icon: '⚡',
+    description: 'Reduced release cycle time',
   },
   {
-    value: "0",
-    label: "Production Incidents",
-    icon: "✅",
-    description: "In last 24 months"
+    value: '0',
+    label: 'Production Incidents',
+    icon: '✅',
+    description: 'In last 24 months',
   },
   {
-    value: "5+",
-    label: "Engineers Mentored",
-    icon: "👥",
-    description: "Junior to mid-level QA"
+    value: '5+',
+    label: 'Engineers Mentored',
+    icon: '👥',
+    description: 'Junior to mid-level QA',
   },
   {
-    value: "200+",
-    label: "Bugs Prevented",
-    icon: "🐛",
-    description: "Caught before production"
-  }
+    value: '200+',
+    label: 'Bugs Prevented',
+    icon: '🐛',
+    description: 'Caught before production',
+  },
 ]
 ```
 
@@ -96,6 +97,7 @@ const metrics = [
 **Update:** `src/data/projects.json`
 
 Add new fields to each project:
+
 ```json
 {
   "businessProblem": "Company was experiencing 3-4 production incidents per month due to insufficient E2E coverage",
@@ -118,6 +120,7 @@ Add new fields to each project:
 **Update:** `src/components/ProjectModal.tsx`
 
 Add case study sections:
+
 - Business Challenge
 - Solution Approach
 - Results & Impact
@@ -137,13 +140,13 @@ npm install react-github-calendar
 ```
 
 **Add to About section:**
+
 ```tsx
 import GitHubCalendar from 'react-github-calendar'
-
-<div className="mt-8">
+;<div className="mt-8">
   <h3 className="text-lg font-bold mb-4">Open Source Contributions</h3>
   <GitHubCalendar username="andreirepo" />
-  
+
   <div className="grid grid-cols-4 gap-4 mt-6">
     <div className="text-center">
       <div className="text-2xl font-bold text-pass">1,234</div>
@@ -174,18 +177,18 @@ import GitHubCalendar from 'react-github-calendar'
 ```tsx
 const contributions = [
   {
-    project: "Playwright",
-    type: "Documentation",
-    description: "Improved TypeScript examples in testing guide",
-    pr: "https://github.com/microsoft/playwright/pull/...",
-    status: "Merged"
+    project: 'Playwright',
+    type: 'Documentation',
+    description: 'Improved TypeScript examples in testing guide',
+    pr: 'https://github.com/microsoft/playwright/pull/...',
+    status: 'Merged',
   },
   {
-    project: "k6",
-    type: "Bug Fix",
-    description: "Fixed memory leak in load testing scenarios",
-    pr: "https://github.com/grafana/k6/pull/...",
-    status: "Merged"
+    project: 'k6',
+    type: 'Bug Fix',
+    description: 'Fixed memory leak in load testing scenarios',
+    pr: 'https://github.com/grafana/k6/pull/...',
+    status: 'Merged',
   },
   // Add more
 ]
@@ -217,21 +220,24 @@ const contributions = [
    - Results analysis
 
 **Tools:**
+
 - Loom (free, easy)
 - OBS Studio (professional)
 - ScreenFlow (Mac)
 - Camtasia (Windows)
 
 **Hosting:**
+
 - YouTube (unlisted or public)
 - Vimeo (professional)
 - Self-hosted (advanced)
 
 **Implementation:**
+
 ```tsx
 // Add to project cards
 <div className="video-preview">
-  <iframe 
+  <iframe
     src="https://www.youtube.com/embed/VIDEO_ID"
     title="Project Demo"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -248,6 +254,7 @@ const contributions = [
 **Create:** `src/pages/Blog.tsx` and `src/pages/BlogPost.tsx`
 
 **Option 1: Simple (Markdown files)**
+
 ```
 /blog
   /posts
@@ -257,6 +264,7 @@ const contributions = [
 ```
 
 **Option 2: Advanced (Headless CMS)**
+
 - Use Contentful or Strapi
 - Better for SEO
 - Easier content management
@@ -282,6 +290,7 @@ const contributions = [
    - CI/CD integration
 
 **SEO Optimization:**
+
 - Target keywords: "playwright migration", "aws lambda testing", "k6 performance testing"
 - 1,500-2,000 words each
 - Code examples with syntax highlighting
@@ -320,21 +329,23 @@ const contributions = [
    - Flaky Test Prevention
 
 **Implementation:**
+
 ```tsx
 const resources = [
   {
-    title: "E2E Testing Checklist",
-    description: "Comprehensive checklist for end-to-end testing",
-    type: "PDF",
-    size: "2 MB",
+    title: 'E2E Testing Checklist',
+    description: 'Comprehensive checklist for end-to-end testing',
+    type: 'PDF',
+    size: '2 MB',
     downloads: 234,
-    link: "/downloads/e2e-checklist.pdf"
+    link: '/downloads/e2e-checklist.pdf',
   },
   // More resources
 ]
 ```
 
 **Lead Capture:**
+
 ```tsx
 // Optional: Email gate for premium resources
 <form onSubmit={handleDownload}>
@@ -374,12 +385,12 @@ const resources = [
    // src/components/Speaking.tsx
    const talks = [
      {
-       title: "Cloud-Native Testing Strategies",
-       event: "QA Meetup Madrid",
-       date: "2025-12-15",
-       slides: "/slides/cloud-testing.pdf",
-       video: "https://youtube.com/..."
-     }
+       title: 'Cloud-Native Testing Strategies',
+       event: 'QA Meetup Madrid',
+       date: '2025-12-15',
+       slides: '/slides/cloud-testing.pdf',
+       video: 'https://youtube.com/...',
+     },
    ]
    ```
 
@@ -390,21 +401,21 @@ const resources = [
 **Create Interactive Elements:**
 
 1. **Live Test Execution Viewer**
+
    ```tsx
    // Embed Playwright trace viewer
    <iframe src="https://trace.playwright.dev/?trace=..." />
    ```
 
 2. **API Testing Playground**
+
    ```tsx
    // Let visitors try your API tests
-   <CodeEditor 
-     defaultValue={sampleTest}
-     onRun={executeTest}
-   />
+   <CodeEditor defaultValue={sampleTest} onRun={executeTest} />
    ```
 
 3. **Performance Test Visualizer**
+
    ```tsx
    // Show k6 results interactively
    <Chart data={performanceData} />
@@ -413,9 +424,7 @@ const resources = [
 4. **Test Coverage Calculator**
    ```tsx
    // Interactive tool
-   <CoverageCalculator 
-     onCalculate={showResults}
-   />
+   <CoverageCalculator onCalculate={showResults} />
    ```
 
 ---
@@ -427,15 +436,17 @@ const resources = [
 **Current Issues to Fix:**
 
 1. **Image Optimization**
+
    ```bash
    # Install image optimization
    npm install sharp
-   
+
    # Optimize all images
    npm run optimize-images
    ```
 
 2. **Code Splitting**
+
    ```tsx
    // Lazy load components
    const Projects = lazy(() => import('./components/Projects'))
@@ -443,10 +454,11 @@ const resources = [
    ```
 
 3. **Bundle Size Reduction**
+
    ```bash
    # Analyze bundle
    npm run build -- --analyze
-   
+
    # Remove unused dependencies
    npm prune
    ```
@@ -462,6 +474,7 @@ const resources = [
 ### **Accessibility Improvements**
 
 **Checklist:**
+
 - [ ] All images have alt text
 - [ ] Proper heading hierarchy (h1 → h2 → h3)
 - [ ] Keyboard navigation works
@@ -477,10 +490,11 @@ const resources = [
 **Implement:**
 
 1. **Google Analytics 4**
+
    ```tsx
    // Track page views, events
    gtag('event', 'project_view', {
-     project_name: 'Playwright E2E'
+     project_name: 'Playwright E2E',
    })
    ```
 
@@ -509,6 +523,7 @@ const resources = [
 **Friday:** Project update or achievement
 
 **Content Ideas:**
+
 - "5 things I learned migrating to Playwright"
 - "How I reduced deployment time by 60%"
 - "Testing AWS Lambda functions locally"
@@ -519,12 +534,14 @@ const resources = [
 ### **Twitter/X Strategy**
 
 **Daily Activity:**
+
 - Share quick testing tips
 - Engage with testing community
 - Retweet relevant content
 - Share code snippets
 
 **Thread Ideas:**
+
 - "10 Playwright tips I wish I knew earlier"
 - "My testing toolkit in 2025"
 - "How to get started with k6"
@@ -534,12 +551,14 @@ const resources = [
 ### **GitHub Strategy**
 
 **Weekly Activity:**
+
 - Commit to personal projects
 - Contribute to OSS projects
 - Answer discussions
 - Review PRs
 
 **Profile Optimization:**
+
 - Pinned repositories (best 6 projects)
 - Complete profile README
 - Contribution graph active
@@ -552,12 +571,14 @@ const resources = [
 ### **Track Monthly:**
 
 **Traffic:**
+
 - Unique visitors
 - Page views
 - Avg. session duration
 - Bounce rate
 
 **Engagement:**
+
 - Contact form submissions
 - Resume downloads
 - Project clicks
@@ -565,6 +586,7 @@ const resources = [
 - Resource downloads
 
 **Authority:**
+
 - Blog post views
 - Social media followers
 - GitHub stars
@@ -572,6 +594,7 @@ const resources = [
 - Search rankings
 
 **Career:**
+
 - Interview requests
 - Job offers
 - Networking connections
@@ -582,6 +605,7 @@ const resources = [
 ## 🎯 3-Month Goals
 
 **By End of Month 1:**
+
 - ✅ Testimonials section live
 - ✅ Impact metrics dashboard added
 - ✅ 2 projects converted to case studies
@@ -589,6 +613,7 @@ const resources = [
 - ✅ 2 demo videos created
 
 **By End of Month 2:**
+
 - ✅ Blog launched with 3 posts
 - ✅ Resources page with 5+ downloads
 - ✅ All projects as case studies
@@ -596,6 +621,7 @@ const resources = [
 - ✅ Newsletter signup form
 
 **By End of Month 3:**
+
 - ✅ 6+ blog posts published
 - ✅ 1 speaking engagement completed
 - ✅ 2 interactive demos live
@@ -607,12 +633,14 @@ const resources = [
 ## 🚀 Next Steps
 
 **This Week:**
+
 1. Create testimonials component
 2. Reach out to 5 colleagues for recommendations
 3. Add impact metrics dashboard
 4. Convert 2 projects to case study format
 
 **Start Now:**
+
 - Open `src/components/Testimonials.tsx`
 - Draft LinkedIn messages to colleagues
 - Calculate your impact metrics

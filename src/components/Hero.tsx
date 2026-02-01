@@ -12,27 +12,33 @@ const Hero = () => {
               Cloud QA Engineer • AWS Certified • 9+ years
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-500 max-w-2xl mx-auto">
-              60% faster deployments • Zero production incidents • 500+ tests automated
+              60% faster deployments • Zero production incidents • 500+ tests
+              automated
             </p>
           </div>
 
           {/* Specializations */}
           <p className="text-xs text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-            Test Automation • CI/CD • Kubernetes • Infrastructure as Code • Observability
+            Test Automation • CI/CD • Kubernetes • Infrastructure as Code •
+            Observability
           </p>
 
           {/* Certification Badge */}
           <div className="flex justify-center mb-6">
-            <img 
-              src="/badges/aws-certified-cloud-practitioner.png" 
-              alt="AWS Certified Cloud Practitioner" 
+            <img
+              src="/badges/aws-certified-cloud-practitioner.png"
+              alt="AWS Certified Cloud Practitioner"
               className="h-16 sm:h-20"
             />
           </div>
 
           {/* CTA Pill */}
           <button
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() =>
+              document
+                .getElementById('contact')
+                ?.scrollIntoView({ behavior: 'smooth' })
+            }
             className="inline-flex items-center gap-2 px-4 py-2.5 bg-pass text-white rounded-full font-medium hover:bg-pass/90 transition-all hover:scale-105 text-sm shadow-lg shadow-pass/25"
           >
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>

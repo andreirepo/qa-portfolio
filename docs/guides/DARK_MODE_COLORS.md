@@ -3,6 +3,7 @@
 ## Current vs Industry Standard
 
 ### **GitHub Dark Theme (Industry Standard)**
+
 ```
 Background:     #0d1117  (Very dark blue-gray)
 Cards:          #161b22  (Dark elevated surface)
@@ -13,6 +14,7 @@ Text Secondary: #8b949e  (Medium gray)
 ```
 
 ### **VS Code Dark+ (Alternative)**
+
 ```
 Background:     #1e1e1e  (Pure dark gray)
 Cards:          #252526  (Slightly lighter)
@@ -21,6 +23,7 @@ Hover:          #2a2d2e  (Hover state)
 ```
 
 ### **Current Implementation**
+
 ```
 Background:     #0d1117  ✅ (GitHub standard)
 Cards:          gray-800 (#1f2937)  ⚠️ (Should be #161b22)
@@ -31,6 +34,7 @@ Hover:          gray-700 (#374151)  ⚠️ (Should be #21262d)
 ## Recommended Changes
 
 Replace all instances:
+
 - `dark:bg-gray-800` → `dark:bg-[#161b22]`
 - `dark:bg-gray-900` → `dark:bg-[#0d1117]`
 - `dark:border-gray-700` → `dark:border-[#30363d]`

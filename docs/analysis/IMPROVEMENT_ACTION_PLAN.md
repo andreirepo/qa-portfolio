@@ -3,12 +3,14 @@
 ## ✅ COMPLETED (Just Now)
 
 ### **1. Resume Download Button** ✅
+
 - **Location**: Hero section (primary CTA)
 - **File**: `/public/Andrei_Repo_Resume.pdf`
 - **Design**: Dark button with download icon
 - **Placement**: Between "View Projects" and "Get in Touch"
 
 ### **2. Mentorship Content** ✅
+
 - **Location**: About section, Quality Engineering Philosophy
 - **Added**: "Mentored 5+ junior QA engineers and led cross-functional quality initiatives"
 - **Impact**: Shows leadership and team development skills
@@ -20,26 +22,29 @@
 ### **HIGH PRIORITY - Do This Week**
 
 #### **Step 1: Get LinkedIn Recommendations** 🎯
+
 **Goal**: Add 2-3 testimonials to portfolio
 
 **Action Items:**
+
 1. **Request from former managers:**
    - Sketch B.V. manager
    - Playtech manager
    - Any other senior colleagues
 
 2. **Message template:**
+
 ```
 Hi [Name],
 
-I'm updating my professional portfolio and would greatly appreciate 
-a brief recommendation highlighting our work together at [Company]. 
+I'm updating my professional portfolio and would greatly appreciate
+a brief recommendation highlighting our work together at [Company].
 Specifically, any mention of:
 - Technical impact (e.g., the 60% deployment improvement)
 - Leadership/mentorship
 - Quality initiatives we led
 
-Would you be willing to write a short recommendation on LinkedIn? 
+Would you be willing to write a short recommendation on LinkedIn?
 I'm happy to return the favor!
 
 Best regards,
@@ -57,9 +62,11 @@ Andrei
 ---
 
 #### **Step 2: Add Certification Badges** 🏆
+
 **Goal**: Make certifications more prominent
 
 **Action Items:**
+
 1. **Download badge images:**
    - AWS Certified Cloud Practitioner badge
    - ISTQB Certified Tester badge
@@ -83,11 +90,13 @@ Andrei
 ---
 
 #### **Step 3: Write First Technical Article** ✍️
+
 **Goal**: Establish thought leadership
 
 **Suggested Topics** (Pick ONE):
 
 **Option A: "Migrating from Cypress to Playwright: Lessons from Production"**
+
 - Your real experience at Sketch
 - Challenges faced
 - Solutions implemented
@@ -95,43 +104,53 @@ Andrei
 - Lessons learned
 
 **Option B: "Building Scalable Test Infrastructure with Terraform"**
+
 - Why IaC for testing
 - Your AWS Lambda testing project
 - LocalStack for cost savings
 - Best practices
 
 **Option C: "Zero Production Incidents: A QA Engineer's Playbook"**
+
 - How you achieved zero incidents
 - Testing strategies
 - Monitoring & observability
 - Shift-left practices
 
 **Where to Publish:**
+
 1. **Dev.to** (easiest, developer-focused)
 2. **Medium** (wider audience)
 3. **LinkedIn Articles** (professional network)
 4. **Your own blog** (I can help set up)
 
 **Article Structure:**
+
 ```markdown
 # Title
 
 ## The Problem
+
 [What challenge you faced]
 
 ## The Approach
+
 [How you solved it]
 
 ## Implementation
+
 [Technical details, code samples]
 
 ## Results
+
 [Metrics, impact]
 
 ## Lessons Learned
+
 [Key takeaways]
 
 ## Conclusion
+
 [Summary, call to action]
 ```
 
@@ -143,6 +162,7 @@ Andrei
 ### **MEDIUM PRIORITY - Do Next Week**
 
 #### **Step 4: Create Testimonials Section** 💬
+
 **Goal**: Add social proof to portfolio
 
 **Once you have 2-3 recommendations:**
@@ -152,6 +172,7 @@ Andrei
 3. **Design**: Clean cards with quotes, names, titles
 
 **Data structure:**
+
 ```json
 {
   "testimonials": [
@@ -172,53 +193,63 @@ Andrei
 ---
 
 #### **Step 5: Expand One Project into Case Study** 📚
+
 **Goal**: Show deep problem-solving skills
 
 **Best Candidate**: **Sketch Playwright Migration**
 
 **Case Study Structure:**
+
 ```markdown
 # Migrating from Cypress to Playwright at Sketch
 
 ## Context
+
 - Company: Sketch B.V. (design collaboration platform)
 - Team size: 5 QA engineers
 - Challenge: Cypress limitations, slow execution
 - Timeline: 3 months
 
 ## The Problem
+
 - Detailed description of pain points
 - Why Cypress wasn't working
 - Business impact
 
 ## Research & Planning
+
 - Evaluation of alternatives
 - Why Playwright was chosen
 - Migration strategy
 
 ## Implementation
+
 - Phase 1: Proof of concept
 - Phase 2: Framework design
 - Phase 3: Test migration
 - Phase 4: Team training
 
 ## Challenges & Solutions
+
 - Challenge 1: [Description] → Solution: [How you solved it]
 - Challenge 2: [Description] → Solution: [How you solved it]
 - Challenge 3: [Description] → Solution: [How you solved it]
 
 ## Results
+
 - 30% faster test execution
 - 500+ tests migrated
 - Zero critical bugs post-migration
 - Team adoption: 100%
 
 ## Lessons Learned
+
 - Key takeaway 1
 - Key takeaway 2
 - Key takeaway 3
 
 ## Technical Details
+
 - Code samples
 - Architecture diagrams
 - Configuration examples
@@ -230,6 +261,7 @@ Andrei
 ---
 
 #### **Step 6: Add Blog Section to Portfolio** 📝
+
 **Goal**: Showcase thought leadership
 
 **Once you have 1-2 articles published:**
@@ -244,6 +276,7 @@ Andrei
    - External link
 
 **Data structure:**
+
 ```json
 {
   "articles": [
@@ -267,9 +300,11 @@ Andrei
 ### **LOW PRIORITY - Do Later**
 
 #### **Step 7: Add GitHub Stats** 📊
+
 **Goal**: Show open source activity
 
 **Options:**
+
 1. **GitHub Stats Card**: https://github-readme-stats.vercel.app
 2. **Contribution Graph**: GitHub's built-in graph
 3. **Popular Repos**: Showcase your QA projects repo
@@ -280,24 +315,27 @@ Andrei
 ---
 
 #### **Step 8: Create Video Introduction** 🎥
+
 **Goal**: Add personality and stand out
 
 **Script Template** (30-60 seconds):
+
 ```
-Hi, I'm Andrei Repo, a Cloud Quality Engineer with 9+ years 
+Hi, I'm Andrei Repo, a Cloud Quality Engineer with 9+ years
 of experience building quality into cloud-native systems.
 
-I specialize in test automation, CI/CD pipelines, and 
-Kubernetes orchestration. I've helped companies reduce 
+I specialize in test automation, CI/CD pipelines, and
+Kubernetes orchestration. I've helped companies reduce
 deployment cycles by 60% and achieve zero production incidents.
 
-I'm passionate about treating test infrastructure as code 
+I'm passionate about treating test infrastructure as code
 and building quality-focused engineering cultures.
 
 Let's connect and build reliable systems together!
 ```
 
 **Tools:**
+
 - **Loom** (easiest, free)
 - **OBS Studio** (professional, free)
 - **Zoom** (record yourself)
@@ -310,6 +348,7 @@ Let's connect and build reliable systems together!
 ## 📅 30-Day Implementation Schedule
 
 ### **Week 1: Quick Wins** ✅
+
 - [x] Day 1: Add resume download button ✅
 - [x] Day 1: Add mentorship content ✅
 - [ ] Day 2: Request LinkedIn recommendations
@@ -318,6 +357,7 @@ Let's connect and build reliable systems together!
 - [ ] Day 5: Follow up on recommendations
 
 ### **Week 2: Content Creation**
+
 - [ ] Day 8-10: Write first technical article (6-8 hours total)
 - [ ] Day 11: Publish article on Dev.to/Medium
 - [ ] Day 12: Share article on LinkedIn
@@ -325,6 +365,7 @@ Let's connect and build reliable systems together!
 - [ ] Day 14: Review and polish
 
 ### **Week 3: Social Proof**
+
 - [ ] Day 15: Collect testimonials (should have 2-3 by now)
 - [ ] Day 16: Create testimonials section
 - [ ] Day 17: Add testimonials to portfolio
@@ -332,6 +373,7 @@ Let's connect and build reliable systems together!
 - [ ] Day 19-21: Start case study outline
 
 ### **Week 4: Deep Content**
+
 - [ ] Day 22-25: Write detailed case study (8-10 hours)
 - [ ] Day 26: Add case study to portfolio
 - [ ] Day 27: Add GitHub stats
@@ -344,22 +386,26 @@ Let's connect and build reliable systems together!
 ## 🎯 Success Metrics
 
 ### **After Week 1:**
+
 - ✅ Resume downloadable
 - ✅ Mentorship mentioned
 - ✅ 2-3 recommendations requested
 - ✅ Certification badges added
 
 ### **After Week 2:**
+
 - ✅ 1 technical article published
 - ✅ Blog section added
 - ✅ Thought leadership established
 
 ### **After Week 3:**
+
 - ✅ Testimonials section live
 - ✅ Social proof visible
 - ✅ Case study outlined
 
 ### **After Week 4:**
+
 - ✅ Full case study published
 - ✅ GitHub stats added
 - ✅ Portfolio at 95/100 score
@@ -370,12 +416,14 @@ Let's connect and build reliable systems together!
 ## 💡 Pro Tips
 
 ### **For LinkedIn Recommendations:**
+
 - Make it easy: Provide bullet points they can use
 - Be specific: Mention projects/achievements
 - Offer reciprocity: Offer to write one back
 - Follow up: Gentle reminder after 3-5 days
 
 ### **For Technical Articles:**
+
 - Start with outline: Don't write linearly
 - Use code samples: Show, don't just tell
 - Add diagrams: Visual aids help
@@ -383,6 +431,7 @@ Let's connect and build reliable systems together!
 - End with CTA: Link to your portfolio
 
 ### **For Case Studies:**
+
 - Tell a story: Problem → Solution → Result
 - Be honest: Include challenges and failures
 - Show process: How you think and solve problems

@@ -5,6 +5,7 @@ Welcome! This guide will help you get your portfolio live with Cloudflare domain
 ## 📋 What You're Building
 
 A professional QA Engineer portfolio that:
+
 - ✅ Hosts on AWS S3 + CloudFront (fast, secure, cheap)
 - ✅ Uses your Cloudflare domain
 - ✅ Deploys automatically when you merge PRs
@@ -15,17 +16,20 @@ A professional QA Engineer portfolio that:
 Choose your path:
 
 ### 🏃 Fast Track (40 minutes)
+
 **For those who want to get live quickly**
 
 Follow: **[QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md)**
 
 This guide walks you through:
+
 1. AWS setup (15 min)
 2. Cloudflare setup (10 min)
 3. GitHub Actions setup (10 min)
 4. Testing (5 min)
 
 ### 📚 Detailed Path
+
 **For those who want to understand everything**
 
 1. **Setup**: [SETUP.md](./SETUP.md) - Install and configure locally
@@ -34,6 +38,7 @@ This guide walks you through:
 4. **AWS**: [DEPLOYMENT.md](./DEPLOYMENT.md) - AWS deployment details
 
 ### 📊 Visual Learner?
+
 **See how everything connects**
 
 Check: **[WORKFLOW_DIAGRAM.md](./WORKFLOW_DIAGRAM.md)**
@@ -57,24 +62,28 @@ Open http://localhost:5173 - you should see your portfolio!
 Edit these files with your information:
 
 **Projects:**
+
 ```bash
 # Edit your projects
 code src/data/projects.json
 ```
 
 **Skills:**
+
 ```bash
 # Edit your skills
 code src/data/skills.json
 ```
 
 **Contact Info:**
+
 ```bash
 # Edit contact information
 code src/components/Contact.tsx
 ```
 
 **Personal Info:**
+
 ```bash
 # Edit hero and about sections
 code src/components/Hero.tsx
@@ -87,23 +96,24 @@ Follow: **[QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md)**
 
 ## 📖 All Available Guides
 
-| Guide | Purpose | Time |
-|-------|---------|------|
-| **[START_HERE.md](./START_HERE.md)** | You are here! | 2 min |
-| **[QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md)** | Fast deployment guide | 40 min |
-| **[SETUP.md](./SETUP.md)** | Complete setup instructions | 15 min |
-| **[QUICKSTART.md](./QUICKSTART.md)** | Quick start guide | 5 min |
-| **[CLOUDFLARE_SETUP.md](./CLOUDFLARE_SETUP.md)** | Cloudflare domain setup | 20 min |
-| **[CICD_SETUP.md](./CICD_SETUP.md)** | GitHub Actions CI/CD | 20 min |
-| **[DEPLOYMENT.md](./DEPLOYMENT.md)** | AWS deployment details | 30 min |
-| **[WORKFLOW_DIAGRAM.md](./WORKFLOW_DIAGRAM.md)** | Visual workflows | 5 min |
-| **[PROJECT_OVERVIEW.md](./PROJECT_OVERVIEW.md)** | Technical overview | 10 min |
-| **[CHECKLIST.md](./CHECKLIST.md)** | Step-by-step checklist | - |
-| **[README.md](./README.md)** | Complete documentation | 20 min |
+| Guide                                                          | Purpose                     | Time   |
+| -------------------------------------------------------------- | --------------------------- | ------ |
+| **[START_HERE.md](./START_HERE.md)**                           | You are here!               | 2 min  |
+| **[QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md)** | Fast deployment guide       | 40 min |
+| **[SETUP.md](./SETUP.md)**                                     | Complete setup instructions | 15 min |
+| **[QUICKSTART.md](./QUICKSTART.md)**                           | Quick start guide           | 5 min  |
+| **[CLOUDFLARE_SETUP.md](./CLOUDFLARE_SETUP.md)**               | Cloudflare domain setup     | 20 min |
+| **[CICD_SETUP.md](./CICD_SETUP.md)**                           | GitHub Actions CI/CD        | 20 min |
+| **[DEPLOYMENT.md](./DEPLOYMENT.md)**                           | AWS deployment details      | 30 min |
+| **[WORKFLOW_DIAGRAM.md](./WORKFLOW_DIAGRAM.md)**               | Visual workflows            | 5 min  |
+| **[PROJECT_OVERVIEW.md](./PROJECT_OVERVIEW.md)**               | Technical overview          | 10 min |
+| **[CHECKLIST.md](./CHECKLIST.md)**                             | Step-by-step checklist      | -      |
+| **[README.md](./README.md)**                                   | Complete documentation      | 20 min |
 
 ## 🎯 Your Goals
 
 ### Immediate Goals (Today)
+
 - [ ] Install dependencies
 - [ ] Run locally
 - [ ] Customize content
@@ -112,6 +122,7 @@ Follow: **[QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md)**
 - [ ] Set up GitHub Actions
 
 ### Short-term Goals (This Week)
+
 - [ ] Add all your projects
 - [ ] Update all skills
 - [ ] Test on mobile devices
@@ -119,6 +130,7 @@ Follow: **[QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md)**
 - [ ] Add to LinkedIn profile
 
 ### Long-term Goals (This Month)
+
 - [ ] Keep content updated
 - [ ] Monitor performance
 - [ ] Gather feedback
@@ -139,18 +151,23 @@ Before you start, make sure you have:
 ## 💡 Key Concepts
 
 ### What is S3?
+
 Amazon S3 is cloud storage. Your website files live here.
 
 ### What is CloudFront?
+
 AWS's CDN (Content Delivery Network). Makes your site fast globally.
 
 ### What is ACM?
+
 AWS Certificate Manager. Provides free SSL certificates for HTTPS.
 
 ### What is GitHub Actions?
+
 Automated workflows that deploy your site when you push code.
 
 ### Why Cloudflare DNS?
+
 You already have your domain there. We'll just point it to AWS.
 
 ## 🔄 Daily Workflow (After Setup)
@@ -181,32 +198,35 @@ git push origin update-projects
 
 ## 💰 Cost Breakdown
 
-| Service | Cost | Notes |
-|---------|------|-------|
-| AWS S3 | ~$0.50/mo | Storage |
-| CloudFront | ~$1-3/mo | CDN (1TB free first year) |
-| Cloudflare | Free | DNS |
-| GitHub | Free | Code hosting & CI/CD |
-| ACM | Free | SSL certificate |
-| **Total** | **$2-4/mo** | Very affordable! |
+| Service    | Cost        | Notes                     |
+| ---------- | ----------- | ------------------------- |
+| AWS S3     | ~$0.50/mo   | Storage                   |
+| CloudFront | ~$1-3/mo    | CDN (1TB free first year) |
+| Cloudflare | Free        | DNS                       |
+| GitHub     | Free        | Code hosting & CI/CD      |
+| ACM        | Free        | SSL certificate           |
+| **Total**  | **$2-4/mo** | Very affordable!          |
 
 ## 🆘 Need Help?
 
 ### Common Issues
 
 **Can't install dependencies?**
+
 ```bash
 rm -rf node_modules package-lock.json
 npm install
 ```
 
 **Port already in use?**
+
 ```bash
 npx kill-port 5173
 npm run dev
 ```
 
 **AWS credentials not working?**
+
 ```bash
 aws configure
 # Re-enter your credentials
@@ -268,14 +288,17 @@ If you're new to this, read in this order:
 ## 🚀 Ready to Start?
 
 ### Option 1: Quick Deploy (Recommended)
+
 Jump straight to deployment:
 👉 **[QUICK_DEPLOY_CLOUDFLARE.md](./QUICK_DEPLOY_CLOUDFLARE.md)**
 
 ### Option 2: Learn First
+
 Understand everything first:
 👉 **[SETUP.md](./SETUP.md)**
 
 ### Option 3: Just Customize
+
 Already know what you're doing?
 👉 **[QUICKSTART.md](./QUICKSTART.md)**
 
@@ -318,6 +341,6 @@ Land Your Dream Job! 💼
 
 **Let's build something amazing!** 🚀
 
-*Estimated total time: 1 hour from zero to live*
+_Estimated total time: 1 hour from zero to live_
 
 **Questions?** Check the guides above or review the [README.md](./README.md)

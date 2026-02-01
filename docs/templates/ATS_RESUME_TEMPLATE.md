@@ -5,6 +5,7 @@
 Use this template to create an ATS-friendly resume. Save as **both** .docx and .pdf formats.
 
 **File Names:**
+
 - `Andrei_Repo_Resume_ATS.docx` (for job applications)
 - `Andrei_Repo_Resume.pdf` (for portfolio/direct emails)
 
@@ -161,6 +162,7 @@ ADDITIONAL INFORMATION
 ## 🎯 ATS Optimization Checklist
 
 ### **Format Requirements:**
+
 - [ ] Use standard fonts (Arial, Calibri, Times New Roman)
 - [ ] No tables or columns
 - [ ] No headers/footers
@@ -170,6 +172,7 @@ ADDITIONAL INFORMATION
 - [ ] Save as .docx AND .pdf
 
 ### **Content Requirements:**
+
 - [ ] Name at top in large text
 - [ ] Contact info clearly visible
 - [ ] Professional summary with keywords
@@ -180,6 +183,7 @@ ADDITIONAL INFORMATION
 - [ ] Portfolio URL included
 
 ### **Keyword Optimization:**
+
 - [ ] Job title variations (QA Engineer, Quality Engineer, Test Engineer)
 - [ ] Technical skills (Playwright, AWS, Kubernetes, etc.)
 - [ ] Methodologies (Agile, Scrum, CI/CD, DevOps)
@@ -194,6 +198,7 @@ ADDITIONAL INFORMATION
 **Aim for 70%+ match** when comparing to job descriptions
 
 **Test Your Resume:**
+
 1. Go to Jobscan.co (free)
 2. Upload your resume
 3. Paste job description
@@ -206,18 +211,21 @@ ADDITIONAL INFORMATION
 ## 💡 Pro Tips
 
 ### **Keyword Placement:**
+
 - Put most important keywords in Professional Summary
 - Repeat keywords naturally throughout experience
 - Include variations (QA Engineer, Quality Engineer, Test Engineer)
 - Use exact phrases from job descriptions
 
 ### **Quantify Everything:**
+
 - "Automated 500+ test cases" (not "automated many tests")
 - "Reduced deployment time by 60%" (not "improved deployments")
 - "Mentored 5+ engineers" (not "mentored team members")
 - "Achieved zero production incidents" (not "improved quality")
 
 ### **Action Verbs:**
+
 - Led, Architected, Designed, Implemented, Built, Reduced, Achieved
 - Automated, Optimized, Integrated, Validated, Collaborated
 - Mentored, Established, Developed, Created, Improved
@@ -235,6 +243,7 @@ ADDITIONAL INFORMATION
 7. **Iterate until 70%+ match**
 
 **Once done, you'll have:**
+
 - ✅ ATS-friendly resume (gets past robots)
 - ✅ Beautiful portfolio (impresses humans)
 - ✅ Winning combination!
@@ -244,6 +253,7 @@ ADDITIONAL INFORMATION
 ## 📞 Need Help?
 
 Let me know if you need:
+
 - Resume review
 - Keyword suggestions for specific jobs
 - Help with quantifying achievements

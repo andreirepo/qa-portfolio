@@ -13,7 +13,7 @@ jobs:
   quality-checks:
     name: Quality Checks
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: quality-checks
     if: success()
-    
+
     steps:
       - name: Comment PR
         uses: actions/github-script@v6

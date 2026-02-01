@@ -8,18 +8,21 @@
 ## ✅ What's Been Implemented
 
 ### **1. Testimonials Section**
+
 - ✅ Component created (`src/components/Testimonials.tsx`)
 - ✅ Integrated into main app
 - ✅ Responsive design with animations
 - ⏳ **ACTION NEEDED:** Replace placeholder testimonials with real ones
 
 ### **2. Impact Metrics Dashboard**
+
 - ✅ Component created (`src/components/ImpactMetrics.tsx`)
 - ✅ Integrated into main app (between Hero and About)
 - ✅ 6 key metrics with icons and descriptions
 - ⏳ **ACTION NEEDED:** Verify metrics accuracy
 
 ### **3. Documentation Created**
+
 - ✅ Competitive Analysis (`COMPETITIVE_ANALYSIS.md`)
 - ✅ Improvements Roadmap (`PORTFOLIO_IMPROVEMENTS_ROADMAP.md`)
 - ✅ This action items document
@@ -31,9 +34,11 @@
 ### **🔥 This Week (Critical)**
 
 #### 1. Add Your LinkedIn Recommendations
+
 **Time:** 10-15 minutes (you already have them!)
 
 **Steps:**
+
 1. Go to your LinkedIn profile
 2. Scroll to "Recommendations" section
 3. Copy 3-5 of your best recommendations (name, title, company, text)
@@ -46,6 +51,7 @@
 **Or paste your recommendations here and I'll format them for you!**
 
 **Choose recommendations from:**
+
 - Managers (highest priority)
 - Tech leads and senior engineers
 - People you mentored
@@ -55,6 +61,7 @@
 ---
 
 #### 2. Verify Impact Metrics
+
 **Time:** 1 hour
 
 **Review each metric in `src/components/ImpactMetrics.tsx`:**
@@ -74,6 +81,7 @@
 ---
 
 #### 3. Test the New Components
+
 **Time:** 30 minutes
 
 ```bash
@@ -94,9 +102,11 @@ npm run dev
 ### **📅 Next Week**
 
 #### 4. Convert 2 Projects to Case Studies
+
 **Time:** 3-4 hours
 
 **Choose your best 2 projects:**
+
 1. Playwright Migration (Sketch B.V.)
 2. Games Marketplace (Playtech plc)
 
@@ -111,15 +121,13 @@ npm run dev
     "Specific metric 2",
     "Specific metric 3"
   ],
-  "lessonsLearned": [
-    "Key insight 1",
-    "Key insight 2"
-  ],
+  "lessonsLearned": ["Key insight 1", "Key insight 2"],
   "roi": "Dollar amount or percentage saved"
 }
 ```
 
 **Example:**
+
 ```json
 {
   "businessProblem": "Sketch was experiencing 3-4 production incidents per month due to insufficient E2E test coverage. Manual testing was slowing down releases.",
@@ -142,13 +150,16 @@ npm run dev
 ---
 
 #### 5. Record Portfolio Walkthrough Video
+
 **Time:** 2 hours (including editing)
 
 **Tools:**
+
 - Loom (easiest, free)
 - OBS Studio (more professional)
 
 **Script (3-5 minutes):**
+
 1. **Intro (30 sec):** "Hi, I'm Andrei, a Cloud Quality Engineer..."
 2. **Hero Section (30 sec):** Key stats and certifications
 3. **Impact Metrics (45 sec):** Walk through each metric
@@ -156,6 +167,7 @@ npm run dev
 5. **Call to Action (30 sec):** "Let's connect..."
 
 **Upload to:**
+
 - YouTube (unlisted or public)
 - Embed in Hero section or create dedicated "About" video
 
@@ -164,11 +176,13 @@ npm run dev
 ### **📅 This Month**
 
 #### 6. Write First Blog Post
+
 **Time:** 4-6 hours
 
 **Recommended Topic:** "Migrating from Cypress to Playwright: Lessons Learned"
 
 **Outline:**
+
 1. Why we migrated
 2. Planning the migration
 3. Technical challenges
@@ -181,6 +195,7 @@ npm run dev
 **Include:** Code examples, screenshots, diagrams
 
 **Where to publish:**
+
 - Medium (easy start)
 - Dev.to (developer audience)
 - Your own blog (add to portfolio later)
@@ -189,6 +204,7 @@ npm run dev
 ---
 
 #### 7. Create GitHub Stats Widget
+
 **Time:** 1 hour
 
 ```bash
@@ -199,6 +215,7 @@ npm install react-github-calendar
 ```
 
 **Shows:**
+
 - Contribution graph
 - Total commits
 - Repositories
@@ -207,17 +224,20 @@ npm install react-github-calendar
 ---
 
 #### 8. Add Open Source Section
+
 **Time:** 2 hours
 
 **Create:** `src/components/OpenSource.tsx`
 
 **List:**
+
 - Contributions to Playwright, k6, etc.
 - Your own open-source projects
 - Pull requests merged
 - Issues resolved
 
 **If you haven't contributed yet:**
+
 - Find "good first issue" in Playwright repo
 - Improve documentation
 - Fix small bugs
@@ -228,12 +248,14 @@ npm install react-github-calendar
 ## 🎯 Success Criteria
 
 ### **Week 1 Complete When:**
+
 - [ ] 3+ real testimonials added
 - [ ] All metrics verified and accurate
 - [ ] New sections tested and working
 - [ ] No console errors or warnings
 
 ### **Month 1 Complete When:**
+
 - [ ] 5+ testimonials live
 - [ ] 2 projects as case studies
 - [ ] 1 video walkthrough created
@@ -245,17 +267,20 @@ npm install react-github-calendar
 ## 📊 Expected Results
 
 ### **After Week 1:**
+
 - More credible portfolio
 - Better storytelling
 - Stronger first impression
 
 ### **After Month 1:**
+
 - 2x more engaging portfolio
 - Better SEO from blog post
 - More professional presentation
 - Higher conversion rate (visitors → contacts)
 
 ### **After 3 Months:**
+
 - Top 5% QA engineer portfolio
 - Consistent traffic from blog
 - Speaking opportunities
@@ -308,6 +333,7 @@ npm test
 ## 🎉 You're Ready!
 
 The technical foundation is complete. Now it's about:
+
 1. **Content** - Real testimonials and case studies
 2. **Promotion** - Share on LinkedIn, Twitter
 3. **Consistency** - Regular updates and blog posts

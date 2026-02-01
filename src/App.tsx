@@ -30,17 +30,20 @@ function App() {
       <div className="min-h-screen">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
-          <Route path="/" element={
-            <main>
-              <Hero />
-              <ImpactMetrics />
-              <About />
-              <Projects />
-              <Skills />
-              <LinkedInRecommendations />
-              <Contact />
-            </main>
-          } />
+          <Route
+            path="/"
+            element={
+              <main>
+                <Hero />
+                <ImpactMetrics />
+                <About />
+                <Projects />
+                <Skills />
+                <LinkedInRecommendations />
+                <Contact />
+              </main>
+            }
+          />
         </Routes>
         <Footer />
       </div>

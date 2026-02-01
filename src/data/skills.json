@@ -3,17 +3,44 @@
     {
       "name": "Test Automation",
       "icon": "🤖",
-      "skills": ["Playwright", "Cypress", "Selenium", "k6", "Postman/Newman", "Pact", "Testcontainers", "Detox", "Appium"]
+      "skills": [
+        "Playwright",
+        "Cypress",
+        "Selenium",
+        "k6",
+        "Postman/Newman",
+        "Pact",
+        "Testcontainers",
+        "Detox",
+        "Appium"
+      ]
     },
     {
       "name": "CI/CD & DevOps",
       "icon": "🔄",
-      "skills": ["GitHub Actions", "Jenkins", "Docker", "AWS", "Terraform", "Kubernetes", "ArgoCD", "Helm", "LocalStack"]
+      "skills": [
+        "GitHub Actions",
+        "Jenkins",
+        "Docker",
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "ArgoCD",
+        "Helm",
+        "LocalStack"
+      ]
     },
     {
       "name": "Observability & Monitoring",
       "icon": "📊",
-      "skills": ["Prometheus", "Grafana", "OpenTelemetry", "CloudWatch", "Datadog", "ELK Stack"]
+      "skills": [
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "CloudWatch",
+        "Datadog",
+        "ELK Stack"
+      ]
     },
     {
       "name": "Languages",
@@ -33,7 +60,14 @@
     {
       "name": "Methodologies",
       "icon": "📋",
-      "skills": ["Agile", "Scrum", "BDD", "Shift-Left Testing", "SRE Practices", "Risk-Based Testing"]
+      "skills": [
+        "Agile",
+        "Scrum",
+        "BDD",
+        "Shift-Left Testing",
+        "SRE Practices",
+        "Risk-Based Testing"
+      ]
     }
   ]
 }

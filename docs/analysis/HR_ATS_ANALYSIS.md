@@ -14,7 +14,9 @@ Your portfolio is **highly attractive to HR professionals** but needs some tweak
 ### **What HR Looks For:**
 
 #### **1. Quick Scanability** ✅ EXCELLENT
+
 **Your Site:**
+
 - ✅ Clear name and title immediately visible
 - ✅ Key metrics front and center (500+ tests, 60% reduction, zero incidents)
 - ✅ Professional design (not toy-ish)
@@ -26,7 +28,9 @@ Your portfolio is **highly attractive to HR professionals** but needs some tweak
 ---
 
 #### **2. Credibility Signals** ✅ EXCELLENT
+
 **Your Site:**
+
 - ✅ AWS Certification badge (visible proof)
 - ✅ Real company names (Sketch, Playtech)
 - ✅ Quantified achievements
@@ -38,7 +42,9 @@ Your portfolio is **highly attractive to HR professionals** but needs some tweak
 ---
 
 #### **3. Technical Depth** ✅ EXCELLENT
+
 **Your Site:**
+
 - ✅ 10 detailed projects
 - ✅ Modern tech stack (Playwright, K8s, Terraform)
 - ✅ GitHub links (shows real work)
@@ -50,7 +56,9 @@ Your portfolio is **highly attractive to HR professionals** but needs some tweak
 ---
 
 #### **4. Cultural Fit Indicators** ✅ GOOD
+
 **Your Site:**
+
 - ✅ Mentions mentorship (team player)
 - ✅ Cross-functional collaboration
 - ✅ Quality-focused culture building
@@ -61,7 +69,9 @@ Your portfolio is **highly attractive to HR professionals** but needs some tweak
 ---
 
 #### **5. Easy Contact** ✅ EXCELLENT
+
 **Your Site:**
+
 - ✅ Multiple contact methods (email, LinkedIn, GitHub, phone)
 - ✅ Resume downloadable
 - ✅ Based in Spain, remote-friendly
@@ -74,8 +84,9 @@ Your portfolio is **highly attractive to HR professionals** but needs some tweak
 ### **HR Professional Score: 9/10** ✅
 
 **What HR Will Think:**
-> "This is a senior-level QA engineer with strong cloud expertise. 
-> AWS certified, proven results, professional presentation. 
+
+> "This is a senior-level QA engineer with strong cloud expertise.
+> AWS certified, proven results, professional presentation.
 > Let's schedule an interview."
 
 ---
@@ -85,6 +96,7 @@ Your portfolio is **highly attractive to HR professionals** but needs some tweak
 ### **How ATS Systems Work:**
 
 ATS systems scan for:
+
 1. **Keywords** from job description
 2. **Standard section headers**
 3. **Contact information**
@@ -95,9 +107,11 @@ ATS systems scan for:
 ### **Your Site's ATS Issues:**
 
 #### **❌ CRITICAL: ATS Can't Parse Your Site**
+
 **Problem:** ATS systems parse **PDF resumes**, not websites
 
 **Your Current Setup:**
+
 - ✅ Resume PDF available for download
 - ❌ But ATS won't visit your website
 - ❌ ATS only sees what's in the PDF
@@ -109,11 +123,14 @@ ATS systems scan for:
 ---
 
 #### **✅ GOOD: Website is for Humans**
+
 **Reality Check:**
+
 - ATS reads: **Resume PDF only**
 - Humans read: **Your portfolio site** (after ATS passes you)
 
 **Your Strategy Should Be:**
+
 1. **Resume PDF** → Optimized for ATS (keywords, format)
 2. **Portfolio Site** → Optimized for humans (visual, impressive)
 
@@ -122,7 +139,9 @@ ATS systems scan for:
 ## 📊 The Hiring Process Reality
 
 ### **Step 1: ATS Screening (Automated)**
+
 **What Happens:**
+
 - HR uploads your resume PDF to ATS
 - ATS scans for keywords
 - ATS scores your resume (0-100)
@@ -135,7 +154,9 @@ ATS systems scan for:
 ---
 
 ### **Step 2: HR Review (Human)**
+
 **What Happens:**
+
 - HR sees your resume
 - HR clicks your portfolio link
 - HR spends 30-60 seconds on your site
@@ -148,7 +169,9 @@ ATS systems scan for:
 ---
 
 ### **Step 3: Technical Review (Hiring Manager)**
+
 **What Happens:**
+
 - Hiring manager reviews your portfolio
 - Looks at projects, GitHub, technical depth
 - Assesses skill level
@@ -161,7 +184,9 @@ ATS systems scan for:
 ---
 
 ### **Step 4: Interview Process**
+
 **What Happens:**
+
 - Interviewers reference your portfolio
 - Ask about specific projects
 - Discuss your achievements
@@ -174,11 +199,13 @@ ATS systems scan for:
 ## 🎯 Your Current Situation
 
 ### **What You Have:**
+
 1. ✅ **Excellent portfolio site** (for humans)
 2. ✅ **Resume PDF** (for ATS)
 3. ⚠️ **Unknown:** Is your resume PDF ATS-optimized?
 
 ### **The Critical Question:**
+
 **Is your resume PDF ATS-friendly?**
 
 ---
@@ -188,6 +215,7 @@ ATS systems scan for:
 ### **Your Resume PDF Must Have:**
 
 #### **1. Standard Section Headers** ✅
+
 ```
 ✅ Contact Information
 ✅ Professional Summary
@@ -198,7 +226,9 @@ ATS systems scan for:
 ```
 
 #### **2. Keywords from Job Descriptions** ⚠️
+
 **Common QA Keywords:**
+
 - Test Automation
 - Playwright / Cypress / Selenium
 - CI/CD Pipelines
@@ -220,6 +250,7 @@ ATS systems scan for:
 **Your Resume Should Include:** 20-30 of these keywords
 
 #### **3. Quantified Achievements** ✅
+
 ```
 ✅ "Reduced deployment cycles by 60%"
 ✅ "Automated 500+ test cases"
@@ -228,7 +259,9 @@ ATS systems scan for:
 ```
 
 #### **4. ATS-Friendly Formatting** ⚠️
+
 **Must Have:**
+
 - ✅ Simple fonts (Arial, Calibri, Times New Roman)
 - ✅ No tables or columns
 - ✅ No headers/footers
@@ -238,6 +271,7 @@ ATS systems scan for:
 - ✅ Clear section headers
 
 **Must Avoid:**
+
 - ❌ Fancy fonts
 - ❌ Text boxes
 - ❌ Multiple columns
@@ -251,6 +285,7 @@ ATS systems scan for:
 ### **HIGH PRIORITY: Optimize Your Resume PDF**
 
 #### **Option 1: Create ATS-Friendly Version**
+
 **Create TWO versions:**
 
 1. **ATS Version** (for applications)
@@ -267,13 +302,16 @@ ATS systems scan for:
    - Name: `Andrei_Repo_Resume.pdf`
 
 **When to Use:**
+
 - **ATS Version:** When applying through job portals
 - **Visual Version:** When emailing directly to hiring managers
 
 ---
 
 #### **Option 2: Make Current PDF ATS-Friendly**
+
 **Ensure your current PDF has:**
+
 - [ ] Standard section headers
 - [ ] 20-30 relevant keywords
 - [ ] Simple formatting (no fancy design)
@@ -289,12 +327,22 @@ ATS systems scan for:
 #### **Why:** HR might Google you
 
 **Add to `index.html`:**
+
 ```html
-<meta name="description" content="Andrei Repo - Cloud Quality Engineer with 9+ years experience. AWS Certified. Specializing in test automation, CI/CD, Kubernetes, and Infrastructure as Code.">
-<meta name="keywords" content="QA Engineer, Quality Engineer, Test Automation, AWS, Kubernetes, Playwright, Terraform, CI/CD, DevOps">
-<meta property="og:title" content="Andrei Repo | Cloud Quality Engineer">
-<meta property="og:description" content="AWS Certified QA Engineer with 9+ years experience. 500+ tests automated, 60% faster deployments, zero production incidents.">
-<meta property="og:image" content="/andrei-photo.jpg">
+<meta
+  name="description"
+  content="Andrei Repo - Cloud Quality Engineer with 9+ years experience. AWS Certified. Specializing in test automation, CI/CD, Kubernetes, and Infrastructure as Code."
+/>
+<meta
+  name="keywords"
+  content="QA Engineer, Quality Engineer, Test Automation, AWS, Kubernetes, Playwright, Terraform, CI/CD, DevOps"
+/>
+<meta property="og:title" content="Andrei Repo | Cloud Quality Engineer" />
+<meta
+  property="og:description"
+  content="AWS Certified QA Engineer with 9+ years experience. 500+ tests automated, 60% faster deployments, zero production incidents."
+/>
+<meta property="og:image" content="/andrei-photo.jpg" />
 ```
 
 **Benefit:** Better Google search results when HR searches your name
@@ -307,17 +355,17 @@ ATS systems scan for:
 
 ```html
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Andrei Repo",
-  "jobTitle": "Cloud Quality Engineer",
-  "url": "https://yoursite.com",
-  "sameAs": [
-    "https://linkedin.com/in/andreirepo",
-    "https://github.com/andreirepo"
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrei Repo",
+    "jobTitle": "Cloud Quality Engineer",
+    "url": "https://yoursite.com",
+    "sameAs": [
+      "https://linkedin.com/in/andreirepo",
+      "https://github.com/andreirepo"
+    ]
+  }
 </script>
 ```
 
@@ -328,12 +376,14 @@ ATS systems scan for:
 ### **Your Two-Pronged Approach:**
 
 #### **1. For ATS (Getting Past the Gate):**
+
 - ✅ ATS-optimized resume PDF
 - ✅ Keyword-rich
 - ✅ Simple formatting
 - ✅ Standard sections
 
 #### **2. For Humans (Making the Sale):**
+
 - ✅ Your beautiful portfolio site
 - ✅ Impressive projects
 - ✅ Quantified results
@@ -343,16 +393,16 @@ ATS systems scan for:
 
 ## 📊 Comparison: You vs Average Candidate
 
-| Element | Average Candidate | You | Advantage |
-|---------|------------------|-----|-----------|
-| **Resume** | Generic, boring | ⚠️ Unknown | Need to verify |
-| **Portfolio** | None or basic | ✅ Excellent | **HUGE** |
-| **Projects** | 0-2 projects | ✅ 10 projects | **HUGE** |
-| **Metrics** | Vague claims | ✅ Quantified | **HUGE** |
-| **Certifications** | Maybe 1 | ✅ AWS + ISTQB | **BIG** |
-| **GitHub** | Empty or old | ✅ Active | **BIG** |
-| **Design** | Template | ✅ Professional | **BIG** |
-| **Tech Stack** | Basic | ✅ Cloud-native | **HUGE** |
+| Element            | Average Candidate | You             | Advantage      |
+| ------------------ | ----------------- | --------------- | -------------- |
+| **Resume**         | Generic, boring   | ⚠️ Unknown      | Need to verify |
+| **Portfolio**      | None or basic     | ✅ Excellent    | **HUGE**       |
+| **Projects**       | 0-2 projects      | ✅ 10 projects  | **HUGE**       |
+| **Metrics**        | Vague claims      | ✅ Quantified   | **HUGE**       |
+| **Certifications** | Maybe 1           | ✅ AWS + ISTQB  | **BIG**        |
+| **GitHub**         | Empty or old      | ✅ Active       | **BIG**        |
+| **Design**         | Template          | ✅ Professional | **BIG**        |
+| **Tech Stack**     | Basic             | ✅ Cloud-native | **HUGE**       |
 
 **Your Advantage:** You're in the **TOP 5%** once humans see your portfolio
 
@@ -363,6 +413,7 @@ ATS systems scan for:
 ## ✅ Action Items
 
 ### **CRITICAL (Do Today):**
+
 1. **Check your resume PDF:**
    - Is it ATS-friendly?
    - Does it have 20-30 keywords?
@@ -375,11 +426,13 @@ ATS systems scan for:
    - Aim for 70%+ match score
 
 ### **HIGH PRIORITY (This Week):**
+
 3. **Add SEO meta tags** to index.html
 4. **Create LinkedIn headline** matching your portfolio
 5. **Ensure portfolio URL** is on resume
 
 ### **MEDIUM PRIORITY (Next Week):**
+
 6. **Add testimonials** (social proof for HR)
 7. **Write technical article** (shows expertise)
 8. **Optimize for Google** (schema markup)
@@ -389,9 +442,11 @@ ATS systems scan for:
 ## 🎉 Final Verdict
 
 ### **For HR Professionals:**
+
 **Score: 9/10** ✅
 
 Your portfolio is **excellent** for human reviewers. HR will be impressed by:
+
 - Professional presentation
 - Quantified results
 - Real company experience
@@ -399,6 +454,7 @@ Your portfolio is **excellent** for human reviewers. HR will be impressed by:
 - Technical depth
 
 ### **For ATS Systems:**
+
 **Score: 7/10** ⚠️
 
 Your **portfolio site** won't be seen by ATS. Your **resume PDF** is what matters.
@@ -412,6 +468,7 @@ Your **portfolio site** won't be seen by ATS. Your **resume PDF** is what matter
 **Your Portfolio:** Ready for senior roles! ✅
 
 **Your Strategy:**
+
 1. **Resume PDF** → Get past ATS (keyword-optimized)
 2. **Portfolio Site** → Impress humans (already excellent)
 3. **LinkedIn** → Match both (consistency)

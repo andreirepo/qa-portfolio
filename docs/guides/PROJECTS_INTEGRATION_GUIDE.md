@@ -7,11 +7,13 @@ This guide explains how the 5 QA testing projects integrate with your portfolio 
 ## 📁 What Was Created
 
 ### Portfolio Website Updates
+
 ✅ Updated `src/data/projects.json` with 5 new portfolio projects  
 ✅ Projects now appear on your portfolio site with links to GitHub  
 ✅ Each project has detailed descriptions, metrics, and technologies
 
 ### Projects Folder Structure
+
 ```
 projects/
 ├── README.md                              # Main projects overview
@@ -61,6 +63,7 @@ git push -u origin main
 ### Step 2: Complete the Projects
 
 Each project currently has:
+
 - ✅ Comprehensive README
 - ✅ Package.json with scripts
 - ✅ Basic structure
@@ -69,6 +72,7 @@ Each project currently has:
 **To complete each project:**
 
 #### Project 1: Playwright E2E
+
 ```bash
 cd 01-playwright-e2e-pom
 
@@ -88,6 +92,7 @@ npm test
 ```
 
 #### Project 2: k6 Performance
+
 ```bash
 cd 02-k6-performance-testing
 
@@ -99,6 +104,7 @@ k6 run tests/load-test.js
 ```
 
 #### Project 3: Newman API
+
 ```bash
 cd 03-api-testing-newman
 
@@ -112,6 +118,7 @@ npm test
 ```
 
 #### Project 4: Security Testing
+
 ```bash
 cd 04-security-compliance-testing
 
@@ -129,6 +136,7 @@ npm test
 ```
 
 #### Project 5: AI Test Generation
+
 ```bash
 cd 05-ai-test-generation
 
@@ -213,24 +221,30 @@ jobs:
 ## 🎨 Customization Options
 
 ### Update Project Descriptions
+
 Edit `src/data/projects.json`:
+
 ```json
 {
   "id": "1",
   "title": "Your Custom Title",
-  "description": "Your custom description",
+  "description": "Your custom description"
   // ... other fields
 }
 ```
 
 ### Change Project Order
+
 Reorder projects in the JSON array to change display order on site.
 
 ### Add More Projects
+
 Add new objects to the projects array following the same structure.
 
 ### Update Metrics
+
 Modify the `metrics` object for each project:
+
 ```json
 "metrics": {
   "testCases": 100,
@@ -243,6 +257,7 @@ Modify the `metrics` object for each project:
 ## 🔗 Repository Structure Recommendation
 
 ### Main Portfolio Repository
+
 ```
 qa-portfolio/
 ├── src/                    # Portfolio website code
@@ -252,6 +267,7 @@ qa-portfolio/
 ```
 
 ### Separate Projects Repository
+
 ```
 qa-projects/
 ├── 01-playwright-e2e-pom/
@@ -264,6 +280,7 @@ qa-projects/
 ```
 
 **Why Separate?**
+
 - ✅ Cleaner organization
 - ✅ Independent CI/CD pipelines
 - ✅ Easier to showcase individual projects
@@ -273,6 +290,7 @@ qa-projects/
 ## 📝 Documentation Checklist
 
 For each project, ensure:
+
 - [ ] README.md is comprehensive
 - [ ] Setup instructions are clear
 - [ ] All dependencies listed
@@ -285,6 +303,7 @@ For each project, ensure:
 ## 🚦 Testing Checklist
 
 Before publishing:
+
 - [ ] All tests run successfully
 - [ ] No hardcoded credentials
 - [ ] Environment variables documented
@@ -296,6 +315,7 @@ Before publishing:
 ## 🌟 Promotion Strategy
 
 ### 1. **LinkedIn Post**
+
 ```
 🚀 Excited to share my QA Testing Projects Portfolio!
 
@@ -319,11 +339,14 @@ GitHub: [your-github-url]
 ```
 
 ### 2. **GitHub README**
+
 Add to your profile README:
+
 ```markdown
 ## 🧪 QA Testing Projects
 
 Check out my comprehensive QA testing portfolio:
+
 - [Playwright E2E Automation](link)
 - [k6 Performance Testing](link)
 - [Newman API Testing](link)
@@ -334,10 +357,12 @@ Check out my comprehensive QA testing portfolio:
 ```
 
 ### 3. **Resume**
+
 Add to projects section:
+
 ```
 QA Testing Projects Portfolio
-- Built 5 comprehensive testing projects demonstrating E2E, API, 
+- Built 5 comprehensive testing projects demonstrating E2E, API,
   performance, security, and AI-powered testing
 - Technologies: Playwright, k6, Newman, OWASP ZAP, OpenAI GPT-4
 - View at: [your-portfolio-url]
@@ -346,24 +371,28 @@ QA Testing Projects Portfolio
 ## 💡 Tips for Success
 
 ### 1. **Keep Projects Updated**
+
 - Update dependencies quarterly
 - Add new features
 - Fix any issues
 - Respond to GitHub issues
 
 ### 2. **Engage with Community**
+
 - Share on testing forums
 - Answer questions
 - Help others learn
 - Build your reputation
 
 ### 3. **Continuous Improvement**
+
 - Add more test cases
 - Improve documentation
 - Add video demos
 - Create blog posts
 
 ### 4. **Track Metrics**
+
 - GitHub stars
 - Portfolio visits
 - LinkedIn engagement
@@ -372,6 +401,7 @@ QA Testing Projects Portfolio
 ## 🎯 Success Metrics
 
 Your projects are successful when:
+
 - ✅ All tests pass consistently
 - ✅ Documentation is clear and helpful
 - ✅ Others can run projects easily
@@ -382,6 +412,7 @@ Your projects are successful when:
 ## 📞 Support
 
 If you need help:
+
 1. Check individual project READMEs
 2. Review this integration guide
 3. Search for similar issues online
@@ -390,6 +421,7 @@ If you need help:
 ## 🎉 You're Ready!
 
 Your portfolio now showcases:
+
 - ✅ 8 impressive projects
 - ✅ Modern testing frameworks
 - ✅ Best practices

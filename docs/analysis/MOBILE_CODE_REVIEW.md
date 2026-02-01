@@ -20,12 +20,14 @@
 ### **1. Hero Section - Text Wrapping**
 
 **Issue:** Long text on small screens (320px-375px)
+
 ```tsx
 // Before
-"60% faster deployments • Zero production incidents • 500+ tests automated"
+'60% faster deployments • Zero production incidents • 500+ tests automated'
 ```
 
 **Fix:** Add proper wrapping and spacing
+
 ```tsx
 <p className="text-sm text-gray-500 dark:text-gray-500 max-w-2xl mx-auto px-4">
   60% faster deployments • Zero production incidents • 500+ tests automated
@@ -41,6 +43,7 @@
 **Issue:** Email `andrei.repo@outlook.com` might truncate on small screens
 
 **Current:**
+
 ```tsx
 <div className="text-xs font-medium break-all">{contact.value}</div>
 ```
@@ -54,15 +57,17 @@
 **Issue:** Too many buttons on mobile (320px width)
 
 **Current Layout:**
+
 - Download icon (40px)
 - Projects button (~60px)
 - Contact button (~60px)
 - Menu button (40px)
-= ~200px + gaps
+  = ~200px + gaps
 
 **Status:** ✅ Acceptable for 320px+ screens
 
 **Recommendation:** Consider hiding "Projects" on very small screens:
+
 ```tsx
 <button className="hidden xs:block px-3 py-1.5...">Projects</button>
 ```
@@ -84,6 +89,7 @@
 **Issue:** "$200K+" might look cramped
 
 **Current:**
+
 ```tsx
 <div className="text-2xl font-bold mb-1">{metric.value}</div>
 ```
@@ -97,6 +103,7 @@
 ### **Fix 1: Add Extra Small Breakpoint**
 
 Add to `tailwind.config.js`:
+
 ```js
 screens: {
   'xs': '375px',
@@ -117,6 +124,7 @@ screens: {
 ### **Fix 3: Add Horizontal Scroll Prevention**
 
 Add to `src/index.css`:
+
 ```css
 body {
   overflow-x: hidden;
@@ -126,8 +134,9 @@ body {
 ### **Fix 4: Improve Touch Feedback**
 
 Add active states to all buttons:
+
 ```tsx
-className="... active:scale-95 transition-transform"
+className = '... active:scale-95 transition-transform'
 ```
 
 ---
@@ -135,26 +144,31 @@ className="... active:scale-95 transition-transform"
 ## 📏 Mobile Standards Checklist
 
 ### **Touch Targets (iOS/Android)**
+
 - [x] Minimum 44x44px (iOS)
 - [x] Minimum 48x48px (Android)
 - [x] Adequate spacing between targets
 
 ### **Typography**
+
 - [x] Minimum 16px for body text (prevents zoom on iOS)
 - [x] Proper line-height (1.5-1.6)
 - [x] Readable contrast ratios
 
 ### **Layout**
+
 - [x] No horizontal scroll
 - [x] Proper padding (16px minimum)
 - [x] Content fits within viewport
 
 ### **Performance**
+
 - [x] Images optimized
 - [x] Lazy loading where appropriate
 - [x] Smooth animations (60fps)
 
 ### **Accessibility**
+
 - [x] Semantic HTML
 - [x] ARIA labels on icon buttons
 - [x] Keyboard navigation
@@ -176,6 +190,7 @@ className="... active:scale-95 transition-transform"
 ## 📱 Test Devices
 
 **Recommended Testing:**
+
 - iPhone SE (375x667) - Smallest modern iPhone
 - iPhone 12/13 (390x844) - Standard
 - iPhone 14 Pro Max (430x932) - Large
@@ -217,17 +232,21 @@ className="... active:scale-95 transition-transform"
 ## 🚀 Additional Recommendations
 
 ### **1. Add Viewport Meta Tag** (Already in index.html)
+
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
+
 ✅ Already present
 
 ### **2. Add Safe Area Insets for iOS**
+
 ```css
 padding-bottom: env(safe-area-inset-bottom);
 ```
 
 ### **3. Improve Scroll Performance**
+
 ```css
 * {
   -webkit-overflow-scrolling: touch;
@@ -235,9 +254,11 @@ padding-bottom: env(safe-area-inset-bottom);
 ```
 
 ### **4. Add Loading States**
+
 For images and async content
 
 ### **5. Test with Slow 3G**
+
 Ensure usability on slow connections
 
 ---
@@ -252,6 +273,7 @@ Ensure usability on slow connections
 ## 📊 Mobile Performance
 
 **Current Metrics:**
+
 - First Contentful Paint: < 1.5s
 - Time to Interactive: < 3s
 - Cumulative Layout Shift: < 0.1
@@ -279,12 +301,14 @@ Ensure usability on slow connections
 **Mobile Readiness:** 95/100
 
 **Strengths:**
+
 - Proper responsive design
 - Good touch targets
 - No text overflow
 - Clean mobile UX
 
 **Minor Improvements:**
+
 - Could add `xs` breakpoint for very small screens
 - Could add more active states
 - Could optimize images further
@@ -298,6 +322,7 @@ Ensure usability on slow connections
 None critical - portfolio is already mobile-optimized!
 
 **Optional Enhancements:**
+
 1. Add `overflow-x: hidden` to body
 2. Add `active:scale-95` to more buttons
 3. Test on real devices

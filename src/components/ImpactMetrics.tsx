@@ -1,6 +1,13 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { TrendingUp, DollarSign, Zap, CheckCircle, Users, Bug } from 'lucide-react'
+import {
+  TrendingUp,
+  DollarSign,
+  Zap,
+  CheckCircle,
+  Users,
+  Bug,
+} from 'lucide-react'
 
 const ImpactMetrics = () => {
   const ref = useRef(null)
@@ -12,43 +19,43 @@ const ImpactMetrics = () => {
       label: 'Tests Automated',
       icon: Zap,
       description: 'Across 7 major projects',
-      color: 'text-blue-500'
+      color: 'text-blue-500',
     },
     {
       value: '$200K+',
       label: 'Cost Savings',
       icon: DollarSign,
       description: 'Through automation efficiency',
-      color: 'text-green-500'
+      color: 'text-green-500',
     },
     {
       value: '60%',
       label: 'Faster Deployments',
       icon: TrendingUp,
       description: 'Reduced release cycle time',
-      color: 'text-purple-500'
+      color: 'text-purple-500',
     },
     {
       value: '0',
       label: 'Production Incidents',
       icon: CheckCircle,
       description: 'In last 24 months',
-      color: 'text-pass'
+      color: 'text-pass',
     },
     {
       value: '5+',
       label: 'Engineers Mentored',
       icon: Users,
       description: 'Junior to mid-level QA',
-      color: 'text-orange-500'
+      color: 'text-orange-500',
     },
     {
       value: '200+',
       label: 'Bugs Prevented',
       icon: Bug,
       description: 'Caught before production',
-      color: 'text-red-500'
-    }
+      color: 'text-red-500',
+    },
   ]
 
   return (
@@ -86,7 +93,9 @@ const ImpactMetrics = () => {
                 className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 hover:shadow-md transition-shadow h-full"
               >
                 <div className="flex items-start gap-3 h-full">
-                  <div className={`w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center flex-shrink-0 ${metric.color}`}>
+                  <div
+                    className={`w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center flex-shrink-0 ${metric.color}`}
+                  >
                     <metric.icon size={20} />
                   </div>
                   <div className="flex-1 min-h-0">
@@ -117,16 +126,32 @@ const ImpactMetrics = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-400">
               <div>
-                <span className="font-semibold text-gray-800 dark:text-gray-200">Automation:</span> Implemented comprehensive test suites using Playwright, Cypress, and k6 across multiple projects
+                <span className="font-semibold text-gray-800 dark:text-gray-200">
+                  Automation:
+                </span>{' '}
+                Implemented comprehensive test suites using Playwright, Cypress,
+                and k6 across multiple projects
               </div>
               <div>
-                <span className="font-semibold text-gray-800 dark:text-gray-200">Cost Savings:</span> Reduced manual testing hours, prevented production incidents, and accelerated release cycles
+                <span className="font-semibold text-gray-800 dark:text-gray-200">
+                  Cost Savings:
+                </span>{' '}
+                Reduced manual testing hours, prevented production incidents,
+                and accelerated release cycles
               </div>
               <div>
-                <span className="font-semibold text-gray-800 dark:text-gray-200">Speed:</span> Optimized CI/CD pipelines with parallel execution and strategic test selection
+                <span className="font-semibold text-gray-800 dark:text-gray-200">
+                  Speed:
+                </span>{' '}
+                Optimized CI/CD pipelines with parallel execution and strategic
+                test selection
               </div>
               <div>
-                <span className="font-semibold text-gray-800 dark:text-gray-200">Quality:</span> Shift-left testing, comprehensive coverage, and proactive monitoring strategies
+                <span className="font-semibold text-gray-800 dark:text-gray-200">
+                  Quality:
+                </span>{' '}
+                Shift-left testing, comprehensive coverage, and proactive
+                monitoring strategies
               </div>
             </div>
           </motion.div>

@@ -8,10 +8,15 @@
   * {
     @apply transition-colors duration-200;
   }
-  
+
   body {
     @apply bg-gray-50 dark:bg-[#0a0e14] text-gray-900 dark:text-gray-100;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family:
+      'Inter',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -35,7 +40,12 @@
   }
 
   /* Prevent text truncation */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     overflow-wrap: break-word;
     word-wrap: break-word;
   }
@@ -85,8 +95,13 @@
 @layer utilities {
   /* Custom animations */
   @keyframes gradient {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
   }
 
   .animate-gradient {
@@ -112,8 +127,12 @@
   }
 
   @keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
   }
 
   /* Smooth transitions */

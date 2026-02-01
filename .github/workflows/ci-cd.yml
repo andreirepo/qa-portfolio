@@ -2,100 +2,100 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run linter
-      run: npm run lint
+      - name: Run linter
+        run: npm run lint
 
-    - name: Build project
-      run: npm run build
+      - name: Build project
+        run: npm run build
 
-    - name: Install Playwright browsers
-      run: npx playwright install --with-deps
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
 
-    - name: Start preview server and run E2E tests
-      run: |
-        npm run preview &
-        sleep 10
-        npm run test:e2e
-      env:
-        BASE_URL: http://localhost:4173
+      - name: Start preview server and run E2E tests
+        run: |
+          npm run preview &
+          sleep 10
+          npm run test:e2e
+        env:
+          BASE_URL: http://localhost:4173
 
-    - name: Upload Playwright report
-      uses: actions/upload-artifact@v4
-      if: failure()
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
+      - name: Upload Playwright report
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
 
   deploy:
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Deploy to LightSail
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.LIGHTSAIL_HOST }}
-        username: ${{ secrets.LIGHTSAIL_USER }}
-        key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
-        script: |
-          # Make deployment script executable and run it
-          chmod +x /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
-          /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
+      - name: Deploy to LightSail
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.LIGHTSAIL_HOST }}
+          username: ${{ secrets.LIGHTSAIL_USER }}
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
+          script: |
+            # Make deployment script executable and run it
+            chmod +x /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
+            /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
 
-    - name: Verify deployment
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.LIGHTSAIL_HOST }}
-        username: ${{ secrets.LIGHTSAIL_USER }}
-        key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
-        script: |
-          # Final verification
-          echo "🔍 Final deployment verification..."
-          if curl -f -s https://andreirepo.com > /dev/null; then
-            echo "✅ Deployment verification successful!"
-            echo "🌟 Portfolio is live at https://andreirepo.com"
-          else
-            echo "❌ Deployment verification failed"
-            exit 1
-          fi
+      - name: Verify deployment
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.LIGHTSAIL_HOST }}
+          username: ${{ secrets.LIGHTSAIL_USER }}
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
+          script: |
+            # Final verification
+            echo "🔍 Final deployment verification..."
+            if curl -f -s https://andreirepo.com > /dev/null; then
+              echo "✅ Deployment verification successful!"
+              echo "🌟 Portfolio is live at https://andreirepo.com"
+            else
+              echo "❌ Deployment verification failed"
+              exit 1
+            fi
 
   notify:
     needs: [test, deploy]
     runs-on: ubuntu-latest
     if: always()
-    
+
     steps:
-    - name: Notify deployment status
-      run: |
-        if [ "${{ needs.deploy.result }}" == "success" ]; then
-          echo "🚀 Deployment successful to https://andreirepo.com"
-        else
-          echo "❌ Deployment failed"
-          exit 1
-        fi
+      - name: Notify deployment status
+        run: |
+          if [ "${{ needs.deploy.result }}" == "success" ]; then
+            echo "🚀 Deployment successful to https://andreirepo.com"
+          else
+            echo "❌ Deployment failed"
+            exit 1
+          fi

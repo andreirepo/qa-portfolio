@@ -12,6 +12,7 @@ Your portfolio includes two GitHub Actions workflows:
 ## Workflow Behavior
 
 ### Pull Request Opened/Updated
+
 - ✅ Runs linter (ESLint)
 - ✅ Runs all tests
 - ✅ Generates test coverage
@@ -21,6 +22,7 @@ Your portfolio includes two GitHub Actions workflows:
 - ❌ Does NOT deploy
 
 ### Pull Request Merged to Main
+
 - ✅ Runs linter
 - ✅ Runs all tests
 - ✅ Builds project
@@ -29,6 +31,7 @@ Your portfolio includes two GitHub Actions workflows:
 - ✅ Shows deployment summary
 
 ### Direct Push to Main
+
 - ✅ Same as merged PR
 - ✅ Immediate deployment
 
@@ -63,20 +66,24 @@ git push -u origin main
 #### Required Secrets:
 
 **AWS_ACCESS_KEY_ID**
+
 - Value: Your AWS access key ID
 - Example: `AKIAIOSFODNN7EXAMPLE`
 
 **AWS_SECRET_ACCESS_KEY**
+
 - Value: Your AWS secret access key
 - Example: `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`
 
 **S3_BUCKET_NAME**
+
 - Value: Your S3 bucket name
 - Example: `my-portfolio-bucket`
 
 #### Optional Secrets:
 
 **CLOUDFRONT_DISTRIBUTION_ID**
+
 - Value: Your CloudFront distribution ID (if using CloudFront)
 - Example: `E1234ABCDEFGHI`
 - Leave empty if not using CloudFront
@@ -115,10 +122,7 @@ Create a custom policy with minimal permissions:
     },
     {
       "Effect": "Allow",
-      "Action": [
-        "cloudfront:CreateInvalidation",
-        "cloudfront:GetInvalidation"
-      ],
+      "Action": ["cloudfront:CreateInvalidation", "cloudfront:GetInvalidation"],
       "Resource": "arn:aws:cloudfront::ACCOUNT_ID:distribution/YOUR_DIST_ID"
     }
   ]
@@ -126,6 +130,7 @@ Create a custom policy with minimal permissions:
 ```
 
 Replace:
+
 - `your-portfolio-bucket` with your actual bucket name
 - `ACCOUNT_ID` with your AWS account ID
 - `YOUR_DIST_ID` with your CloudFront distribution ID
@@ -138,11 +143,13 @@ Replace:
 #### Test PR Checks:
 
 1. Create a new branch:
+
 ```bash
 git checkout -b test-deployment
 ```
 
 2. Make a small change (e.g., update README):
+
 ```bash
 echo "Testing CI/CD" >> README.md
 git add README.md
@@ -193,7 +200,7 @@ jobs:
     - Generate coverage
     - Build project
     - Check bundle size
-  
+
   comment:
     - Posts results to PR
 ```
@@ -215,7 +222,7 @@ jobs:
   test:
     - Runs on open PRs (before merge)
     - Validates code quality
-  
+
   deploy:
     - Runs on merged PRs or push to main
     - Deploys to AWS
@@ -227,11 +234,13 @@ jobs:
 ### Recommended Git Flow:
 
 1. **Create feature branch:**
+
 ```bash
 git checkout -b feature/update-projects
 ```
 
 2. **Make changes:**
+
 ```bash
 # Edit files
 git add .
@@ -239,22 +248,26 @@ git commit -m "feat: Add new project to portfolio"
 ```
 
 3. **Push and create PR:**
+
 ```bash
 git push origin feature/update-projects
 # Create PR on GitHub
 ```
 
 4. **Wait for checks:**
+
 - PR Quality Checks run automatically
 - Review the results
 - Fix any issues
 
 5. **Merge PR:**
+
 - Click "Merge pull request" on GitHub
 - Deployment starts automatically
 - Wait 2-3 minutes for deployment
 
 6. **Verify:**
+
 - Check your live website
 - Changes should be visible
 
@@ -271,6 +284,7 @@ Protect your main branch:
    - ✅ Include administrators
 
 This ensures:
+
 - No direct pushes to main
 - All changes go through PR
 - Tests must pass before merge
@@ -296,6 +310,7 @@ Add to your README.md:
 ### Notifications:
 
 GitHub will email you when:
+
 - Workflow fails
 - Deployment completes
 - PR checks finish
@@ -307,6 +322,7 @@ Configure in: **Settings** → **Notifications**
 ### Issue: Workflow fails with "Access Denied"
 
 **Solution:**
+
 - Check AWS credentials in GitHub Secrets
 - Verify IAM user has correct permissions
 - Ensure bucket name is correct
@@ -314,6 +330,7 @@ Configure in: **Settings** → **Notifications**
 ### Issue: CloudFront invalidation fails
 
 **Solution:**
+
 - Check `CLOUDFRONT_DISTRIBUTION_ID` secret is set
 - Verify IAM user has CloudFront permissions
 - Ensure distribution ID is correct
@@ -321,6 +338,7 @@ Configure in: **Settings** → **Notifications**
 ### Issue: Tests fail in CI but pass locally
 
 **Solution:**
+
 ```bash
 # Run tests exactly as CI does
 npm ci  # Clean install
@@ -328,6 +346,7 @@ npm test
 ```
 
 Common causes:
+
 - Different Node.js version
 - Missing dependencies
 - Environment-specific issues
@@ -335,6 +354,7 @@ Common causes:
 ### Issue: Build succeeds but site not updating
 
 **Solution:**
+
 - Check S3 sync completed successfully
 - Verify CloudFront invalidation ran
 - Clear browser cache
@@ -343,6 +363,7 @@ Common causes:
 ### Issue: PR checks not running
 
 **Solution:**
+
 - Ensure workflow files are in `.github/workflows/`
 - Check workflow syntax (YAML)
 - Verify branch name matches trigger
@@ -421,7 +442,7 @@ Already configured in workflows:
 ```yaml
 - uses: actions/setup-node@v3
   with:
-    cache: 'npm'  # Caches node_modules
+    cache: 'npm' # Caches node_modules
 ```
 
 ### Parallel Jobs
@@ -434,7 +455,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm run lint
-  
+
   test:
     runs-on: ubuntu-latest
     steps:
@@ -471,10 +492,12 @@ Only deploy if files changed:
 ## Cost Optimization
 
 GitHub Actions free tier:
+
 - 2,000 minutes/month for private repos
 - Unlimited for public repos
 
 Typical usage:
+
 - PR check: ~3 minutes
 - Deployment: ~4 minutes
 - ~10 deployments/month = 40 minutes

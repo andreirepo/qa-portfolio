@@ -3,12 +3,15 @@ import { afterEach } from 'vitest'
 import { cleanup } from '@testing-library/react'
 
 // Mock IntersectionObserver for Framer Motion
-;(globalThis as any).IntersectionObserver = class IntersectionObserver {
+class MockIntersectionObserver {
   constructor() {}
   disconnect() {}
   observe() {}
   unobserve() {}
 }
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+;(globalThis as any).IntersectionObserver = MockIntersectionObserver
 
 // Mock localStorage
 const localStorageMock = {

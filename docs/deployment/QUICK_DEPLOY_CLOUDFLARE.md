@@ -21,12 +21,14 @@ This is your streamlined guide for deploying with Cloudflare domain and automati
 ### Part 1: AWS Setup (15 minutes)
 
 #### 1. Build Your Project
+
 ```bash
 npm install
 npm run build
 ```
 
 #### 2. Create S3 Bucket
+
 ```bash
 # Replace 'my-portfolio' with your preferred name
 aws s3 mb s3://my-portfolio-bucket --region us-east-1
@@ -38,7 +40,9 @@ aws s3 website s3://my-portfolio-bucket \
 ```
 
 #### 3. Update and Apply Bucket Policy
+
 Edit `bucket-policy.json` - replace `your-portfolio-bucket-name` with `my-portfolio-bucket`:
+
 ```json
 {
   "Version": "2012-10-17",
@@ -55,6 +59,7 @@ Edit `bucket-policy.json` - replace `your-portfolio-bucket-name` with `my-portfo
 ```
 
 Apply it:
+
 ```bash
 aws s3api put-bucket-policy \
   --bucket my-portfolio-bucket \
@@ -62,6 +67,7 @@ aws s3api put-bucket-policy \
 ```
 
 #### 4. Upload Files
+
 ```bash
 aws s3 sync dist/ s3://my-portfolio-bucket --delete
 ```
@@ -69,6 +75,7 @@ aws s3 sync dist/ s3://my-portfolio-bucket --delete
 Test: `http://my-portfolio-bucket.s3-website-us-east-1.amazonaws.com`
 
 #### 5. Request SSL Certificate
+
 ```bash
 # Replace yourdomain.com with your actual domain
 aws acm request-certificate \
@@ -81,6 +88,7 @@ aws acm request-certificate \
 Save the Certificate ARN from output!
 
 #### 6. Get Validation Records
+
 ```bash
 # Replace CERT_ARN with your certificate ARN
 aws acm describe-certificate \
@@ -89,6 +97,7 @@ aws acm describe-certificate \
 ```
 
 You'll see something like:
+
 ```
 Name: _abc123.yourdomain.com
 Type: CNAME
@@ -120,7 +129,7 @@ Wait 5-10 minutes for validation.
 1. Go to CloudFront → Create Distribution
 2. **Origin Domain**: Select your S3 bucket
 3. **Viewer Protocol Policy**: Redirect HTTP to HTTPS
-4. **Alternate Domain Names (CNAMEs)**: 
+4. **Alternate Domain Names (CNAMEs)**:
    - `yourdomain.com`
    - `www.yourdomain.com`
 5. **Custom SSL Certificate**: Select your validated ACM certificate
@@ -138,6 +147,7 @@ Wait 10-15 minutes. Note your CloudFront domain (e.g., `d1234abcd.cloudfront.net
 2. Add/Update:
 
 **Root domain:**
+
 - **Type**: CNAME
 - **Name**: `@`
 - **Target**: `d1234abcd.cloudfront.net` (your CloudFront domain)
@@ -145,6 +155,7 @@ Wait 10-15 minutes. Note your CloudFront domain (e.g., `d1234abcd.cloudfront.net
 - **TTL**: Auto
 
 **WWW subdomain:**
+
 - **Type**: CNAME
 - **Name**: `www`
 - **Target**: `d1234abcd.cloudfront.net`
@@ -196,10 +207,7 @@ git push -u origin main
     },
     {
       "Effect": "Allow",
-      "Action": [
-        "cloudfront:CreateInvalidation",
-        "cloudfront:GetInvalidation"
-      ],
+      "Action": ["cloudfront:CreateInvalidation", "cloudfront:GetInvalidation"],
       "Resource": "*"
     }
   ]
@@ -214,11 +222,11 @@ git push -u origin main
 1. Go to your repo → **Settings** → **Secrets and variables** → **Actions**
 2. Add these secrets:
 
-| Secret Name | Value |
-|-------------|-------|
-| `AWS_ACCESS_KEY_ID` | Your IAM user access key ID |
-| `AWS_SECRET_ACCESS_KEY` | Your IAM user secret access key |
-| `S3_BUCKET_NAME` | `my-portfolio-bucket` |
+| Secret Name                  | Value                                               |
+| ---------------------------- | --------------------------------------------------- |
+| `AWS_ACCESS_KEY_ID`          | Your IAM user access key ID                         |
+| `AWS_SECRET_ACCESS_KEY`      | Your IAM user secret access key                     |
+| `S3_BUCKET_NAME`             | `my-portfolio-bucket`                               |
 | `CLOUDFRONT_DISTRIBUTION_ID` | Your CloudFront distribution ID (e.g., `E1234ABCD`) |
 
 #### 14. Test the Pipeline
@@ -255,6 +263,7 @@ open https://yourdomain.com
 ```
 
 Check:
+
 - [ ] Website loads
 - [ ] HTTPS works (green padlock)
 - [ ] All sections visible
@@ -265,6 +274,7 @@ Check:
 ## 🎉 You're Done!
 
 Your portfolio is now:
+
 - ✅ Hosted on AWS S3 + CloudFront
 - ✅ Using your Cloudflare domain
 - ✅ Secured with HTTPS
@@ -276,11 +286,13 @@ Your portfolio is now:
 ### Making Updates:
 
 1. **Create branch:**
+
 ```bash
 git checkout -b feature/update-projects
 ```
 
 2. **Make changes:**
+
 ```bash
 # Edit src/data/projects.json or other files
 git add .
@@ -288,27 +300,32 @@ git commit -m "feat: Add new project"
 ```
 
 3. **Push and create PR:**
+
 ```bash
 git push origin feature/update-projects
 # Create PR on GitHub
 ```
 
 4. **Wait for checks:**
+
 - PR Quality Checks run automatically
 - Review results
 
 5. **Merge PR:**
+
 - Click "Merge pull request"
 - Deployment starts automatically
 - Wait 2-3 minutes
 
 6. **Verify:**
+
 - Check https://yourdomain.com
 - Changes are live!
 
 ## 🔧 Maintenance Commands
 
 ### Update Content:
+
 ```bash
 # Edit JSON files
 vim src/data/projects.json
@@ -321,6 +338,7 @@ git push
 ```
 
 ### Manual Deployment:
+
 ```bash
 npm run build
 aws s3 sync dist/ s3://my-portfolio-bucket --delete
@@ -330,6 +348,7 @@ aws cloudfront create-invalidation \
 ```
 
 ### Check Deployment Status:
+
 ```bash
 # View GitHub Actions
 gh run list
@@ -350,21 +369,25 @@ Cloudflare DNS: Free ✨
 ## 🆘 Troubleshooting
 
 ### Website not loading?
+
 - Wait 24-48 hours for DNS propagation
 - Check DNS: https://dnschecker.org
 - Clear browser cache
 
 ### SSL certificate pending?
+
 - Verify CNAME record in Cloudflare
 - Ensure "DNS only" (gray cloud)
 - Wait 10-15 minutes
 
 ### Deployment failing?
+
 - Check GitHub Secrets are correct
 - Verify IAM permissions
 - Check workflow logs in GitHub Actions
 
 ### Changes not appearing?
+
 - Wait 5-10 minutes for CloudFront
 - Invalidate cache manually
 - Clear browser cache
@@ -393,4 +416,4 @@ Cloudflare DNS: Free ✨
 
 **Congratulations! Your portfolio is live with automatic deployments!** 🚀
 
-*Estimated total setup time: 40 minutes*
+_Estimated total setup time: 40 minutes_

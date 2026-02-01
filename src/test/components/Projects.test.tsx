@@ -11,7 +11,9 @@ describe('Projects', () => {
   it('displays projects from JSON data', () => {
     render(<Projects />)
     // Check for first project title
-    expect(screen.getByText(/E2E Automation with Playwright/i)).toBeInTheDocument()
+    expect(
+      screen.getByText(/E2E Automation with Playwright/i)
+    ).toBeInTheDocument()
     // Check for project metrics (using getAllByText for multiple matches)
     expect(screen.getAllByText(/tests/i).length).toBeGreaterThan(0)
     expect(screen.getAllByText(/coverage/i).length).toBeGreaterThan(0)

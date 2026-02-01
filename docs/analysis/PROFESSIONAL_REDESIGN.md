@@ -11,6 +11,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ### **1. Hero Section - Complete Overhaul**
 
 **REMOVED:**
+
 - ❌ Photo with pulse animation (too gimmicky)
 - ❌ Decorative lines around name (unnecessary)
 - ❌ 8 emoji skill badges (cluttered, unprofessional)
@@ -20,6 +21,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 - ❌ Gradient buttons
 
 **ADDED:**
+
 - ✅ Clean, bold name: "Andrei"
 - ✅ Professional subtitle: "Cloud Quality Engineer"
 - ✅ Expanded professional tagline (no emojis)
@@ -37,12 +39,14 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ### **2. Skills Section - Simplified**
 
 **REMOVED:**
+
 - ❌ Emoji icons (🤖📊🔄 etc.)
 - ❌ Frosted glass cards
 - ❌ Hover lift animations
 - ❌ Background blobs
 
 **ADDED:**
+
 - ✅ Solid white/dark cards
 - ✅ Clean borders
 - ✅ Text-only category names
@@ -56,11 +60,13 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ### **3. Projects Section - Professional Cards**
 
 **REMOVED:**
+
 - ❌ Frosted glass effect
 - ❌ Hover lift animations
 - ❌ Background blobs
 
 **ADDED:**
+
 - ✅ Solid cards with borders
 - ✅ Subtle shadow on hover
 - ✅ Clean, professional layout
@@ -73,6 +79,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ### **4. About Section - Clean & Professional**
 
 **REMOVED:**
+
 - ❌ All emojis (☁️🎓🌍📍 etc.)
 - ❌ Frosted glass cards
 - ❌ Icon rotation animations
@@ -80,6 +87,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 - ❌ Background blobs
 
 **ADDED:**
+
 - ✅ Solid cards throughout
 - ✅ Clean icon backgrounds (pass/10)
 - ✅ Professional typography
@@ -93,11 +101,13 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ### **5. Contact Section - Simplified**
 
 **REMOVED:**
+
 - ❌ Cloud emoji in heading
 - ❌ Frosted glass cards
 - ❌ Excessive hover effects
 
 **ADDED:**
+
 - ✅ Solid contact cards
 - ✅ Clean, professional layout
 - ✅ Subtle hover shadows
@@ -110,6 +120,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ## 📊 Design System Changes
 
 ### **Before (Toy-ish):**
+
 - Frosted glass everywhere
 - Emojis in every section
 - Pulse/wiggle animations
@@ -119,6 +130,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 - Decorative elements
 
 ### **After (Professional):**
+
 - Solid white/dark cards
 - No emojis (except strategic use)
 - Minimal animations (fade only)
@@ -132,26 +144,31 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ## 🎨 New Design Principles
 
 ### **1. Solid Over Glass**
+
 - `bg-white dark:bg-gray-800` (not frosted glass)
 - `border border-gray-200 dark:border-gray-700`
 - `shadow-sm hover:shadow-md`
 
 ### **2. Content Over Decoration**
+
 - No emojis in professional sections
 - No decorative lines or elements
 - Focus on data and results
 
 ### **3. Subtle Interactions**
+
 - `hover:shadow-md` (not lift animations)
 - `transition-shadow` (not complex transitions)
 - Professional, not playful
 
 ### **4. Clean Typography**
+
 - Consistent sizing
 - Professional hierarchy
 - No playful elements
 
 ### **5. Data-Driven**
+
 - Credentials front and center
 - Metrics emphasized
 - Results over decoration
@@ -161,6 +178,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ## 🎯 What Makes It Professional Now
 
 ### **Senior Engineer Indicators:**
+
 1. ✅ **Clean, minimal design** - no gimmicks
 2. ✅ **Data-driven content** - metrics and results
 3. ✅ **Professional credentials** - AWS, years, achievements
@@ -175,6 +193,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 ## 📈 Impact
 
 ### **Before:**
+
 - Looked like a junior developer's creative experiment
 - Too playful for senior roles
 - Design overshadowed content
@@ -182,6 +201,7 @@ Your portfolio has been transformed from a **playful/toy-ish design** to a **pro
 - Gimmicky animations
 
 ### **After:**
+
 - Looks like a senior engineer's professional portfolio
 - Appropriate for Staff/Principal roles
 - Content is the star

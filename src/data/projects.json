@@ -6,7 +6,12 @@
     "description": "Modern E2E testing framework using Playwright with Page Object Model, demonstrating best practices for scalable test automation",
     "fullDescription": "Comprehensive E2E automation project showcasing Playwright with Page Object Model design pattern. Features custom fixtures, cross-browser testing, parallel execution, and visual regression testing. Tests the Sauce Demo e-commerce application with complete coverage of authentication, product browsing, cart management, and checkout flows. Includes detailed reporting, trace debugging, and CI/CD integration examples.",
     "testingTypes": ["E2E", "Automation", "Cross-Browser"],
-    "technologies": ["Playwright", "TypeScript", "Page Object Model", "GitHub Actions"],
+    "technologies": [
+      "Playwright",
+      "TypeScript",
+      "Page Object Model",
+      "GitHub Actions"
+    ],
     "achievements": [
       "Implemented scalable POM architecture for maintainability",
       "Achieved cross-browser testing (Chromium, Firefox, WebKit)",
@@ -106,7 +111,13 @@
     "description": "Cloud-native testing for AWS Lambda functions using Terraform IaC and LocalStack for serverless architecture validation",
     "fullDescription": "Demonstrates infrastructure testing for AWS Lambda using Terraform for Infrastructure as Code and LocalStack for local AWS simulation. Tests serverless functions, API Gateway, DynamoDB integration, and validates Terraform configurations. Includes integration tests, infrastructure validation, and end-to-end workflows. Perfect example of cloud-native QA practices with cost-effective local development using LocalStack.",
     "testingTypes": ["Cloud", "Infrastructure", "Serverless"],
-    "technologies": ["AWS Lambda", "Terraform", "LocalStack", "TypeScript", "DynamoDB"],
+    "technologies": [
+      "AWS Lambda",
+      "Terraform",
+      "LocalStack",
+      "TypeScript",
+      "DynamoDB"
+    ],
     "achievements": [
       "Validated Infrastructure as Code with Terraform",
       "Tested serverless Lambda functions locally with LocalStack",
@@ -156,7 +167,12 @@
     "description": "Cutting-edge AI/LLM integration for automated test generation, bug analysis, and intelligent test optimization",
     "fullDescription": "Innovative project showcasing AI integration in QA workflows using OpenAI GPT-4. Demonstrates automated test case generation from requirements, intelligent bug report analysis and categorization, realistic test data generation, coverage gap identification, and flaky test detection using ML. Represents the future of QA engineering where AI augments human expertise for 10x productivity gains.",
     "testingTypes": ["AI/ML", "Test Generation", "Analysis"],
-    "technologies": ["OpenAI GPT-4", "TypeScript", "Playwright", "Machine Learning"],
+    "technologies": [
+      "OpenAI GPT-4",
+      "TypeScript",
+      "Playwright",
+      "Machine Learning"
+    ],
     "achievements": [
       "Automated test generation from natural language requirements",
       "Built intelligent bug analyzer with root cause suggestions",
@@ -206,7 +222,13 @@
     "description": "Owned end-to-end quality strategy for cloud-native gaming platform with distributed microservices",
     "fullDescription": "Architected and implemented comprehensive quality strategy for a Games Marketplace platform serving millions of users. Built Cypress E2E suites integrated with Jenkins, cutting release cycles by 60%. Collaborated directly with CTO and architects to embed quality gates into deployment pipelines. Implemented API performance testing and monitoring that significantly improved system resilience.",
     "testingTypes": ["E2E", "API", "Performance"],
-    "technologies": ["Cypress", "Jenkins", "Postman", "Docker", "Microservices"],
+    "technologies": [
+      "Cypress",
+      "Jenkins",
+      "Postman",
+      "Docker",
+      "Microservices"
+    ],
     "achievements": [
       "Cut release cycle time by 60% through automation",
       "Validated large-scale JSON data pipelines across microservices",
@@ -231,7 +253,14 @@
     "description": "Production-ready CRUD app with authentication, deployed on self-hosted Kubernetes with full CI/CD",
     "fullDescription": "Built a complete full-stack application from scratch to demonstrate modern DevOps and testing practices. Features responsive React frontend, Node.js backend, MongoDB database, all containerized with Docker and deployed behind Traefik reverse proxy with HTTPS. Comprehensive Playwright E2E test suite integrated into GitHub Actions pipeline ensures quality on every commit.",
     "testingTypes": ["E2E", "Integration", "CI/CD"],
-    "technologies": ["React", "Node.js", "MongoDB", "Docker", "Playwright", "Traefik"],
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Docker",
+      "Playwright",
+      "Traefik"
+    ],
     "achievements": [
       "Deployed on self-hosted Kubernetes cluster",
       "Secured with HTTPS and proper authentication",

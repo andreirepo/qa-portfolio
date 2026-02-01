@@ -42,7 +42,7 @@ const recommendations: Recommendation[] = [
     relationship: 'Managed Andrei directly',
     text: 'Andrei is an exceptional QA engineer who transformed our testing infrastructure. His migration of our test framework to Playwright was flawless, and his mentorship elevated our entire team. He consistently delivered high-quality work and was a pleasure to work with.',
     linkedinUrl: 'https://linkedin.com/in/johnsmith',
-    date: 'November 2024'
+    date: 'November 2024',
   },
   {
     name: 'Jane Doe',
@@ -51,7 +51,7 @@ const recommendations: Recommendation[] = [
     relationship: 'Worked with Andrei on the same team',
     text: 'Working with Andrei on the Games Marketplace project was incredible. His automation strategies reduced our release cycle by 60% while improving quality. He has a unique ability to understand both technical and business requirements.',
     linkedinUrl: 'https://linkedin.com/in/janedoe',
-    date: 'September 2024'
+    date: 'September 2024',
   },
   // Add more...
 ]
@@ -66,21 +66,25 @@ Replace the old Testimonials component with the new LinkedIn one:
 **Open:** `src/App.tsx`
 
 **Change this:**
+
 ```tsx
 import Testimonials from './components/Testimonials'
 ```
 
 **To this:**
+
 ```tsx
 import LinkedInRecommendations from './components/LinkedInRecommendations'
 ```
 
 **And change this:**
+
 ```tsx
 <Testimonials />
 ```
 
 **To this:**
+
 ```tsx
 <LinkedInRecommendations />
 ```
@@ -92,7 +96,7 @@ import LinkedInRecommendations from './components/LinkedInRecommendations'
 In `LinkedInRecommendations.tsx`, find this line:
 
 ```tsx
-href="https://linkedin.com/in/andreirepo"
+href = 'https://linkedin.com/in/andreirepo'
 ```
 
 Replace with your actual LinkedIn profile URL.
@@ -108,6 +112,7 @@ npm run dev
 Visit: http://localhost:5173
 
 Check:
+
 - Recommendations display correctly
 - LinkedIn button works
 - Mobile responsive
@@ -134,6 +139,7 @@ Check:
 ## 💡 Tips
 
 ### **Relationship Examples:**
+
 - "Managed Andrei directly"
 - "Worked with Andrei on the same team"
 - "Reported directly to Andrei"
@@ -141,11 +147,13 @@ Check:
 - "Andrei was senior to [Name] but didn't manage directly"
 
 ### **How Many to Include:**
+
 - **Minimum:** 3 recommendations
 - **Ideal:** 5-7 recommendations
 - **Maximum:** 10 recommendations
 
 ### **Which Ones to Choose:**
+
 - Managers (highest priority)
 - Tech leads
 - Senior engineers you worked with
@@ -153,6 +161,7 @@ Check:
 - Cross-functional partners
 
 ### **Order:**
+
 - Most recent first
 - Or most impressive first
 - Or by seniority (managers first)
@@ -172,7 +181,7 @@ const recommendations: Recommendation[] = [
     relationship: 'Managed Andrei directly',
     text: 'Andrei is one of the most talented QA engineers I have worked with. His technical expertise in test automation and cloud infrastructure is exceptional. He led the migration of our entire test suite to Playwright, which reduced our deployment time by 30% and eliminated production incidents. Beyond his technical skills, Andrei is an excellent mentor who elevated the capabilities of our entire QA team.',
     linkedinUrl: 'https://linkedin.com/in/sarahjohnson',
-    date: 'December 2024'
+    date: 'December 2024',
   },
   {
     name: 'Michael Chen',
@@ -181,7 +190,7 @@ const recommendations: Recommendation[] = [
     relationship: 'Worked with Andrei on the same team',
     text: 'Andrei brings a unique perspective that bridges QA and DevOps. His understanding of CI/CD pipelines, Kubernetes, and infrastructure as code made our collaboration seamless. He implemented comprehensive testing strategies that caught critical issues before production and saved us countless hours of debugging. Highly recommend working with Andrei!',
     linkedinUrl: 'https://linkedin.com/in/michaelchen',
-    date: 'October 2024'
+    date: 'October 2024',
   },
   {
     name: 'Emily Rodriguez',
@@ -190,8 +199,8 @@ const recommendations: Recommendation[] = [
     relationship: 'Reported directly to Andrei',
     text: 'Andrei was an incredible mentor during my first year as a QA engineer. He taught me not just testing tools, but how to think about quality engineering holistically. His patience, clear explanations, and hands-on guidance helped me grow from junior to mid-level in record time. I am grateful for the opportunity to learn from him.',
     linkedinUrl: 'https://linkedin.com/in/emilyrodriguez',
-    date: 'August 2024'
-  }
+    date: 'August 2024',
+  },
 ]
 ```
 
@@ -202,17 +211,20 @@ const recommendations: Recommendation[] = [
 You can have BOTH testimonials and LinkedIn recommendations:
 
 **In App.tsx:**
+
 ```tsx
 <Testimonials />
 <LinkedInRecommendations />
 ```
 
 **Use Testimonials for:**
+
 - Short, punchy quotes
 - Specific achievements
 - Quick social proof
 
 **Use LinkedIn Recommendations for:**
+
 - Longer, detailed feedback
 - Official recommendations
 - Credibility and trust
@@ -235,6 +247,7 @@ You can have BOTH testimonials and LinkedIn recommendations:
 ## 🎉 Done!
 
 Once you've added your LinkedIn recommendations, you'll have:
+
 - ✅ Real social proof from actual colleagues
 - ✅ Credible testimonials with LinkedIn verification
 - ✅ Professional presentation
@@ -247,12 +260,14 @@ Once you've added your LinkedIn recommendations, you'll have:
 ## 📞 Need Help?
 
 **Can't find recommendations on LinkedIn?**
+
 - Go to your profile
 - Click "More" under your intro
 - Select "Request a recommendation"
 - Or scroll down to see existing ones
 
 **Want me to format them?**
+
 - Just paste the text here
 - I'll format it for you
 - Takes 2 minutes

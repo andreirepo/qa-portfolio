@@ -20,6 +20,7 @@ Use this checklist to track your progress from setup to deployment.
 ## 📝 Content Customization
 
 ### Personal Information
+
 - [ ] Update name in `src/components/Hero.tsx`
 - [ ] Update title/role in `src/components/Hero.tsx`
 - [ ] Update intro text in `src/components/Hero.tsx`
@@ -27,6 +28,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Update testing philosophy in `src/components/About.tsx`
 
 ### Contact Information
+
 - [ ] Update email in `src/components/Contact.tsx`
 - [ ] Update LinkedIn URL in `src/components/Contact.tsx`
 - [ ] Update GitHub URL in `src/components/Contact.tsx`
@@ -34,6 +36,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Update availability status in `src/components/Contact.tsx`
 
 ### Projects
+
 - [ ] Review sample projects in `src/data/projects.json`
 - [ ] Add your first project
 - [ ] Add your second project
@@ -46,6 +49,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Add achievements for each project
 
 ### Skills
+
 - [ ] Review skill categories in `src/data/skills.json`
 - [ ] Update Test Automation skills
 - [ ] Update Programming skills
@@ -58,6 +62,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Remove irrelevant skills
 
 ### Meta Information
+
 - [ ] Update page title in `index.html`
 - [ ] Update meta description in `index.html`
 - [ ] Update project name in `package.json`
@@ -66,6 +71,7 @@ Use this checklist to track your progress from setup to deployment.
 ## 🎨 Optional Customizations
 
 ### Styling
+
 - [ ] Review color scheme in `tailwind.config.js`
 - [ ] Change primary color (pass) if desired
 - [ ] Change secondary color (fail) if desired
@@ -73,6 +79,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Modify spacing/sizing if needed
 
 ### Content
+
 - [ ] Add more projects (4+)
 - [ ] Add certifications section (optional)
 - [ ] Add blog section (optional)
@@ -80,6 +87,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Add resume download link (optional)
 
 ### Features
+
 - [ ] Add Google Analytics (optional)
 - [ ] Add contact form (optional)
 - [ ] Add newsletter signup (optional)
@@ -117,6 +125,7 @@ Use this checklist to track your progress from setup to deployment.
 ## ☁️ AWS Setup
 
 ### AWS Account
+
 - [ ] AWS account created
 - [ ] Payment method added
 - [ ] IAM user created (for manual deployment)
@@ -127,6 +136,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Credentials tested
 
 ### SSL Certificate
+
 - [ ] ACM certificate requested (us-east-1 region)
 - [ ] Certificate ARN saved
 - [ ] DNS validation records obtained
@@ -134,6 +144,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Certificate validated and issued
 
 ### S3 Bucket
+
 - [ ] S3 bucket created
 - [ ] Bucket name chosen (globally unique)
 - [ ] Static website hosting enabled
@@ -144,6 +155,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Bucket is public
 
 ### Initial Deployment
+
 - [ ] Files uploaded to S3 (`aws s3 sync dist/ s3://your-bucket`)
 - [ ] Website accessible via S3 URL
 - [ ] All pages load correctly
@@ -168,6 +180,7 @@ Use this checklist to track your progress from setup to deployment.
 ## 🌍 Cloudflare Domain Setup
 
 ### DNS Configuration
+
 - [ ] Cloudflare account with domain
 - [ ] ACM validation CNAME record added
 - [ ] ACM validation CNAME set to "DNS only" (gray cloud)
@@ -177,11 +190,13 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] WWW subdomain set to "DNS only" (gray cloud)
 
 ### SSL/TLS Configuration
+
 - [ ] SSL/TLS mode set to "Full"
 - [ ] "Always Use HTTPS" enabled (optional)
 - [ ] HSTS enabled (optional, after testing)
 
 ### Verification
+
 - [ ] DNS propagation complete (check dnschecker.org)
 - [ ] Website accessible via custom domain
 - [ ] HTTPS working on custom domain
@@ -192,6 +207,7 @@ Use this checklist to track your progress from setup to deployment.
 ## 🔄 CI/CD Setup with GitHub Actions
 
 ### GitHub Repository
+
 - [ ] Git repository initialized
 - [ ] Initial commit made
 - [ ] GitHub repository created
@@ -199,6 +215,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Repository is public or private (your choice)
 
 ### IAM User for GitHub Actions
+
 - [ ] Separate IAM user created (`github-actions-deploy`)
 - [ ] Custom policy created with minimal permissions
 - [ ] Policy allows S3 operations on specific bucket
@@ -207,6 +224,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Access keys saved securely
 
 ### GitHub Secrets
+
 - [ ] GitHub Secrets added:
   - [ ] `AWS_ACCESS_KEY_ID` (GitHub Actions IAM user)
   - [ ] `AWS_SECRET_ACCESS_KEY` (GitHub Actions IAM user)
@@ -214,6 +232,7 @@ Use this checklist to track your progress from setup to deployment.
   - [ ] `CLOUDFRONT_DISTRIBUTION_ID` (your distribution ID)
 
 ### Workflow Testing
+
 - [ ] Workflow files reviewed:
   - [ ] `.github/workflows/deploy.yml`
   - [ ] `.github/workflows/pr-check.yml`
@@ -226,6 +245,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] CloudFront cache invalidated
 
 ### Branch Protection (Recommended)
+
 - [ ] Branch protection rules enabled for `main`
 - [ ] Require status checks before merging
 - [ ] Require branches to be up to date
@@ -235,6 +255,7 @@ Use this checklist to track your progress from setup to deployment.
 ## 📊 Post-Deployment
 
 ### Verification
+
 - [ ] Website loads fast (< 3 seconds)
 - [ ] All sections visible
 - [ ] All links working
@@ -245,12 +266,14 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] SEO meta tags present
 
 ### Monitoring
+
 - [ ] CloudWatch monitoring enabled (optional)
 - [ ] Billing alerts set up
 - [ ] Google Analytics added (optional)
 - [ ] Google Search Console added (optional)
 
 ### Sharing
+
 - [ ] Add website URL to LinkedIn profile
 - [ ] Add website URL to GitHub profile
 - [ ] Add website URL to resume
@@ -260,6 +283,7 @@ Use this checklist to track your progress from setup to deployment.
 ## 🔧 Maintenance
 
 ### Regular Updates
+
 - [ ] Update projects as completed
 - [ ] Update skills as learned
 - [ ] Update contact information if changed
@@ -269,6 +293,7 @@ Use this checklist to track your progress from setup to deployment.
 - [ ] Review and update content quarterly
 
 ### Performance
+
 - [ ] Run Lighthouse audit quarterly
 - [ ] Optimize images if needed
 - [ ] Review bundle size
@@ -300,6 +325,7 @@ Use this checklist to track your progress from setup to deployment.
 ## Quick Reference
 
 ### Essential Commands
+
 ```bash
 npm install          # Install dependencies
 npm run dev          # Start dev server
@@ -309,12 +335,14 @@ npm run preview     # Preview production build
 ```
 
 ### Deployment Commands
+
 ```bash
 aws s3 sync dist/ s3://your-bucket --delete
 aws cloudfront create-invalidation --distribution-id ID --paths "/*"
 ```
 
 ### File Locations
+
 - Projects: `src/data/projects.json`
 - Skills: `src/data/skills.json`
 - Contact: `src/components/Contact.tsx`
@@ -324,14 +352,14 @@ aws cloudfront create-invalidation --distribution-id ID --paths "/*"
 
 **Progress Tracker**
 
-- Setup: __ / 12 items
-- Content: __ / 29 items
-- Testing: __ / 15 items
-- AWS: __ / 13 items
-- Total: __ / 69 items
+- Setup: \_\_ / 12 items
+- Content: \_\_ / 29 items
+- Testing: \_\_ / 15 items
+- AWS: \_\_ / 13 items
+- Total: \_\_ / 69 items
 
 **Target: 100% Complete** ✨
 
 ---
 
-*Last Updated: November 2024*
+_Last Updated: November 2024_

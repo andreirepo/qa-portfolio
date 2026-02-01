@@ -7,6 +7,7 @@ A modern, production-ready portfolio website specifically designed for QA Engine
 ## ✨ Key Features
 
 ### Design & UX
+
 - ✅ Modern, clean design with professional QA-themed aesthetics
 - ✅ Fully responsive (mobile, tablet, desktop)
 - ✅ Dark mode with persistent preference
@@ -15,6 +16,7 @@ A modern, production-ready portfolio website specifically designed for QA Engine
 - ✅ Fast loading (< 2s Time to Interactive)
 
 ### Content Sections
+
 - ✅ **Hero**: Eye-catching landing with "All Tests Passing" badge
 - ✅ **About**: Professional background and testing philosophy
 - ✅ **Projects**: Showcase with detailed metrics and modal views
@@ -22,6 +24,7 @@ A modern, production-ready portfolio website specifically designed for QA Engine
 - ✅ **Contact**: Multiple contact methods with links
 
 ### Technical Features
+
 - ✅ TypeScript for type safety
 - ✅ Component-based architecture
 - ✅ JSON-based content management (no backend needed)
@@ -31,6 +34,7 @@ A modern, production-ready portfolio website specifically designed for QA Engine
 - ✅ SEO-friendly
 
 ### Deployment
+
 - ✅ AWS S3 + CloudFront ready
 - ✅ GitHub Actions CI/CD pipeline
 - ✅ One-command deployment
@@ -38,17 +42,17 @@ A modern, production-ready portfolio website specifically designed for QA Engine
 
 ## 📊 Technical Stack
 
-| Category | Technology | Version |
-|----------|-----------|---------|
-| Framework | React | 18.3.1 |
-| Language | TypeScript | 5.4.2 |
-| Build Tool | Vite | 5.1.4 |
-| Styling | Tailwind CSS | 3.4.1 |
-| Animations | Framer Motion | 11.0.5 |
-| Routing | React Router | 6.22.0 |
-| Icons | Lucide React | 0.344.0 |
-| Testing | Vitest | 1.3.1 |
-| Testing Library | React Testing Library | 14.2.1 |
+| Category        | Technology            | Version |
+| --------------- | --------------------- | ------- |
+| Framework       | React                 | 18.3.1  |
+| Language        | TypeScript            | 5.4.2   |
+| Build Tool      | Vite                  | 5.1.4   |
+| Styling         | Tailwind CSS          | 3.4.1   |
+| Animations      | Framer Motion         | 11.0.5  |
+| Routing         | React Router          | 6.22.0  |
+| Icons           | Lucide React          | 0.344.0 |
+| Testing         | Vitest                | 1.3.1   |
+| Testing Library | React Testing Library | 14.2.1  |
 
 ## 📁 Project Structure
 
@@ -108,17 +112,20 @@ qa-portfolio/
 ## 🎨 Design System
 
 ### Colors
+
 - **Primary (Pass)**: `#10b981` (Green) - Success, passing tests
 - **Secondary (Fail)**: `#ef4444` (Red) - Errors, failing tests
 - **Background**: White / Dark Gray (#1f2937)
 - **Text**: Gray-900 / Gray-100
 
 ### Typography
+
 - **Headings**: Bold, large sizes (4xl-7xl)
 - **Body**: Regular, readable (base-lg)
 - **Code**: Monospace font (JetBrains Mono, Fira Code)
 
 ### Spacing
+
 - Consistent spacing scale (Tailwind default)
 - Generous padding for readability
 - Proper section separation
@@ -126,17 +133,20 @@ qa-portfolio/
 ## 🧪 Testing Strategy
 
 ### Test Coverage
+
 - Component rendering tests
 - User interaction tests
 - Navigation tests
 - Dark mode toggle tests
 
 ### Test Files
+
 - `src/test/App.test.tsx` - Main app tests
 - `src/test/components/Header.test.tsx` - Header tests
 - `src/test/components/Projects.test.tsx` - Projects tests
 
 ### Running Tests
+
 ```bash
 npm test              # Run once
 npm run test:watch    # Watch mode
@@ -146,18 +156,21 @@ npm run test:coverage # Coverage report
 ## 🚀 Deployment Options
 
 ### Option 1: AWS S3 + CloudFront (Recommended)
+
 - **Cost**: $1-5/month
 - **Setup Time**: 15 minutes
 - **Features**: HTTPS, CDN, custom domain
 - **Guide**: See DEPLOYMENT.md
 
 ### Option 2: GitHub Actions Auto-Deploy
+
 - **Cost**: Free (GitHub Actions) + AWS costs
 - **Setup Time**: 10 minutes
 - **Features**: Auto-deploy on push to main
 - **Guide**: See DEPLOYMENT.md
 
 ### Option 3: Other Platforms
+
 - **Netlify**: Drag & drop deployment
 - **Vercel**: Git integration
 - **AWS Amplify**: Full AWS integration
@@ -165,17 +178,20 @@ npm run test:coverage # Coverage report
 ## 📈 Performance Metrics
 
 ### Lighthouse Scores (Target)
+
 - Performance: 95+
 - Accessibility: 100
 - Best Practices: 100
 - SEO: 100
 
 ### Bundle Size
+
 - Initial JS: ~150KB (gzipped)
 - Initial CSS: ~10KB (gzipped)
 - Total: ~160KB (gzipped)
 
 ### Load Times
+
 - First Contentful Paint: < 1s
 - Time to Interactive: < 2s
 - Largest Contentful Paint: < 2.5s
@@ -183,15 +199,18 @@ npm run test:coverage # Coverage report
 ## 🔧 Customization Guide
 
 ### Easy Customizations (JSON files)
+
 1. **Projects**: Edit `src/data/projects.json`
 2. **Skills**: Edit `src/data/skills.json`
 
 ### Medium Customizations (Component files)
+
 1. **Contact Info**: Edit `src/components/Contact.tsx`
 2. **Personal Info**: Edit `src/components/Hero.tsx` and `About.tsx`
 3. **Colors**: Edit `tailwind.config.js`
 
 ### Advanced Customizations
+
 1. **Add Sections**: Create new components
 2. **Modify Layout**: Edit `src/App.tsx`
 3. **Change Animations**: Modify Framer Motion props
@@ -199,12 +218,14 @@ npm run test:coverage # Coverage report
 ## 📝 Content Management
 
 ### JSON-Based Approach
+
 - No backend required
 - Version controlled
 - Easy to edit
 - Type-safe with TypeScript
 
 ### Adding a New Project
+
 ```json
 {
   "id": "4",
@@ -240,6 +261,7 @@ npm run test:coverage # Coverage report
 ## 🎯 Use Cases
 
 ### Perfect For
+
 - QA Engineers building a portfolio
 - Test Automation Engineers
 - SDET professionals
@@ -247,6 +269,7 @@ npm run test:coverage # Coverage report
 - Freelance QA consultants
 
 ### Showcases
+
 - Testing projects and achievements
 - Technical skills and tools
 - Testing methodologies
@@ -256,6 +279,7 @@ npm run test:coverage # Coverage report
 ## 🛠️ Maintenance
 
 ### Regular Tasks
+
 - Update dependencies: `npm update`
 - Run security audit: `npm audit`
 - Check for outdated packages: `npm outdated`
@@ -263,6 +287,7 @@ npm run test:coverage # Coverage report
 - Add new projects as completed
 
 ### Monitoring
+
 - AWS CloudWatch for traffic
 - Lighthouse for performance
 - Google Analytics (optional)
@@ -270,6 +295,7 @@ npm run test:coverage # Coverage report
 ## 📚 Learning Resources
 
 ### Technologies Used
+
 - [React Documentation](https://react.dev)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [Tailwind CSS Docs](https://tailwindcss.com/docs)
@@ -278,6 +304,7 @@ npm run test:coverage # Coverage report
 - [Vitest Documentation](https://vitest.dev/)
 
 ### AWS Resources
+
 - [S3 Static Website Hosting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
 - [CloudFront Documentation](https://docs.aws.amazon.com/cloudfront/)
 - [AWS CLI Reference](https://docs.aws.amazon.com/cli/)
@@ -285,6 +312,7 @@ npm run test:coverage # Coverage report
 ## 🤝 Contributing
 
 This is a portfolio template. Feel free to:
+
 - Fork and customize for your own use
 - Submit issues for bugs
 - Suggest improvements
@@ -310,4 +338,4 @@ MIT License - Free to use for personal and commercial projects.
 
 **Built with ❤️ for QA Engineers**
 
-*Version 1.0.0 - November 2024*
+_Version 1.0.0 - November 2024_

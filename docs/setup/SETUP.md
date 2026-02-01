@@ -26,6 +26,7 @@ npm install
 ```
 
 This will install all required packages:
+
 - React 18
 - TypeScript
 - Vite
@@ -54,6 +55,7 @@ npm run dev
 ```
 
 You should see output like:
+
 ```
 VITE v5.1.4  ready in 500 ms
 
@@ -66,6 +68,7 @@ VITE v5.1.4  ready in 500 ms
 Navigate to http://localhost:5173
 
 You should see your portfolio site with:
+
 - Hero section with "All Tests Passing" badge
 - About section
 - Projects showcase
@@ -82,6 +85,7 @@ npm test
 ```
 
 Expected output:
+
 ```
 ✓ src/test/App.test.tsx (3)
 ✓ src/test/components/Header.test.tsx (2)
@@ -106,6 +110,7 @@ npm run build
 ```
 
 Expected output:
+
 ```
 vite v5.1.4 building for production...
 ✓ built in 2.5s
@@ -167,6 +172,7 @@ After setup, customize these files:
 ### Issue: `npm install` fails
 
 **Solution:**
+
 ```bash
 # Clear npm cache
 npm cache clean --force
@@ -181,6 +187,7 @@ npm install
 ### Issue: Port 5173 already in use
 
 **Solution:**
+
 ```bash
 # Kill process on port 5173
 npx kill-port 5173
@@ -192,6 +199,7 @@ npm run dev -- --port 3000
 ### Issue: TypeScript errors in editor
 
 **Solution:**
+
 1. Ensure dependencies are installed: `npm install`
 2. Restart your editor
 3. In VS Code: Cmd/Ctrl + Shift + P → "TypeScript: Restart TS Server"
@@ -199,6 +207,7 @@ npm run dev -- --port 3000
 ### Issue: Tailwind styles not working
 
 **Solution:**
+
 1. Check `tailwind.config.js` is present
 2. Verify `postcss.config.js` exists
 3. Restart dev server: Ctrl+C, then `npm run dev`
@@ -206,6 +215,7 @@ npm run dev -- --port 3000
 ### Issue: Tests failing
 
 **Solution:**
+
 ```bash
 # Update test snapshots
 npm test -- -u
@@ -219,12 +229,14 @@ npm run test:watch
 ### Install Recommended Extensions
 
 Open VS Code and install:
+
 - ESLint
 - Tailwind CSS IntelliSense
 - Prettier
 - Vitest
 
 Or run:
+
 ```bash
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension bradlc.vscode-tailwindcss
@@ -235,6 +247,7 @@ code --install-extension vitest.explorer
 ### VS Code Settings
 
 Create `.vscode/settings.json`:
+
 ```json
 {
   "editor.formatOnSave": true,

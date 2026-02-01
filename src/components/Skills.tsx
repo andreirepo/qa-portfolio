@@ -38,7 +38,9 @@ const Skills = () => {
                 key={category.name}
                 className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow p-4 h-full flex flex-col"
               >
-                <h3 className="text-sm font-bold mb-2 text-gray-800 dark:text-gray-200 flex-shrink-0">{category.name}</h3>
+                <h3 className="text-sm font-bold mb-2 text-gray-800 dark:text-gray-200 flex-shrink-0">
+                  {category.name}
+                </h3>
                 <div className="flex flex-wrap gap-1.5 content-start">
                   {category.skills.map((skill) => (
                     <span

@@ -3,11 +3,16 @@
 ## What Was Added to index.html
 
 ### **1. Enhanced Meta Description**
+
 ```html
-<meta name="description" content="Andrei Repo - Cloud Quality Engineer with 9+ years experience. AWS Certified. 500+ tests automated, 60% faster deployments, zero production incidents." />
+<meta
+  name="description"
+  content="Andrei Repo - Cloud Quality Engineer with 9+ years experience. AWS Certified. 500+ tests automated, 60% faster deployments, zero production incidents."
+/>
 ```
 
 **Benefits:**
+
 - Shows up in Google search results
 - Includes key metrics
 - Optimized for click-through
@@ -15,11 +20,16 @@
 ---
 
 ### **2. Comprehensive Keywords**
+
 ```html
-<meta name="keywords" content="Andrei Repo, QA Engineer, Quality Engineer, Test Automation, AWS Certified, Kubernetes, Playwright, Terraform, CI/CD, DevOps, Cloud Testing, Infrastructure as Code, Performance Testing, API Testing, Security Testing, Observability, GitOps, Contract Testing, Shift-Left Testing" />
+<meta
+  name="keywords"
+  content="Andrei Repo, QA Engineer, Quality Engineer, Test Automation, AWS Certified, Kubernetes, Playwright, Terraform, CI/CD, DevOps, Cloud Testing, Infrastructure as Code, Performance Testing, API Testing, Security Testing, Observability, GitOps, Contract Testing, Shift-Left Testing"
+/>
 ```
 
 **Benefits:**
+
 - 20+ relevant keywords
 - Covers all your specializations
 - Helps with search rankings
@@ -27,14 +37,22 @@
 ---
 
 ### **3. Open Graph Tags (LinkedIn/Facebook)**
+
 ```html
-<meta property="og:title" content="Andrei Repo | Cloud Quality Engineer | AWS Certified" />
-<meta property="og:description" content="AWS Certified QA Engineer with 9+ years experience..." />
+<meta
+  property="og:title"
+  content="Andrei Repo | Cloud Quality Engineer | AWS Certified"
+/>
+<meta
+  property="og:description"
+  content="AWS Certified QA Engineer with 9+ years experience..."
+/>
 <meta property="og:image" content="/andrei-photo.jpg" />
 <meta property="og:url" content="https://andreiqa.click" />
 ```
 
 **Benefits:**
+
 - Beautiful preview when shared on LinkedIn
 - Professional card when shared on social media
 - Shows your photo and key info
@@ -42,6 +60,7 @@
 ---
 
 ### **4. Twitter Card Tags**
+
 ```html
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Andrei Repo | Cloud Quality Engineer" />
@@ -50,6 +69,7 @@
 ```
 
 **Benefits:**
+
 - Professional preview on Twitter/X
 - Large image card format
 - Attracts attention when shared
@@ -57,11 +77,13 @@
 ---
 
 ### **5. Canonical URL**
+
 ```html
 <link rel="canonical" href="https://andreiqa.click" />
 ```
 
 **Benefits:**
+
 - Prevents duplicate content issues
 - Helps with SEO rankings
 - Tells search engines this is the main URL
@@ -69,11 +91,13 @@
 ---
 
 ### **6. Updated Page Title**
+
 ```html
 <title>Andrei Repo | Cloud Quality Engineer | AWS Certified | Portfolio</title>
 ```
 
 **Benefits:**
+
 - Shows in browser tab
 - Shows in Google search results
 - Includes key terms for SEO
@@ -83,17 +107,21 @@
 ## 🎯 Impact
 
 ### **When HR Googles "Andrei Repo":**
+
 They'll see:
+
 ```
 Andrei Repo | Cloud Quality Engineer | AWS Certified | Portfolio
 andreiqa.click
-Andrei Repo - Cloud Quality Engineer with 9+ years experience. 
-AWS Certified. 500+ tests automated, 60% faster deployments, 
+Andrei Repo - Cloud Quality Engineer with 9+ years experience.
+AWS Certified. 500+ tests automated, 60% faster deployments,
 zero production incidents.
 ```
 
 ### **When Shared on LinkedIn:**
+
 Beautiful card with:
+
 - Your photo
 - Title: "Andrei Repo | Cloud Quality Engineer"
 - Description with key metrics
@@ -159,6 +187,7 @@ Beautiful card with:
 ## 🎉 Summary
 
 Your portfolio is now **fully optimized for discovery**:
+
 - ✅ SEO meta tags added
 - ✅ Social sharing optimized
 - ✅ Google search ready
@@ -167,12 +196,12 @@ Your portfolio is now **fully optimized for discovery**:
 
 **HR will find you easily and be impressed!** 💼✨
 
-
 ---
 
 ## 🆕 Additional SEO Enhancements (Latest Update)
 
 ### **7. Structured Data (JSON-LD)**
+
 ```json
 {
   "@context": "https://schema.org",
@@ -187,6 +216,7 @@ Your portfolio is now **fully optimized for discovery**:
 ```
 
 **Benefits:**
+
 - Google understands your profile better
 - Eligible for rich search results
 - Shows credentials in search
@@ -195,6 +225,7 @@ Your portfolio is now **fully optimized for discovery**:
 ---
 
 ### **8. robots.txt File**
+
 ```
 User-agent: *
 Allow: /
@@ -202,6 +233,7 @@ Sitemap: https://andreiqa.click/sitemap.xml
 ```
 
 **Benefits:**
+
 - Tells search engines what to crawl
 - Points to your sitemap
 - Professional SEO setup
@@ -210,6 +242,7 @@ Sitemap: https://andreiqa.click/sitemap.xml
 ---
 
 ### **9. sitemap.xml File**
+
 ```xml
 <urlset>
   <url>
@@ -220,6 +253,7 @@ Sitemap: https://andreiqa.click/sitemap.xml
 ```
 
 **Benefits:**
+
 - Helps search engines find all pages
 - Faster indexing
 - Better crawl efficiency

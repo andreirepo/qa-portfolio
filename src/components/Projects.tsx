@@ -52,7 +52,8 @@ const Projects = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
           >
-            Cloud-native testing projects showcasing modern QA and DevOps practices
+            Cloud-native testing projects showcasing modern QA and DevOps
+            practices
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -110,15 +111,19 @@ const Projects = () => {
                 <div className="flex items-center justify-between pt-3 border-t border-gray-200/50 dark:border-gray-700/50">
                   <div className="flex gap-3 text-xs">
                     <div>
-                      <span className="font-bold text-pass">{project.metrics.testCases}</span>
+                      <span className="font-bold text-pass">
+                        {project.metrics.testCases}
+                      </span>
                       <span className="text-gray-500 ml-1">tests</span>
                     </div>
                     <div>
-                      <span className="font-bold text-pass">{project.metrics.coverage}%</span>
+                      <span className="font-bold text-pass">
+                        {project.metrics.coverage}%
+                      </span>
                       <span className="text-gray-500 ml-1">coverage</span>
                     </div>
                   </div>
-                  
+
                   <div className="flex gap-2">
                     {project.links.github !== '#' && (
                       <a
@@ -129,7 +134,10 @@ const Projects = () => {
                         className="p-1.5 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors"
                         title="View Code"
                       >
-                        <Github size={16} className="text-gray-600 dark:text-gray-400" />
+                        <Github
+                          size={16}
+                          className="text-gray-600 dark:text-gray-400"
+                        />
                       </a>
                     )}
                     {project.links.report !== '#' && (
@@ -141,7 +149,10 @@ const Projects = () => {
                         className="p-1.5 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors"
                         title="View Docs"
                       >
-                        <ExternalLink size={16} className="text-gray-600 dark:text-gray-400" />
+                        <ExternalLink
+                          size={16}
+                          className="text-gray-600 dark:text-gray-400"
+                        />
                       </a>
                     )}
                   </div>
