@@ -3,7 +3,7 @@ import { afterEach } from 'vitest'
 import { cleanup } from '@testing-library/react'
 
 // Mock IntersectionObserver for Framer Motion
-global.IntersectionObserver = class IntersectionObserver {
+;(globalThis as any).IntersectionObserver = class IntersectionObserver {
   constructor() {}
   disconnect() {}
   observe() {}

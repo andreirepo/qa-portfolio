@@ -16,3 +16,7 @@ src/test/
 *.test.tsx
 *.test.ts
 vitest.config.ts
+tsconfig.test.json
+e2e/
+playwright-report/
+test-results/

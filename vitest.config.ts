@@ -29,4 +29,8 @@ export default defineConfig({
       ],
     },
   },
+  // Use separate TypeScript config for tests
+  esbuild: {
+    target: 'es2020',
+  },
 })
