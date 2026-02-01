@@ -12,3 +12,7 @@ docs/
 coverage
 .nyc_output
 dist
+src/test/
+*.test.tsx
+*.test.ts
+vitest.config.ts
