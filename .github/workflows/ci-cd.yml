@@ -64,9 +64,54 @@ jobs:
           username: ${{ secrets.LIGHTSAIL_USER }}
           key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
           script: |
+            # Navigate to portfolio directory
+            cd /home/ubuntu/apps/qa-portfolio
+            
+            # Pull latest changes first
+            echo "📥 Pulling latest changes from Git..."
+            git pull origin main || git pull origin master
+            
             # Make deployment script executable and run it
-            chmod +x /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
-            /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
+            if [ -f "scripts/deploy.sh" ]; then
+              chmod +x scripts/deploy.sh
+              ./scripts/deploy.sh
+            else
+              echo "⚠️  Deploy script not found, running manual deployment..."
+              
+              # Navigate to docker-compose directory
+              cd /home/ubuntu/apps/todo-app
+              
+              # Stop current portfolio container
+              echo "🛑 Stopping current portfolio container..."
+              docker-compose stop portfolio || echo "⚠️  Container was not running"
+              
+              # Remove old image to force rebuild
+              echo "🗑️  Removing old Docker image..."
+              docker image rm todo-app-portfolio 2>/dev/null || echo "⚠️  Image not found, continuing..."
+              
+              # Rebuild and start portfolio
+              echo "🔨 Building and starting new portfolio container..."
+              if docker-compose up -d portfolio; then
+                echo "✅ Container started successfully"
+              else
+                echo "❌ Failed to start container"
+                exit 1
+              fi
+              
+              # Wait for container to be ready
+              echo "⏳ Waiting for container to be ready..."
+              sleep 15
+              
+              # Check if container is running
+              echo "🔍 Checking container status..."
+              if docker ps | grep -q portfolio; then
+                echo "✅ Portfolio container is running"
+              else
+                echo "❌ Portfolio container is not running"
+                docker-compose logs portfolio --tail=20
+                exit 1
+              fi
+            fi
 
       - name: Verify deployment
         uses: appleboy/ssh-action@v1.0.3
