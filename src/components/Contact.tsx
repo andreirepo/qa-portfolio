@@ -28,7 +28,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="py-12 px-6">
+    <section id="contact" className="py-12 px-6 mobile-padding">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           ref={ref}
@@ -91,14 +91,15 @@ const Contact = () => {
             <div className="flex flex-wrap justify-center gap-3">
               <a
                 href="mailto:andrei.repo@outlook.com"
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-pass text-white rounded-lg text-sm font-semibold hover:bg-pass/90 transition-colors shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-pass text-white rounded-lg text-sm font-semibold hover:bg-pass/90 transition-all hover:scale-105 shadow-lg shadow-pass/25 hover:shadow-xl hover:shadow-pass/30 focus:outline-none focus:ring-2 focus:ring-pass/50 focus:ring-offset-2"
               >
-                Let's Talk
+                <Mail size={16} />
+                Schedule a 15-min quality audit
               </a>
               <a
                 href="/Andrei_Repo_Resume.pdf"
                 download
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all hover:scale-105 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-500/50 focus:ring-offset-2"
               >
                 Download Resume
               </a>

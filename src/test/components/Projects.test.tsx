@@ -10,9 +10,9 @@ describe('Projects', () => {
 
   it('displays projects from JSON data', () => {
     render(<Projects />)
-    // Check for first project title
+    // Check for first project title (updated)
     expect(
-      screen.getByText(/E2E Automation with Playwright/i)
+      screen.getByText(/Enterprise E2E Framework Migration/i)
     ).toBeInTheDocument()
     // Check for project metrics (using getAllByText for multiple matches)
     expect(screen.getAllByText(/tests/i).length).toBeGreaterThan(0)

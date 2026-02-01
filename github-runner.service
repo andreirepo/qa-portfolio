@@ -1,0 +1,17 @@
+[Unit]
+Description=GitHub Actions Self-Hosted Runner
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+Environment=GITHUB_TOKEN=your_token_here
+ExecStart=/home/ubuntu/smart-runner.sh auto
+ExecStop=/home/ubuntu/smart-runner.sh stop
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

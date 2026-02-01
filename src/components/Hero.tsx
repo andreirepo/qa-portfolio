@@ -9,7 +9,11 @@ const Hero = () => {
               Andrei Repo
             </h1>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 font-medium max-w-2xl mx-auto mb-2">
-              Cloud QA Engineer • AWS Certified • 9+ years
+              Senior Quality Engineer | Cloud-Native Testing & DevOps
+              Integration
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-500 max-w-2xl mx-auto mb-1">
+              AWS Certified • Building Resilient QA Systems
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-500 max-w-2xl mx-auto">
               60% faster deployments • Zero production incidents • 500+ tests
@@ -39,10 +43,10 @@ const Hero = () => {
                 .getElementById('contact')
                 ?.scrollIntoView({ behavior: 'smooth' })
             }
-            className="inline-flex items-center gap-2 px-4 py-2.5 bg-pass text-white rounded-full font-medium hover:bg-pass/90 transition-all hover:scale-105 text-sm shadow-lg shadow-pass/25"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-pass text-white rounded-full font-medium hover:bg-pass/90 transition-all hover:scale-105 text-sm shadow-lg shadow-pass/25 hover:shadow-xl hover:shadow-pass/30 focus:outline-none focus:ring-2 focus:ring-pass/50 focus:ring-offset-2"
           >
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            <span>Need quality? Let's talk</span>
+            <span>Let's build resilient quality systems together</span>
           </button>
         </div>
       </div>

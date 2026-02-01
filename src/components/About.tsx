@@ -56,14 +56,14 @@ const About = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
           >
-            9+ years engineering quality in cloud-native environments. AWS
-            Certified with deep expertise in Kubernetes, Docker, and
-            Infrastructure as Code. Architected CI/CD pipelines reducing
-            deployment time by 60%, implemented SLO-based testing strategies,
-            and embedded observability into test frameworks. Migrated test
-            frameworks (Cypress → Playwright) and built GitOps workflows for
-            zero-downtime deployments. Where quality engineering meets Site
-            Reliability Engineering. ☁️🚀
+            Senior Quality Engineer with deep expertise in cloud-native
+            environments. AWS Certified with specialized knowledge in
+            Kubernetes, Docker, and Infrastructure as Code. Architected CI/CD
+            pipelines reducing deployment time by 60%, implemented SLO-based
+            testing strategies, and embedded observability into test frameworks.
+            Migrated test frameworks (Cypress → Playwright) and built GitOps
+            workflows for zero-downtime deployments. Where quality engineering
+            meets Site Reliability Engineering. ☁️🚀
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">

@@ -65,7 +65,7 @@ const Projects = () => {
               >
                 {/* Title & Company */}
                 <div className="mb-3">
-                  <h3 className="text-base font-bold mb-1 group-hover:text-pass transition-colors line-clamp-2">
+                  <h3 className="text-base font-bold mb-1 group-hover:text-pass transition-colors line-clamp-2 project-title">
                     {project.title}
                   </h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400">

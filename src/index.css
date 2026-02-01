@@ -39,7 +39,7 @@
     }
   }
 
-  /* Prevent text truncation */
+  /* Prevent text truncation and improve mobile readability */
   h1,
   h2,
   h3,
@@ -48,6 +48,20 @@
   h6 {
     overflow-wrap: break-word;
     word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Better mobile text handling */
+  @media (max-width: 640px) {
+    .project-title {
+      word-break: break-word;
+      hyphens: auto;
+      line-height: 1.4;
+    }
+
+    .mobile-padding {
+      padding-bottom: 2rem;
+    }
   }
 
   /* Fix for flex items */

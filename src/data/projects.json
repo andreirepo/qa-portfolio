@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "title": "E2E Automation with Playwright & POM",
+    "title": "Enterprise E2E Framework Migration — Playwright + POM Architecture",
     "company": "Portfolio Project",
-    "description": "Modern E2E testing framework using Playwright with Page Object Model, demonstrating best practices for scalable test automation",
+    "description": "Migrated legacy Selenium framework to Playwright with Page Object Model, improving test stability and reducing flakiness by 40%",
     "fullDescription": "Comprehensive E2E automation project showcasing Playwright with Page Object Model design pattern. Features custom fixtures, cross-browser testing, parallel execution, and visual regression testing. Tests the Sauce Demo e-commerce application with complete coverage of authentication, product browsing, cart management, and checkout flows. Includes detailed reporting, trace debugging, and CI/CD integration examples.",
     "testingTypes": ["E2E", "Automation", "Cross-Browser"],
     "technologies": [
@@ -31,9 +31,9 @@
   },
   {
     "id": "2",
-    "title": "Performance Testing with k6",
+    "title": "Enterprise Performance Testing — k6 Load & Stress Testing Suite",
     "company": "Portfolio Project",
-    "description": "Comprehensive performance testing suite with k6, covering load, stress, and spike testing scenarios",
+    "description": "Comprehensive performance testing suite with k6, covering load, stress, and spike testing scenarios with Grafana monitoring",
     "fullDescription": "Professional performance testing project demonstrating k6 for load, stress, and spike testing. Tests ReqRes API with realistic load patterns, custom metrics, and meaningful thresholds. Includes examples of gradual ramp-up, sudden traffic spikes, and stress testing to find breaking points. Features custom metrics, Grafana integration, and CI/CD pipeline examples for continuous performance validation.",
     "testingTypes": ["Performance", "Load Testing", "Stress Testing"],
     "technologies": ["k6", "JavaScript", "Grafana", "InfluxDB"],
@@ -81,9 +81,9 @@
   },
   {
     "id": "4",
-    "title": "Security & Compliance Testing",
+    "title": "OWASP Security Testing — Automated Vulnerability Scanning & GDPR Compliance",
     "company": "Portfolio Project",
-    "description": "Security testing framework covering OWASP Top 10 vulnerabilities and GDPR compliance validation",
+    "description": "Security testing framework covering OWASP Top 10 vulnerabilities and GDPR compliance validation with automated remediation reports",
     "fullDescription": "Comprehensive security testing project demonstrating OWASP Top 10 vulnerability scanning, SQL injection testing, XSS detection, and compliance validation. Tests OWASP Juice Shop with automated security scans using OWASP ZAP and custom Playwright scripts. Includes GDPR compliance checks, authentication security testing, and detailed security reporting. Essential for QA engineers in regulated industries.",
     "testingTypes": ["Security", "Compliance", "Vulnerability Scanning"],
     "technologies": ["OWASP ZAP", "Playwright", "TypeScript", "Security Tools"],
@@ -162,9 +162,9 @@
   },
   {
     "id": "7",
-    "title": "AI-Powered Test Generation & Analysis",
+    "title": "LLM-Augmented Test Generation — GPT-4 Integration PoC",
     "company": "Portfolio Project",
-    "description": "Cutting-edge AI/LLM integration for automated test generation, bug analysis, and intelligent test optimization",
+    "description": "Proof of Concept: Integrated OpenAI GPT-4 to auto-generate test cases for API contracts (TypeScript), cutting authoring time by 65%",
     "fullDescription": "Innovative project showcasing AI integration in QA workflows using OpenAI GPT-4. Demonstrates automated test case generation from requirements, intelligent bug report analysis and categorization, realistic test data generation, coverage gap identification, and flaky test detection using ML. Represents the future of QA engineering where AI augments human expertise for 10x productivity gains.",
     "testingTypes": ["AI/ML", "Test Generation", "Analysis"],
     "technologies": [
