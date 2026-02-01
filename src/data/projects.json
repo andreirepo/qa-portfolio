@@ -175,7 +175,7 @@
     }
   },
   {
-    "id": "6",
+    "id": "8",
     "title": "Playwright Migration & Framework Evolution",
     "company": "Sketch B.V.",
     "description": "Led enterprise-wide migration from Cypress to Playwright, reducing execution time by 30% and expanding test coverage",
@@ -200,7 +200,7 @@
     }
   },
   {
-    "id": "7",
+    "id": "9",
     "title": "Games Marketplace Quality Strategy",
     "company": "Playtech plc",
     "description": "Owned end-to-end quality strategy for cloud-native gaming platform with distributed microservices",
@@ -225,7 +225,7 @@
     }
   },
   {
-    "id": "8",
+    "id": "10",
     "title": "Full-Stack Todo Application",
     "company": "Personal Project",
     "description": "Production-ready CRUD app with authentication, deployed on self-hosted Kubernetes with full CI/CD",

@@ -35,15 +35,10 @@ jobs:
     - name: Install Playwright browsers
       run: npx playwright install --with-deps
 
-    - name: Run E2E tests
-      run: npm run test:e2e
-      env:
-        BASE_URL: http://localhost:4173
-
-    - name: Start preview server for E2E tests
+    - name: Start preview server and run E2E tests
       run: |
         npm run preview &
-        sleep 5
+        sleep 10
         npm run test:e2e
       env:
         BASE_URL: http://localhost:4173
@@ -72,29 +67,9 @@ jobs:
         username: ${{ secrets.LIGHTSAIL_USER }}
         key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
         script: |
-          # Navigate to portfolio directory
-          cd /home/ubuntu/apps/qa-portfolio
-          
-          # Pull latest changes
-          git pull origin main || git pull origin master
-          
-          # Navigate to docker-compose directory
-          cd /home/ubuntu/apps/todo-app
-          
-          # Stop current portfolio container
-          docker-compose stop portfolio
-          
-          # Remove old image to force rebuild
-          docker image rm todo-app-portfolio || true
-          
-          # Rebuild and start portfolio
-          docker-compose up -d portfolio
-          
-          # Wait for container to be healthy
-          sleep 10
-          
-          # Check if container is running
-          docker ps | grep portfolio
+          # Make deployment script executable and run it
+          chmod +x /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
+          /home/ubuntu/apps/qa-portfolio/scripts/deploy.sh
 
     - name: Verify deployment
       uses: appleboy/ssh-action@v1.0.3
@@ -103,9 +78,15 @@ jobs:
         username: ${{ secrets.LIGHTSAIL_USER }}
         key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
         script: |
-          # Test if the site is responding
-          curl -f https://andreirepo.com || exit 1
-          echo "✅ Deployment successful!"
+          # Final verification
+          echo "🔍 Final deployment verification..."
+          if curl -f -s https://andreirepo.com > /dev/null; then
+            echo "✅ Deployment verification successful!"
+            echo "🌟 Portfolio is live at https://andreirepo.com"
+          else
+            echo "❌ Deployment verification failed"
+            exit 1
+          fi
 
   notify:
     needs: [test, deploy]
