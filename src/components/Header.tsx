@@ -80,12 +80,6 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
               <Download size={16} />
             </a>
             <button
-              onClick={() => scrollToSection('projects')}
-              className="px-3 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-pass transition-colors"
-            >
-              Projects
-            </button>
-            <button
               onClick={() => scrollToSection('contact')}
               className="px-3 py-1.5 rounded-lg bg-pass text-white hover:bg-pass/90 transition-colors text-xs font-medium"
             >
@@ -109,6 +103,12 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
               className="block w-full text-left py-3 px-4 hover:text-pass transition-colors rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium"
             >
               About
+            </button>
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="block w-full text-left py-3 px-4 hover:text-pass transition-colors rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium"
+            >
+              Projects
             </button>
             <button
               onClick={() => scrollToSection('skills')}

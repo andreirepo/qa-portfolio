@@ -13,7 +13,7 @@ describe('Header', () => {
     )
 
     expect(screen.getByText(/about/i)).toBeInTheDocument()
-    expect(screen.getAllByText(/projects/i)).toHaveLength(2) // Desktop and mobile versions
+    expect(screen.getByText(/projects/i)).toBeInTheDocument() // Only desktop version visible by default
     expect(screen.getByText(/skills/i)).toBeInTheDocument()
     expect(screen.getAllByText(/contact/i)).toHaveLength(2) // Desktop and mobile versions
   })

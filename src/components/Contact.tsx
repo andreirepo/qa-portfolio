@@ -94,7 +94,7 @@ const Contact = () => {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-pass text-white rounded-lg text-sm font-semibold hover:bg-pass/90 transition-all hover:scale-105 shadow-lg shadow-pass/25 hover:shadow-xl hover:shadow-pass/30 focus:outline-none focus:ring-2 focus:ring-pass/50 focus:ring-offset-2"
               >
                 <Mail size={16} />
-                Schedule a 15-min quality audit
+                Get in touch
               </a>
               <a
                 href="/Andrei_Repo_Resume.pdf"
